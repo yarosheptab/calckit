@@ -10,8 +10,8 @@ export default function AboutPage() {
         <a href="https://open.er-api.com" style={{ color: '#2563eb' }}>open.er-api.com</a> and cached for one hour.
       </p>
       <p style={{ fontSize: '13px', color: '#374151', lineHeight: 1.7, marginBottom: '14px' }}>
-        calckit is part of the{' '}
-        <a href="https://yaro-labs.com" style={{ color: '#2563eb' }}>yaro-labs.com</a> family of developer and productivity tools.
+        calckit is built by{' '}
+        <a href="https://yaro-labs.com" target="_blank" rel="noopener noreferrer" style={{ color: '#2563eb' }}>Yaro Labs</a>.
       </p>
       <p style={{ fontSize: '12px', color: '#9ca3af', lineHeight: 1.6 }}>
         Tax estimates use simplified 2024 US federal brackets and are for informational purposes only. Always consult a tax professional for advice specific to your situation.
