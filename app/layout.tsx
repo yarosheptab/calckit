@@ -9,9 +9,36 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
+const siteTitle = 'calckit — Free Online Calculators'
+const siteDescription = 'Calculators — Mortgage, Compound Interest, ROI, Currency Converter, Unit Converter, Tip Calculator, Tax Estimator. Free, no account needed.'
+
 export const metadata: Metadata = {
-  title: 'calckit — Free calculators for everyday math',
-  description: 'Mortgage, interest, ROI, currency, unit conversions, and more. No account. No ads.',
+  title: siteTitle,
+  description: siteDescription,
+  keywords: [
+    'calculators',
+    'mortgage calculator',
+    'compound interest calculator',
+    'ROI calculator',
+    'currency converter',
+    'unit converter',
+    'tip calculator',
+    'tax calculator',
+    'free online calculators',
+  ],
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: 'https://calckit.yaro-labs.com',
+    siteName: 'calckit',
+    type: 'website',
+    images: [{ url: 'https://calckit.yaro-labs.com/og/home.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -21,6 +48,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGJKRZZF" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
         </noscript>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'WebSite',
+                  name: 'calckit',
+                  url: 'https://calckit.yaro-labs.com',
+                  description: siteDescription,
+                  publisher: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+                  potentialAction: {
+                    '@type': 'SearchAction',
+                    target: { '@type': 'EntryPoint', urlTemplate: 'https://calckit.yaro-labs.com/search?q={search_term_string}' },
+                    'query-input': 'required name=search_term_string',
+                  },
+                },
+                {
+                  '@type': 'Organization',
+                  name: 'Yaro Labs',
+                  url: 'https://yaro-labs.com',
+                },
+              ],
+            }),
+          }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />
