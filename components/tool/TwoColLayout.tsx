@@ -5,7 +5,7 @@ interface TwoColLayoutProps {
 
 export default function TwoColLayout({ left, right }: TwoColLayoutProps) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: 'calc(100vh - 120px)' }}>
+    <div className="two-col-layout">
       <div style={{ padding: '20px 20px 28px', background: '#fff', borderRight: '1px solid #f0f0f0' }}>
         {left}
       </div>

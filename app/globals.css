@@ -30,3 +30,31 @@ input:focus, select:focus {
   outline: none;
   border-color: var(--accent-border) !important;
 }
+
+/* Responsive: tool grid on home page */
+.tool-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+}
+@media (max-width: 600px) {
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive: two-column tool layout */
+.two-col-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 120px);
+}
+@media (max-width: 640px) {
+  .two-col-layout {
+    grid-template-columns: 1fr;
+  }
+  .two-col-layout > div:first-child {
+    border-right: none !important;
+    border-bottom: 1px solid #f0f0f0;
+  }
+}

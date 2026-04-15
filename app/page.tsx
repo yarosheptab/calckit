@@ -37,7 +37,7 @@ export default function HomePage() {
           </span>
           <span style={{ fontSize: '9px', color: '#d1d5db' }}>7 tools</span>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px' }}>
+        <div className="tool-grid">
           {TOOLS.map((tool) => (
             <ToolCard key={tool.href} tool={tool} />
           ))}
