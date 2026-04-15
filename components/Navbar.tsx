@@ -1,10 +1,11 @@
+'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-interface NavbarProps {
-  showCta?: boolean
-}
+export default function Navbar() {
+  const pathname = usePathname()
+  const showCta = pathname === '/'
 
-export default function Navbar({ showCta = false }: NavbarProps) {
   return (
     <nav style={{
       height: '50px',

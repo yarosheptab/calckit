@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        <Navbar showCta />
+        <Navbar />
         <main>{children}</main>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
