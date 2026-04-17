@@ -148,7 +148,7 @@ export function HeroWidget() {
       </div>
 
       {/* Calculator content */}
-      <div className="p-5">
+      <div className="p-5 min-h-[325px]">
         {tab === 'Mortgage' && <MortgageMini />}
         {tab === 'Compound' && <CompoundMini />}
         {tab === 'ROI' && <ROIMini />}
