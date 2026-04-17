@@ -2,23 +2,24 @@ import type { Metadata } from 'next'
 import MortgageCalculator from './MortgageCalculator'
 
 export const metadata: Metadata = {
-  title: 'Mortgage Calculator',
+  title: 'Mortgage Calculator — Monthly Payment & Amortization',
   description: 'Calculate monthly mortgage payments, total interest, and amortization. Enter loan amount, rate, and term — get instant results.',
   keywords: ['mortgage calculator', 'monthly payment calculator', 'home loan calculator', 'mortgage payment', 'amortization calculator'],
   openGraph: {
-    title: 'Mortgage Calculator',
+    title: 'Mortgage Calculator — Monthly Payment & Amortization',
     description: 'Calculate monthly mortgage payments, total interest, and amortization. Enter loan amount, rate, and term — get instant results.',
     url: 'https://calckit.yaro-labs.com/mortgage',
     siteName: 'calckit',
     type: 'website',
-    images: [{ url: 'https://calckit.yaro-labs.com/og/home.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mortgage Calculator',
+    title: 'Mortgage Calculator — Monthly Payment & Amortization',
     description: 'Calculate monthly mortgage payments, total interest, and amortization. Enter loan amount, rate, and term — get instant results.',
   },
 }
+
+const BASE = 'https://calckit.yaro-labs.com'
 
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
@@ -28,10 +29,17 @@ const jsonLd = JSON.stringify({
       name: 'Mortgage Calculator',
       applicationCategory: 'FinanceApplication',
       operatingSystem: 'Web',
-      url: 'https://calckit.yaro-labs.com/mortgage',
+      url: `${BASE}/mortgage`,
       description: 'Calculate monthly mortgage payments, total interest, and amortization. Enter loan amount, rate, and term — get instant results.',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Mortgage Calculator', item: `${BASE}/mortgage` },
+      ],
     },
     {
       '@type': 'FAQPage',
@@ -57,7 +65,7 @@ const jsonLd = JSON.stringify({
           name: 'How much of my mortgage payment goes to interest vs principal?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'In the early years of a mortgage, most of your payment goes toward interest. Over time, more goes toward reducing the principal. Our calculator shows the full breakdown of principal vs. total interest paid.',
+            text: 'In the early years, most of your payment goes toward interest. Over time, more goes toward principal. Our calculator shows the full breakdown of principal vs. total interest paid.',
           },
         },
       ],
