@@ -1,3 +1,22 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: { absolute: 'About calckit — Free Online Calculators' },
+  description: 'calckit is a free collection of everyday calculators — mortgage, compound interest, ROI, currency, units, tips, and taxes. No account, no ads, no data collected. Built by Yaro Labs.',
+  openGraph: {
+    title: 'About calckit — Free Online Calculators',
+    description: 'calckit is a free collection of everyday calculators — mortgage, compound interest, ROI, currency, units, tips, and taxes. No account, no ads, no data collected.',
+    url: 'https://calckit.yaro-labs.com/about',
+    siteName: 'calckit',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About calckit — Free Online Calculators',
+    description: 'calckit is a free collection of everyday calculators — mortgage, compound interest, ROI, currency, units, tips, and taxes. No account, no ads, no data collected.',
+  },
+}
+
 export default function AboutPage() {
   return (
     <div style={{ maxWidth: '640px', margin: '0 auto', padding: '40px 20px' }}>

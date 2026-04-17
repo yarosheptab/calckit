@@ -3,8 +3,20 @@ import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
 
 export const metadata: Metadata = {
-  title: 'Blog — calckit',
-  description: 'Articles about personal finance, math, and everyday calculations.',
+  title: 'Blog — Personal Finance & Math Articles',
+  description: 'Articles, guides, and explainers about personal finance, everyday math, mortgage calculations, investment growth, tax planning, and more — from the calckit team.',
+  openGraph: {
+    title: 'Blog — Personal Finance & Math Articles',
+    description: 'Articles, guides, and explainers about personal finance, everyday math, mortgage calculations, investment growth, tax planning, and more — from the calckit team.',
+    url: 'https://calckit.yaro-labs.com/blog',
+    siteName: 'calckit',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog — Personal Finance & Math Articles',
+    description: 'Articles, guides, and explainers about personal finance, everyday math, mortgage calculations, investment growth, tax planning, and more — from the calckit team.',
+  },
 }
 
 export default function BlogIndexPage() {
