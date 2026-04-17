@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import { ChevronRight, ArrowRight, CalendarDays } from 'lucide-react'
+import { getAllPosts, getPostBySlug, findToolForPost, getRelatedPosts } from '@/lib/blog'
 
 const BASE = 'https://calckit.yaro-labs.com'
 
@@ -18,6 +19,7 @@ export async function generateMetadata(
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: { canonical: `${BASE}/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -39,7 +41,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getPostBySlug(slug)
   if (!post) notFound()
 
-  const jsonLd = JSON.stringify({
+  const tool = findToolForPost(slug)
+  const related = getRelatedPosts(slug)
+
+  // Content is static markdown from repo files, not user input — safe to render
+  const postHtml = post.html
+  const ldJson = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
@@ -51,24 +58,110 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     publisher: { '@type': 'Organization', name: 'calckit', url: BASE },
   })
 
+  const dateFormatted = new Date(post.date).toLocaleDateString('en-US', {
+    year: 'numeric', month: 'long', day: 'numeric',
+  })
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
-      <div style={{ maxWidth: '680px', margin: '0 auto', padding: '32px 20px' }}>
-        <Link
-          href="/blog"
-          style={{ fontSize: '12px', color: '#6b7280', textDecoration: 'none', display: 'inline-block', marginBottom: '20px' }}
-        >
-          ← Back to blog
-        </Link>
-        <div style={{ fontSize: '10px', color: '#9ca3af', marginBottom: '8px' }}>{post.date}</div>
-        <h1 style={{ fontSize: '22px', fontWeight: 800, color: '#111', letterSpacing: '-0.03em', marginBottom: '20px' }}>
-          {post.title}
-        </h1>
-        <div
-          style={{ fontSize: '14px', color: '#374151', lineHeight: 1.7 }}
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson }} />
+
+      <div className="bg-gray-50 min-h-screen">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+
+          {/* Breadcrumb */}
+          <nav className="flex items-center gap-1.5 text-xs text-gray-400 mb-8">
+            <Link href="/" className="hover:text-gray-600 transition-colors">Home</Link>
+            <ChevronRight className="w-3 h-3" />
+            <Link href="/blog" className="hover:text-gray-600 transition-colors">Blog</Link>
+            <ChevronRight className="w-3 h-3" />
+            <span className="text-gray-500 truncate max-w-48">{post.title}</span>
+          </nav>
+
+          {/* Article */}
+          <article className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+
+            {/* Header */}
+            <div className="px-8 pt-10 pb-8 border-b border-gray-100">
+              <div className="flex items-center gap-2 text-xs text-gray-400 mb-4">
+                <CalendarDays className="w-3.5 h-3.5" />
+                <time dateTime={post.date}>{dateFormatted}</time>
+              </div>
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight leading-tight mb-4">
+                {post.title}
+              </h1>
+              <p className="text-base text-gray-500 leading-relaxed">{post.excerpt}</p>
+            </div>
+
+            {/* Prose content — HTML from static markdown files in /content/blog */}
+            <div className="px-8 py-10">
+              <div
+                className="prose prose-gray prose-sm sm:prose-base max-w-none
+                  prose-headings:font-bold prose-headings:tracking-tight
+                  prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4
+                  prose-h3:text-base prose-h3:mt-6 prose-h3:mb-3
+                  prose-p:text-gray-700 prose-p:leading-relaxed
+                  prose-a:text-blue-600 prose-a:font-medium prose-a:no-underline hover:prose-a:underline
+                  prose-strong:text-gray-900
+                  prose-table:text-sm
+                  prose-th:font-semibold prose-th:text-gray-700
+                  prose-td:text-gray-600
+                  prose-blockquote:border-blue-400 prose-blockquote:not-italic
+                  prose-code:bg-gray-100 prose-code:text-gray-800 prose-code:rounded prose-code:px-1 prose-code:text-[13px] prose-code:before:content-none prose-code:after:content-none
+                  prose-li:text-gray-700"
+                dangerouslySetInnerHTML={{ __html: postHtml }}
+              />
+            </div>
+
+            {/* CTA */}
+            {tool && (
+              <div className="mx-8 mb-10 rounded-xl bg-blue-50 border border-blue-100 px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <div className="text-sm font-semibold text-blue-900 mb-0.5">Try it yourself</div>
+                  <div className="text-xs text-blue-600">{tool.name} — free, no account needed</div>
+                </div>
+                <Link
+                  href={tool.href}
+                  className="shrink-0 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors"
+                >
+                  Open {tool.name}
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            )}
+          </article>
+
+          {/* Related articles */}
+          {related.length > 0 && (
+            <section className="mt-10">
+              <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-5">Related articles</h2>
+              <div className="grid sm:grid-cols-3 gap-4">
+                {related.map(p => (
+                  <Link
+                    key={p.slug}
+                    href={`/blog/${p.slug}`}
+                    className="group bg-white border border-gray-200 rounded-xl p-5 hover:border-blue-300 hover:shadow-sm transition-all no-underline"
+                  >
+                    <div className="text-[11px] text-gray-400 mb-2">
+                      {new Date(p.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                    </div>
+                    <div className="text-sm font-semibold text-gray-900 leading-snug mb-2 group-hover:text-blue-600 transition-colors">
+                      {p.title}
+                    </div>
+                    <div className="text-xs text-gray-400 leading-relaxed line-clamp-2">{p.excerpt}</div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <div className="mt-8 text-center">
+            <Link href="/blog" className="text-sm text-gray-500 hover:text-gray-800 transition-colors">
+              ← All articles
+            </Link>
+          </div>
+
+        </div>
       </div>
     </>
   )
