@@ -8,7 +8,7 @@ excerpt: "Learn how to calculate daily calorie needs using the Mifflin-St Jeor B
 
 Knowing **how to calculate daily calorie needs** is the single most actionable step you can take before starting any weight-management plan. Without a reliable target, you are guessing — and research consistently shows that people underestimate food intake by 20–40%. The Total Daily Energy Expenditure (TDEE) method removes the guesswork by anchoring your target to your body's actual metabolism and activity level.
 
-[Skip the math — use the free Calorie Calculator](/calorie)
+[Skip the math — use the free Calorie Calculator](/calorie-calculator)
 
 ---
 
@@ -95,7 +95,7 @@ With TDEE in hand, adjust up or down depending on what you want to achieve:
 
 Do not cut below your BMR (1,330 kcal in this example) without medical supervision — it risks nutrient deficiencies and metabolic adaptation.
 
-Once you have your calorie target, you can refine further. Check your [BMI](/bmi) to set a realistic weight goal, and consider your [body fat percentage](/body-fat) if you want to track lean mass changes rather than total weight.
+Once you have your calorie target, you can refine further. Check your [BMI](/bmi-calculator) to set a realistic weight goal, and consider your [body fat percentage](/body-fat-calculator) if you want to track lean mass changes rather than total weight.
 
 ---
 
@@ -108,4 +108,4 @@ Once you have your calorie target, you can refine further. Check your [BMI](/bmi
 - A 500 kcal/day deficit produces approximately 0.5 kg of weekly fat loss
 - Most people overestimate their activity level — when in doubt, use "lightly active"
 - Re-calculate TDEE every 4–6 weeks as your weight and fitness level change
-- Use the [free Calorie Calculator](/calorie) to get your TDEE and goal targets instantly
+- Use the [free Calorie Calculator](/calorie-calculator) to get your TDEE and goal targets instantly

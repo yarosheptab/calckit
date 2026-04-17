@@ -128,7 +128,7 @@ Note: hard drive manufacturers use decimal gigabytes (1 GB = 1,000 MB), so a "2 
 
 Memorizing conversion factors takes time, and mental math introduces rounding errors. The [CalcKit unit converter](/unit-converter) covers length, weight, temperature, area, volume, data, and more — with exact results in one tap.
 
-For financial conversions between currencies, the [currency converter](/currency) uses live mid-market rates. And if you need your BMI — which blends kg, cm, and lbs — the [BMI calculator](/bmi) handles the unit juggling automatically.
+For financial conversions between currencies, the [currency converter](/currency-converter) uses live mid-market rates. And if you need your BMI — which blends kg, cm, and lbs — the [BMI calculator](/bmi-calculator) handles the unit juggling automatically.
 
 ---
 

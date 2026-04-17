@@ -51,7 +51,7 @@ Working through the math:
 3. Denominator: 1.5510 − 1 = 0.5510
 4. M = $20,000 × (0.014217 ÷ 0.5510) = $20,000 × 0.025803 = **$516/month**
 
-Skip the arithmetic and let the [CalcKit Loan Calculator](/loan) do this instantly — just enter principal, rate, and term.
+Skip the arithmetic and let the [CalcKit Loan Calculator](/loan-calculator) do this instantly — just enter principal, rate, and term.
 
 ## Step 4: Calculate Total Interest
 
@@ -106,4 +106,4 @@ Even a small consistent extra payment accelerates principal paydown because less
 
 For the $20,000 loan at 11% APR over 48 months: **$516/month, $4,768 total interest**.
 
-Use the [CalcKit Loan Calculator](/loan) to model your exact numbers. If you're comparing loan payoff against an existing mortgage, check the [Mortgage Calculator](/mortgage) — or if you're working to eliminate multiple debts, the [Debt Payoff Calculator](/debt) can map out a strategy that saves the most interest.
+Use the [CalcKit Loan Calculator](/loan-calculator) to model your exact numbers. If you're comparing loan payoff against an existing mortgage, check the [Mortgage Calculator](/mortgage-calculator) — or if you're working to eliminate multiple debts, the [Debt Payoff Calculator](/debt-payoff-calculator) can map out a strategy that saves the most interest.

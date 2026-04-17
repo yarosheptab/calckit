@@ -14,7 +14,7 @@ This guide walks you through the five-step process, with a real worked example.
 
 ## Step 1: Find the Mid-Market Exchange Rate
 
-The mid-market rate — also called the interbank rate or spot rate — is the true exchange rate, the midpoint between buying and selling prices. It is what you see on Google, Reuters, or the [CalcKit currency converter](/currency).
+The mid-market rate — also called the interbank rate or spot rate — is the true exchange rate, the midpoint between buying and selling prices. It is what you see on Google, Reuters, or the [CalcKit currency converter](/currency-converter).
 
 This is your benchmark. Any conversion service will offer you a rate slightly worse than this, plus fees. Your goal is to get as close to the mid-market rate as possible.
 
@@ -90,9 +90,9 @@ When paying by card abroad, the terminal may ask: "Pay in your home currency or 
 
 ## Calculate Currency Conversions Instantly
 
-Doing these calculations manually is fine for a quick sanity check, but exchange rates change by the minute. The [CalcKit currency converter](/currency) uses live mid-market rates so you always see the real value before you transfer.
+Doing these calculations manually is fine for a quick sanity check, but exchange rates change by the minute. The [CalcKit currency converter](/currency-converter) uses live mid-market rates so you always see the real value before you transfer.
 
-For other financial calculations, try the [unit converter](/unit-converter) for measurement conversions or the [tip calculator](/tip) when splitting costs abroad.
+For other financial calculations, try the [unit converter](/unit-converter) for measurement conversions or the [tip calculator](/tip-calculator) when splitting costs abroad.
 
 ---
 

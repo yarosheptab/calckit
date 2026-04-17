@@ -105,8 +105,8 @@ These are approximations — for anything that matters (medicine, engineering, c
 
 Unit conversions often arise alongside financial and health calculations:
 
-- When buying gold or precious metals, prices are quoted in troy ounces (1 troy oz = 31.1 g, different from the regular ounce of 28.35 g). A [Currency Converter](/currency) helps when comparing international gold prices.
-- BMI calculations require consistent units — a height in feet/inches must be converted to meters, and weight in pounds to kilograms, before the WHO formula applies. The [BMI Calculator](/bmi) handles this conversion automatically.
+- When buying gold or precious metals, prices are quoted in troy ounces (1 troy oz = 31.1 g, different from the regular ounce of 28.35 g). A [Currency Converter](/currency-converter) helps when comparing international gold prices.
+- BMI calculations require consistent units — a height in feet/inches must be converted to meters, and weight in pounds to kilograms, before the WHO formula applies. The [BMI Calculator](/bmi-calculator) handles this conversion automatically.
 
 ## Conclusion: Key Takeaways
 

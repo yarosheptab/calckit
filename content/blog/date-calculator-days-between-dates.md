@@ -15,7 +15,7 @@ People reach for a date calculator in situations like these:
 - A subscription started on March 3 and renews after 6 months — when is the renewal?
 - A 30-day return window opened on January 15 — is April 5 still within the window?
 
-[Use the free Date Calculator](/date) to get an instant, exact answer.
+[Use the free Date Calculator](/date-calculator) to get an instant, exact answer.
 
 ## The Math Behind Days Between Dates
 
@@ -55,7 +55,7 @@ This approximation assumes a standard 5-day workweek with no public holidays. In
 | 6 months | ~182 | ~130 |
 | 1 year | 365–366 | ~260 |
 
-For more precise business-day counts (especially around public holidays), the [Date Calculator](/date) applies actual calendar logic rather than the 5/7 approximation.
+For more precise business-day counts (especially around public holidays), the [Date Calculator](/date-calculator) applies actual calendar logic rather than the 5/7 approximation.
 
 ## Practical Example: 90 Days From Today
 
@@ -101,7 +101,7 @@ The ISO 8601 format (YYYY-MM-DD) is unambiguous and universally sortable — it 
 - CD (certificate of deposit) maturity dates
 - Mortgage rate lock expiration periods (typically 30, 45, or 60 days)
 
-The [Age Calculator](/age) is closely related — it calculates the distance between a birth date and today in years, months, and days rather than total days alone.
+The [Age Calculator](/age-calculator) is closely related — it calculates the distance between a birth date and today in years, months, and days rather than total days alone.
 
 For financial calculations tied to time periods, the [Unit Converter](/unit-converter) can help with any measurement conversions that come up alongside date-based planning.
 
@@ -120,4 +120,4 @@ For financial calculations tied to time periods, the [Unit Converter](/unit-conv
 - ISO 8601 (YYYY-MM-DD) is the unambiguous international date format used in software and legal documents.
 - Many legal, medical, and financial deadlines depend on exact day counts — mental math is unreliable.
 
-[Calculate the days between any two dates — or find a date 90 days from now](/date) in one click.
+[Calculate the days between any two dates — or find a date 90 days from now](/date-calculator) in one click.

@@ -12,7 +12,7 @@ A **BMI calculator** is one of the fastest ways to screen whether your weight fa
 
 Because it requires only two inputs and no special equipment, BMI has become the world's most widely used population-level health screening tool. The CDC reports that the average American adult has a BMI of 26.5, placing the typical adult in the "overweight" category — and roughly 42% of U.S. adults have a BMI above 30, meeting the clinical definition of obesity.
 
-[Use the free BMI Calculator](/bmi) to find your number in seconds.
+[Use the free BMI Calculator](/bmi-calculator) to find your number in seconds.
 
 ## WHO BMI Categories: The Official Ranges
 
@@ -35,7 +35,7 @@ Suppose you are 5 ft 9 in (175 cm) tall and weigh 160 lbs (72.6 kg):
 
 **BMI = 72.6 ÷ (1.75 × 1.75) = 72.6 ÷ 3.0625 ≈ 23.7**
 
-A BMI of 23.7 falls squarely in the **Normal weight** range (18.5–24.9). You can verify any combination instantly with the [BMI Calculator](/bmi).
+A BMI of 23.7 falls squarely in the **Normal weight** range (18.5–24.9). You can verify any combination instantly with the [BMI Calculator](/bmi-calculator).
 
 ## Healthy Weight Ranges at Common Heights
 
@@ -75,13 +75,13 @@ BMI is a screening proxy — not a direct measurement of body composition. Key l
 
 BMI is a **screening tool** — fast, free, and requiring no equipment. Body fat percentage is a **diagnostic tool** — more precise, but requiring either a DEXA scan, hydrostatic weighing, or a validated estimation method like the US Navy formula.
 
-For most people without access to a DEXA scanner, using both a BMI calculator and a [body fat calculator](/body-fat) together gives a much more complete picture than either measure alone.
+For most people without access to a DEXA scanner, using both a BMI calculator and a [body fat calculator](/body-fat-calculator) together gives a much more complete picture than either measure alone.
 
 If your BMI is in the overweight range but you exercise regularly, the body fat calculator can help determine whether the excess weight is lean mass or actual fat — a crucial distinction for your health plan.
 
 ## Estimating Your Calorie Needs Once You Know Your BMI
 
-Understanding your BMI is step one. Step two is knowing how many calories your body actually needs to reach or maintain a healthy weight. The [calorie calculator](/calorie) uses the Mifflin-St Jeor equation to calculate your Total Daily Energy Expenditure (TDEE) based on age, sex, height, weight, and activity level — giving you a concrete daily calorie target for weight loss, maintenance, or gain.
+Understanding your BMI is step one. Step two is knowing how many calories your body actually needs to reach or maintain a healthy weight. The [calorie calculator](/calorie-calculator) uses the Mifflin-St Jeor equation to calculate your Total Daily Energy Expenditure (TDEE) based on age, sex, height, weight, and activity level — giving you a concrete daily calorie target for weight loss, maintenance, or gain.
 
 ## Conclusion: Key Takeaways
 
@@ -92,4 +92,4 @@ Understanding your BMI is step one. Step two is knowing how many calories your b
 - Asian populations may face health risks at lower BMI thresholds (overweight at BMI ≥ 23).
 - Pair BMI with a body fat percentage estimate for a more accurate health assessment.
 
-[Calculate your BMI now — it takes under 10 seconds](/bmi).
+[Calculate your BMI now — it takes under 10 seconds](/bmi-calculator).

@@ -42,7 +42,7 @@ Real numbers make the formula concrete:
 
 That 16% annualized return is what you'd compare against the S&P 500 index (historically ~10% nominal) or a bond fund (3–5%) to evaluate whether holding this stock was worth the risk.
 
-Use the [ROI calculator](/roi) to run your own numbers instantly — no formula memorization required.
+Use the [ROI calculator](/roi-calculator) to run your own numbers instantly — no formula memorization required.
 
 ## Historical Average Returns by Asset Class
 
@@ -70,7 +70,7 @@ Real Return ≈ Nominal Return − Inflation Rate
 
 More precisely: Real Return = (1 + Nominal) / (1 + Inflation) − 1
 
-**2. Ignoring taxes.** A 56% pre-tax ROI on a stock held less than one year faces short-term capital gains rates (up to 37% federal). After taxes, a 56% gross return might be a 35–40% net return. Always calculate after-tax ROI for realistic comparisons. Pair this with the [tax calculator](/tax) to model your actual tax liability.
+**2. Ignoring taxes.** A 56% pre-tax ROI on a stock held less than one year faces short-term capital gains rates (up to 37% federal). After taxes, a 56% gross return might be a 35–40% net return. Always calculate after-tax ROI for realistic comparisons. Pair this with the [tax calculator](/tax-calculator) to model your actual tax liability.
 
 **3. Ignoring risk.** Two investments both returning 10% CAGR are not equivalent if one has 5% annual volatility and the other has 30%. The Sharpe ratio (return per unit of risk) captures what raw ROI cannot. Higher returns paired with higher risk don't represent free money.
 
@@ -88,8 +88,8 @@ There's no universally correct answer — it depends on your risk tolerance and 
 
 ROI is one piece of the puzzle. To calculate your true investment returns:
 
-- Factor in inflation with the [inflation calculator](/inflation)
-- Model how gains grow over time with the [compound interest calculator](/compound-interest)
+- Factor in inflation with the [inflation calculator](/inflation-calculator)
+- Model how gains grow over time with the [compound interest calculator](/compound-interest-calculator)
 - Understand what you actually keep after taxes on your gains
 
 ## Key Takeaways
@@ -101,4 +101,4 @@ ROI is one piece of the puzzle. To calculate your true investment returns:
 - Basic ROI ignores inflation, taxes, and risk — always adjust for a realistic picture
 - Every percentage point of annual return matters enormously over 20–30 year horizons
 
-Calculate your returns now with the [ROI calculator](/roi).
+Calculate your returns now with the [ROI calculator](/roi-calculator).

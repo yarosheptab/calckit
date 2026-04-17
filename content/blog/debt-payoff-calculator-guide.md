@@ -8,7 +8,7 @@ excerpt: "A debt payoff calculator reveals the real cost of minimum payments and
 
 A debt payoff calculator does something powerful: it shows you not just when you'll be debt-free, but exactly how much the method you choose affects the total amount you pay. The difference between the right and wrong approach on a typical debt load can easily be **$400–$1,500** in additional interest — sometimes more.
 
-The average American carries approximately **$6,500 in credit card debt** at around **20% APR**. That's a heavy burden, and the way most people handle it — paying the minimum each month — is one of the most expensive financial mistakes you can make. [Use our free Debt Payoff Calculator](/debt) to map your own path to debt freedom.
+The average American carries approximately **$6,500 in credit card debt** at around **20% APR**. That's a heavy burden, and the way most people handle it — paying the minimum each month — is one of the most expensive financial mistakes you can make. [Use our free Debt Payoff Calculator](/debt-payoff-calculator) to map your own path to debt freedom.
 
 ## The Minimum Payment Trap: A $4,000+ Mistake
 
@@ -96,7 +96,7 @@ Consolidation does not make sense when:
 - You're extending a 2-year payoff into a 5-year payoff to lower the monthly payment
 - You have strong negotiating leverage to get rate reductions directly with creditors
 
-For example, consolidating our three debts (total $9,000, blended rate ~18%) into a personal loan at 10% would save significant interest. But consolidating at 16% would save very little. Use our [Loan Calculator](/loan) to check whether a consolidation offer actually beats your current situation.
+For example, consolidating our three debts (total $9,000, blended rate ~18%) into a personal loan at 10% would save significant interest. But consolidating at 16% would save very little. Use our [Loan Calculator](/loan-calculator) to check whether a consolidation offer actually beats your current situation.
 
 ## How Extra Payments Compound Over Time
 
@@ -115,7 +115,7 @@ Carrying debt doesn't just cost money — it creates measurable stress. Research
 
 ## After Debt: Where the Money Goes Next
 
-Once you're debt-free, the monthly payment budget you built — $415/month in our example — doesn't disappear. It redirects. Many people who pay off debt find they can build substantial savings almost immediately, using the same habits. Redirect that $415/month to a savings account, retirement account, or mortgage paydown, and see our [Mortgage Calculator](/mortgage) to understand how extra principal payments cut your loan term.
+Once you're debt-free, the monthly payment budget you built — $415/month in our example — doesn't disappear. It redirects. Many people who pay off debt find they can build substantial savings almost immediately, using the same habits. Redirect that $415/month to a savings account, retirement account, or mortgage paydown, and see our [Mortgage Calculator](/mortgage-calculator) to understand how extra principal payments cut your loan term.
 
 ## Conclusion: Key Takeaways
 
@@ -126,4 +126,4 @@ Once you're debt-free, the monthly payment budget you built — $415/month in ou
 - Debt consolidation is worth considering when your new rate is meaningfully lower than your current blended rate
 - Once debt-free, redirect those monthly payments to savings and investments immediately
 
-[Map your debt payoff plan and pick your strategy →](/debt)
+[Map your debt payoff plan and pick your strategy →](/debt-payoff-calculator)

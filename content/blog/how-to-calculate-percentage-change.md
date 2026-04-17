@@ -8,7 +8,7 @@ excerpt: "Learn how to calculate percentage change between any two numbers using
 
 **How to calculate percentage change** is one of the most practical arithmetic skills in everyday life. Whether you are comparing a stock price gain, a salary cut, year-over-year revenue, or your own weight-loss progress, the same formula applies every time. Miss it and you risk misreading data — or being misled by someone who presents numbers without the context of where they started.
 
-[Calculate any percentage change instantly with the free Percentage Calculator](/percentage)
+[Calculate any percentage change instantly with the free Percentage Calculator](/percentage-calculator)
 
 ---
 
@@ -71,7 +71,7 @@ Always include the sign. "+48.9%" and "−48.9%" are completely different outcom
 | Inflation (CPI) | 260 | 275 | (275−260)/260 × 100 | **+5.8%** |
 | Weight-loss progress | 95 kg | 82 kg | (82−95)/95 × 100 | **−13.7%** |
 
-For quick work on any of these, the [Percentage Calculator](/percentage) handles all four scenario types and also covers percentage-off discounts and inflation adjustments.
+For quick work on any of these, the [Percentage Calculator](/percentage-calculator) handles all four scenario types and also covers percentage-off discounts and inflation adjustments.
 
 ---
 
@@ -89,7 +89,7 @@ For quick work on any of these, the [Percentage Calculator](/percentage) handles
 > New = 1,200,000 × 1.25 = $1,500,000
 > % Change = (1.5M − 1.2M) / 1.2M × 100 = **+25.0%**
 
-Checking a [discount](/discount) or an [inflation adjustment](/inflation)? Both are specific applications of the same percentage change formula.
+Checking a [discount](/discount-calculator) or an [inflation adjustment](/inflation-calculator)? Both are specific applications of the same percentage change formula.
 
 ---
 
@@ -116,4 +116,4 @@ The same applies to election polling, unemployment statistics, and test scores. 
 - Subtract first, then divide by the original, then multiply by 100
 - Always include the + or − sign in your answer
 - Percentage change and percentage point change are different concepts — especially relevant in finance and statistics
-- Use the [free Percentage Calculator](/percentage) for instant results without manual arithmetic
+- Use the [free Percentage Calculator](/percentage-calculator) for instant results without manual arithmetic

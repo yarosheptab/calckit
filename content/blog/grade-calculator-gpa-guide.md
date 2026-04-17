@@ -14,7 +14,7 @@ A **grade calculator** solves three distinct problems that come up repeatedly th
 
 Each has its own formula. Understanding the math behind each calculation helps you set realistic targets, plan your study time, and avoid unpleasant surprises at the end of a semester.
 
-[Use the free Grade Calculator](/grade) to solve all three in seconds.
+[Use the free Grade Calculator](/grade-calculator) to solve all three in seconds.
 
 ## Problem 1: What Score Do I Need on the Final Exam?
 
@@ -126,9 +126,9 @@ GPA improvement is a long-term project, but certain strategies have an outsized 
 
 ## Connecting Grade Calculations to Other Tools
 
-Grade calculation is fundamentally applied percentage math. The weighted average formula is the same structure as any other weighted percentage calculation. If you want to practice or verify percentage arithmetic outside of a grade context, the [percentage calculator](/percentage) handles all three percentage problem types.
+Grade calculation is fundamentally applied percentage math. The weighted average formula is the same structure as any other weighted percentage calculation. If you want to practice or verify percentage arithmetic outside of a grade context, the [percentage calculator](/percentage-calculator) handles all three percentage problem types.
 
-For students calculating their age in months for scholarship eligibility or program deadlines, the [age calculator](/age) provides exact age in years, months, and days from a birth date.
+For students calculating their age in months for scholarship eligibility or program deadlines, the [age calculator](/age-calculator) provides exact age in years, months, and days from a birth date.
 
 ## Conclusion: Key Takeaways
 
@@ -138,4 +138,4 @@ For students calculating their age in months for scholarship eligibility or prog
 - Latin honors typically start at 3.0 (Cum Laude), 3.5 (Magna Cum Laude), and 3.7 (Summa Cum Laude), but thresholds vary by institution.
 - Retaking failed high-credit courses under grade forgiveness policies is the fastest path to meaningful GPA recovery.
 
-[Calculate the grade you need on your final exam right now](/grade) — free, no account required.
+[Calculate the grade you need on your final exam right now](/grade-calculator) — free, no account required.

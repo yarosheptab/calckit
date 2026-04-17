@@ -8,7 +8,7 @@ excerpt: "Learn how to calculate GPA using the standard 4.0 scale, with a full s
 
 Knowing **how to calculate GPA** puts you in control of your academic standing. Students who track their own GPA catch problems early — before a single bad semester collapses a carefully built record. It also helps you answer a specific question before finals: "If I earn a B in this course, what happens to my overall average?" The formula makes that question answerable in about two minutes.
 
-[Calculate your GPA instantly with the free Grade Calculator](/grade)
+[Calculate your GPA instantly with the free Grade Calculator](/grade-calculator)
 
 ---
 
@@ -74,7 +74,7 @@ Add up every quality points value across all courses. This is your total weighte
 
 > Semester GPA = 43.4 ÷ 14 = **3.10**
 
-Use the [free Grade Calculator](/grade) to run this calculation automatically — paste in your grades and credits and it handles the rest.
+Use the [free Grade Calculator](/grade-calculator) to run this calculation automatically — paste in your grades and credits and it handles the rest.
 
 ---
 
@@ -95,7 +95,7 @@ Next semester you take 15 credits and earn all A's (4.0):
 
 > New cumulative GPA = (168 + 60) ÷ (60 + 15) = 228 ÷ 75 = **3.04**
 
-A full semester of A's raised a 2.8 to only 3.04 — which illustrates how difficult it is to recover a GPA once it has fallen. A [percentage calculation](/percentage) can help you model different scenarios numerically before the semester starts.
+A full semester of A's raised a 2.8 to only 3.04 — which illustrates how difficult it is to recover a GPA once it has fallen. A [percentage calculation](/percentage-calculator) can help you model different scenarios numerically before the semester starts.
 
 ---
 
@@ -118,7 +118,7 @@ Solve: (112.5 + 4.0 × X) ÷ (45 + X) = 3.0
 
 That is approximately 1.5 full-time semesters of perfect grades to move 0.5 GPA points from 2.5 to 3.0. Starting early matters far more than cramming at the end.
 
-You can also check your [age](/age) relative to typical graduation timelines — knowing how many semesters remain informs whether recovery is realistic.
+You can also check your [age](/age-calculator) relative to typical graduation timelines — knowing how many semesters remain informs whether recovery is realistic.
 
 ---
 
@@ -131,4 +131,4 @@ You can also check your [age](/age) relative to typical graduation timelines —
 - Cumulative GPA cannot be computed by averaging semester GPAs with different credit loads
 - A 4-credit A adds 16 quality points; a 4-credit C+ adds only 9.2 — high-credit courses have outsized impact
 - Recovering a low GPA takes far longer than most students expect; early intervention is the most effective strategy
-- Use the [free Grade Calculator](/grade) to simulate any scenario before committing to a course load
+- Use the [free Grade Calculator](/grade-calculator) to simulate any scenario before committing to a course load

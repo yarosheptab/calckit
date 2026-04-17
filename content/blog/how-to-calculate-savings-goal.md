@@ -56,7 +56,7 @@ Where:
 - **r** = monthly interest rate
 - **n** = number of months
 
-This formula can look intimidating on paper. Use the [CalcKit Savings Calculator](/savings) to handle it in seconds — just enter your goal, timeline, starting balance, and rate.
+This formula can look intimidating on paper. Use the [CalcKit Savings Calculator](/savings-calculator) to handle it in seconds — just enter your goal, timeline, starting balance, and rate.
 
 **Working through the car down payment example:**
 
@@ -114,4 +114,4 @@ Knowing how to calculate your savings goal contribution means:
 4. Apply the PMT formula or use the calculator
 5. Adjust timeline or amount if the monthly figure is too high
 
-Start planning your goal now with the [CalcKit Savings Calculator](/savings). Once you're saving consistently, the [Compound Interest Calculator](/compound-interest) can show how your money grows if you invest it instead. And if existing loan payments are limiting how much you can save, the [Loan Calculator](/loan) can help you find extra room in your budget.
+Start planning your goal now with the [CalcKit Savings Calculator](/savings-calculator). Once you're saving consistently, the [Compound Interest Calculator](/compound-interest-calculator) can show how your money grows if you invest it instead. And if existing loan payments are limiting how much you can save, the [Loan Calculator](/loan-calculator) can help you find extra room in your budget.

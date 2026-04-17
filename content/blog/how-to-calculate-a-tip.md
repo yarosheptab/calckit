@@ -105,7 +105,7 @@ Even splitting works well when everyone ordered roughly the same. When one perso
 2. Everyone adds the same tip percentage on their own total.
 3. Each person pays their subtotal + their tip share.
 
-Alternatively, the [CalcKit tip calculator](/tip) lets you enter individual amounts, set a tip percentage, and split any way you like — including accounting for one person picking up part of the bill.
+Alternatively, the [CalcKit tip calculator](/tip-calculator) lets you enter individual amounts, set a tip percentage, and split any way you like — including accounting for one person picking up part of the bill.
 
 ---
 
@@ -119,7 +119,7 @@ Tipping customs vary widely:
 - **Japan / South Korea:** tipping is not customary and can even be considered rude.
 - **Western Europe:** rounding up or leaving 5–10% is appreciated but not required.
 
-Always check local customs before you travel. The [currency converter](/currency) helps you understand exactly how much you are tipping in the local currency when abroad. And if you need to split costs in different currencies, the [discount calculator](/discount) is handy for quick percentage math.
+Always check local customs before you travel. The [currency converter](/currency-converter) helps you understand exactly how much you are tipping in the local currency when abroad. And if you need to split costs in different currencies, the [discount calculator](/discount-calculator) is handy for quick percentage math.
 
 ---
 

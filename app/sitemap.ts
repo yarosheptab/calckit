@@ -1,19 +1,19 @@
 import type { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
+import { ALL_TOOLS } from '@/lib/tools'
 
 const BASE = 'https://calckit.yaro-labs.com'
 const TOOLS_UPDATED = new Date('2026-04-18')
 const SITE_UPDATED = new Date('2026-04-18')
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const tools = ['mortgage', 'compound-interest', 'roi', 'currency', 'unit-converter', 'tip', 'tax']
   const blogPosts = getAllPosts()
   return [
     { url: BASE, lastModified: SITE_UPDATED, changeFrequency: 'weekly', priority: 1 },
     { url: `${BASE}/blog`, lastModified: SITE_UPDATED, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/about`, lastModified: SITE_UPDATED, changeFrequency: 'yearly', priority: 0.4 },
-    ...tools.map(slug => ({
-      url: `${BASE}/${slug}`,
+    ...ALL_TOOLS.map(tool => ({
+      url: `${BASE}${tool.href}`,
       lastModified: TOOLS_UPDATED,
       changeFrequency: 'monthly' as const,
       priority: 0.9,

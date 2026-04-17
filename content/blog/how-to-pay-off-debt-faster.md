@@ -38,7 +38,7 @@ Before strategizing, understand the cost of doing nothing. The monthly interest 
 - Personal loan: $3,000 × 14% ÷ 12 = **$35/month in interest**
 - **Total interest: ~$164/month just to tread water**
 
-Paying only minimum payments means $164 of your $350 monthly payment — nearly half — is going straight to lenders as profit. The [CalcKit Debt Payoff Calculator](/debt) can calculate this breakdown automatically and project your payoff date under different scenarios.
+Paying only minimum payments means $164 of your $350 monthly payment — nearly half — is going straight to lenders as profit. The [CalcKit Debt Payoff Calculator](/debt-payoff-calculator) can calculate this breakdown automatically and project your payoff date under different scenarios.
 
 ## Step 3: Choose Your Strategy — Avalanche or Snowball
 
@@ -81,7 +81,7 @@ The avalanche method saves about $200 more in interest than the snowball for thi
 - **Round up payments.** If your minimum is $110, pay $125. Even $15 extra per month on a high-APR card adds up.
 - **Apply windfalls immediately.** Tax refunds, bonuses, or cash gifts go directly to the target debt as a lump sum.
 - **Don't close paid-off accounts.** Keeping them open (but unused) maintains your credit utilization ratio and can improve your credit score over time.
-- **Refinance high-rate debt.** If you can qualify for a personal loan at 10% to consolidate the 22% credit card, you cut the monthly interest cost dramatically. Run the comparison in the [Loan Calculator](/loan) first.
+- **Refinance high-rate debt.** If you can qualify for a personal loan at 10% to consolidate the 22% credit card, you cut the monthly interest cost dramatically. Run the comparison in the [Loan Calculator](/loan-calculator) first.
 
 ## Putting It All Together
 
@@ -95,4 +95,4 @@ Here's the complete roadmap to pay off debt faster:
 
 For our three-debt scenario ($15,500 total), adding just $200/month and using the avalanche method cuts payoff from 6+ years to about 3 years and 2 months — saving roughly $1,800 in interest along the way.
 
-Map out your own payoff plan with the [CalcKit Debt Payoff Calculator](/debt). Once your debts are eliminated, redirect those payments into savings using the [Savings Calculator](/savings) to start building wealth at the same pace you were eliminating debt.
+Map out your own payoff plan with the [CalcKit Debt Payoff Calculator](/debt-payoff-calculator). Once your debts are eliminated, redirect those payments into savings using the [Savings Calculator](/savings-calculator) to start building wealth at the same pace you were eliminating debt.

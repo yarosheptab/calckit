@@ -46,7 +46,7 @@ $75,000 − $15,000 (standard deduction) = **$60,000 taxable income**
 
 The number that matters for most decisions — like whether to take a raise or do a Roth conversion — is the *marginal* rate. The effective rate tells you what you actually paid as a share of income.
 
-Use the [federal income tax calculator](/tax) to get your precise estimate in under 30 seconds.
+Use the [federal income tax calculator](/tax-calculator) to get your precise estimate in under 30 seconds.
 
 ## Effective Tax Rate at Different Income Levels
 
@@ -96,7 +96,7 @@ Credits are generally far more valuable than deductions of the same dollar amoun
 
 If you owe more than $1,000 at year-end (above withholding), the IRS can assess underpayment penalties. To stay compliant, most employees adjust their W-4 withholding so their employer withholds the right amount throughout the year.
 
-To check your withholding accuracy, use the [salary calculator](/salary) to estimate your net take-home, then compare against your actual pay stubs. Pair this with the [savings calculator](/savings) to model what you can realistically set aside.
+To check your withholding accuracy, use the [salary calculator](/salary-calculator) to estimate your net take-home, then compare against your actual pay stubs. Pair this with the [savings calculator](/savings-calculator) to model what you can realistically set aside.
 
 ## Key Takeaways
 
@@ -107,4 +107,4 @@ To check your withholding accuracy, use the [salary calculator](/salary) to esti
 - ~87% of filers take the standard deduction; itemize only if deductions exceed the threshold
 - Tax credits beat deductions: a $1,000 credit saves $1,000; a $1,000 deduction saves $220 in the 22% bracket
 
-Estimate your exact tax bill with the [federal income tax calculator](/tax).
+Estimate your exact tax bill with the [federal income tax calculator](/tax-calculator).

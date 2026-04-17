@@ -10,7 +10,7 @@ A **percentage calculator** is one of the most universally useful math tools in 
 
 This guide covers the three core percentage problems and their formulas, mental math shortcuts, real-world applications, and the most common mistakes people make.
 
-[Use the free Percentage Calculator](/percentage) — handles all three problem types instantly.
+[Use the free Percentage Calculator](/percentage-calculator) — handles all three problem types instantly.
 
 ## The Three Core Percentage Problems
 
@@ -81,7 +81,7 @@ Note: if you received a 7% raise last year and another 7% this year, your total 
 An index fund returns 10% per year. After 10 years, a $10,000 investment grows to:
 10,000 × (1.10)¹⁰ = **$25,937** — not $20,000 (which would be simple, non-compounded growth).
 
-The [percentage calculator](/percentage) handles simple percentage change. For compound growth, use the dedicated investment calculator.
+The [percentage calculator](/percentage-calculator) handles simple percentage change. For compound growth, use the dedicated investment calculator.
 
 ### Grade Curves
 
@@ -116,7 +116,7 @@ This distinction matters enormously in economics, public health, and finance:
 
 Percentages are the language of comparison across nearly all quantitative fields:
 
-- Use the [grade calculator](/grade) when you need to calculate weighted averages for course grades — essentially Problem 1 repeated across multiple assignments.
+- Use the [grade calculator](/grade-calculator) when you need to calculate weighted averages for course grades — essentially Problem 1 repeated across multiple assignments.
 - Tip calculations are Problem 1: 20% of $47.80 = $9.56.
 - Body fat percentage is literally a percentage: if you weigh 80 kg and carry 20 kg of fat, your body fat is (20 ÷ 80) × 100 = 25%.
 
@@ -128,4 +128,4 @@ Percentages are the language of comparison across nearly all quantitative fields
 - Sequential percentage changes multiply, not add. A +10% gain followed by a −10% loss nets you −1%.
 - Compounding makes a 10%/year return worth 2.6× your original investment over 10 years — not 2×.
 
-[Open the free Percentage Calculator and solve any problem instantly](/percentage).
+[Open the free Percentage Calculator and solve any problem instantly](/percentage-calculator).

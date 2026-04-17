@@ -8,11 +8,11 @@ excerpt: "Calculate your body fat percentage with just a measuring tape using th
 
 A **body fat calculator** gives you information the bathroom scale simply cannot: how much of your body weight is fat versus lean mass (muscle, bone, water, organs). This distinction is fundamental to understanding health and fitness progress.
 
-Consider two people who both weigh 80 kg at 178 cm — a BMI of 25.2 for both. One carries 15% body fat (12 kg of fat, 68 kg of lean mass). The other carries 25% body fat (20 kg of fat, 60 kg of lean mass). Their weight is identical. Their [BMI](/bmi) is identical. But their metabolic health, strength, and disease risk profiles are dramatically different.
+Consider two people who both weigh 80 kg at 178 cm — a BMI of 25.2 for both. One carries 15% body fat (12 kg of fat, 68 kg of lean mass). The other carries 25% body fat (20 kg of fat, 60 kg of lean mass). Their weight is identical. Their [BMI](/bmi-calculator) is identical. But their metabolic health, strength, and disease risk profiles are dramatically different.
 
 Body fat percentage is the metric that makes that distinction visible.
 
-[Use the free Body Fat Calculator](/body-fat) — no gym equipment needed.
+[Use the free Body Fat Calculator](/body-fat-calculator) — no gym equipment needed.
 
 ## The US Navy Method: Accurate Results with a Measuring Tape
 
@@ -26,7 +26,7 @@ Body Fat % = 86.010 × log₁₀(waist − neck) − 70.041 × log₁₀(height)
 **Female:**
 Body Fat % = 163.205 × log₁₀(waist + hip − neck) − 97.684 × log₁₀(height) − 78.387
 
-All measurements in centimeters. Imperial (inches) inputs can be converted — the [body fat calculator](/body-fat) handles both unit systems automatically.
+All measurements in centimeters. Imperial (inches) inputs can be converted — the [body fat calculator](/body-fat-calculator) handles both unit systems automatically.
 
 ### How to Take Accurate Measurements
 
@@ -66,7 +66,7 @@ Essential fat is the minimum required for physiological function — protecting 
 = 145.37 − 157.57 + 36.76
 = **24.6%**
 
-This result falls in the **Acceptable** range for men (18–24% is fitness; 25%+ is obese — this person is at the upper edge of acceptable). The [body fat calculator](/body-fat) performs these calculations instantly.
+This result falls in the **Acceptable** range for men (18–24% is fitness; 25%+ is obese — this person is at the upper edge of acceptable). The [body fat calculator](/body-fat-calculator) performs these calculations instantly.
 
 ## Navy Method Accuracy vs. Other Measurement Techniques
 
@@ -102,7 +102,7 @@ Rather than focusing solely on total weight loss, tracking lean mass and fat mas
 - **Lean mass goal:** Maintain or increase lean mass during a calorie deficit. Losing lean mass slows metabolism, making future weight loss harder.
 - **Fat mass goal:** Reduce fat mass while keeping lean mass stable.
 
-Combining the body fat calculator with the [calorie calculator](/calorie) creates a complete feedback loop: you know your body composition, you set a calorie deficit that preserves lean mass, and you track changes in fat mass over time.
+Combining the body fat calculator with the [calorie calculator](/calorie-calculator) creates a complete feedback loop: you know your body composition, you set a calorie deficit that preserves lean mass, and you track changes in fat mass over time.
 
 ## Conclusion: Key Takeaways
 
@@ -113,4 +113,4 @@ Combining the body fat calculator with the [calorie calculator](/calorie) create
 - The Navy formula result of ~24.6% for an 80 kg, 178 cm male with 87 cm waist puts him at the upper edge of the acceptable range.
 - Body recomposition — losing fat while gaining muscle — only shows up in body fat %, not on the scale.
 
-[Calculate your body fat percentage now — free and instant](/body-fat).
+[Calculate your body fat percentage now — free and instant](/body-fat-calculator).

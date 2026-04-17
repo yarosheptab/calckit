@@ -20,7 +20,7 @@ Where:
 
 It looks intimidating, but the logic is simple: you're spreading the principal plus all future interest across equal monthly payments so the loan reaches exactly zero on the final payment date.
 
-[Use our free Mortgage Calculator](/mortgage) to run the numbers instantly without doing any algebra by hand.
+[Use our free Mortgage Calculator](/mortgage-calculator) to run the numbers instantly without doing any algebra by hand.
 
 ## Worked Example: $280,000 Loan at 6.5% for 30 Years
 
@@ -110,11 +110,11 @@ Your quoted interest rate will differ from published averages based on several p
 - **Points:** Paying 1 discount point (1% of loan amount upfront) typically buys the rate down by ~0.25%
 - **Property type:** Primary residences get better rates than investment properties or second homes
 
-Want to model different rate scenarios? [Use our free Mortgage Calculator](/mortgage) to see how a 0.5% rate difference affects your total cost over time.
+Want to model different rate scenarios? [Use our free Mortgage Calculator](/mortgage-calculator) to see how a 0.5% rate difference affects your total cost over time.
 
 ## Other Calculators You May Need
 
-Before finalizing your home purchase, it's worth understanding the full debt picture. Use our [Loan Calculator](/loan) to model any additional borrowing, or our [Savings Calculator](/savings) to figure out how long it will take to accumulate your down payment at current savings rates.
+Before finalizing your home purchase, it's worth understanding the full debt picture. Use our [Loan Calculator](/loan-calculator) to model any additional borrowing, or our [Savings Calculator](/savings-calculator) to figure out how long it will take to accumulate your down payment at current savings rates.
 
 ## Conclusion: Key Takeaways
 
@@ -125,4 +125,4 @@ Before finalizing your home purchase, it's worth understanding the full debt pic
 - Use the 28% rule as a quick affordability check: keep total housing costs below 28% of gross monthly income
 - Making extra principal payments early in the loan can dramatically reduce total interest paid
 
-[Calculate your exact monthly mortgage payment now →](/mortgage)
+[Calculate your exact monthly mortgage payment now →](/mortgage-calculator)

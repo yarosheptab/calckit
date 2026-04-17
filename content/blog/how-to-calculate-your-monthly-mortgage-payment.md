@@ -70,7 +70,7 @@ Plugging in the numbers:
 
 This $2,328 covers only principal and interest. Your actual bill is higher.
 
-Rather than doing this arithmetic by hand, use the [CalcKit Mortgage Calculator](/mortgage) to get an instant, accurate result for any scenario.
+Rather than doing this arithmetic by hand, use the [CalcKit Mortgage Calculator](/mortgage-calculator) to get an instant, accurate result for any scenario.
 
 ## Step 5: Add Property Taxes, Insurance, and PMI
 
@@ -110,4 +110,4 @@ Here's a quick recap of the five steps to calculate your monthly mortgage paymen
 
 For our $400,000 example at 6.75% with 10% down, the true monthly cost is approximately **$2,995/month** — about $667 more than the principal-and-interest figure alone.
 
-Use the [CalcKit Mortgage Calculator](/mortgage) to model your own scenario in seconds. You can also explore the [Loan Calculator](/loan) to compare mortgage options against other financing, or the [Savings Calculator](/savings) to figure out how long it will take to save your down payment.
+Use the [CalcKit Mortgage Calculator](/mortgage-calculator) to model your own scenario in seconds. You can also explore the [Loan Calculator](/loan-calculator) to compare mortgage options against other financing, or the [Savings Calculator](/savings-calculator) to figure out how long it will take to save your down payment.

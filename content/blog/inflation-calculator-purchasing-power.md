@@ -8,7 +8,7 @@ excerpt: "An inflation calculator reveals what your money is really worth over t
 
 An inflation calculator answers a question that sounds simple but carries profound implications for every financial decision you make: what will today's money be worth in the future — and what was yesterday's money worth in today's terms?
 
-Inflation quietly erodes purchasing power whether or not you're paying attention to it. A 3% annual inflation rate doesn't feel urgent in any given month, but over 20 years it cuts your dollar's purchasing power nearly in half. Understanding this math is essential for anyone making long-term financial plans. [Use our free Inflation Calculator](/inflation) to see exactly how inflation affects any amount over any timeframe.
+Inflation quietly erodes purchasing power whether or not you're paying attention to it. A 3% annual inflation rate doesn't feel urgent in any given month, but over 20 years it cuts your dollar's purchasing power nearly in half. Understanding this math is essential for anyone making long-term financial plans. [Use our free Inflation Calculator](/inflation-calculator) to see exactly how inflation affects any amount over any timeframe.
 
 ## What Is Inflation and How Is It Measured?
 
@@ -98,7 +98,7 @@ Your account balance grows nominally, but its purchasing power shrinks by 2.5% a
 
 This is why holding large cash balances in low-yield accounts for long periods is a hidden form of financial loss — one that doesn't show up as a red number anywhere.
 
-High-yield savings accounts paying 4.0–5.0% APY (as of early 2026) actually outpace 3% inflation, producing a modest **positive real return**. That changes the math entirely. Our [Savings Calculator](/savings) can show you how much difference the interest rate makes over your specific timeline.
+High-yield savings accounts paying 4.0–5.0% APY (as of early 2026) actually outpace 3% inflation, producing a modest **positive real return**. That changes the math entirely. Our [Savings Calculator](/savings-calculator) can show you how much difference the interest rate makes over your specific timeline.
 
 ## How to Inflation-Proof Your Finances
 
@@ -130,7 +130,7 @@ No investment fully eliminates inflation risk, but several options have historic
 - Energy, agricultural goods, and metals often rise with inflation
 - High volatility; not recommended as a large portion of a portfolio
 
-The common thread: money sitting in cash or low-yield accounts loses to inflation. Money invested in productive assets — equities, real estate, TIPS — has historically preserved or grown purchasing power. Our [Compound Interest Calculator](/compound-interest) can model how different return rates compound over your timeline.
+The common thread: money sitting in cash or low-yield accounts loses to inflation. Money invested in productive assets — equities, real estate, TIPS — has historically preserved or grown purchasing power. Our [Compound Interest Calculator](/compound-interest-calculator) can model how different return rates compound over your timeline.
 
 ## Inflation's Effect on Debt: Sometimes a Borrower's Friend
 
@@ -148,4 +148,4 @@ This is why long-term fixed-rate debt can be advantageous in high-inflation envi
 - Inflation-fighting tools include **I-Bonds, TIPS, equities, and real estate** — each with different risk and liquidity profiles
 - Long-term fixed-rate debt becomes cheaper in real terms during inflationary periods
 
-[Calculate the real value of your money over time →](/inflation)
+[Calculate the real value of your money over time →](/inflation-calculator)

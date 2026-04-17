@@ -10,7 +10,7 @@ A **calorie calculator** takes the guesswork out of nutrition planning. Rather t
 
 The number you're looking for is called **TDEE**: Total Daily Energy Expenditure. It represents every calorie your body burns in a 24-hour period, from keeping your heart beating to powering a 5-mile run.
 
-[Use the free Calorie Calculator](/calorie) to find your TDEE in under a minute.
+[Use the free Calorie Calculator](/calorie-calculator) to find your TDEE in under a minute.
 
 ## Step 1: Calculate Your BMR Using the Mifflin-St Jeor Formula
 
@@ -85,12 +85,12 @@ Fat is more than twice as calorie-dense as protein or carbohydrates, which is wh
 - **Track for 2 weeks first.** Research shows most people underestimate food intake by 20–40%. A brief tracking period recalibrates your intuition without committing to permanent calorie counting.
 - **Prioritize protein.** Aim for 1.6–2.2 g of protein per kg of body weight when in a calorie deficit to preserve lean mass.
 - **Account for liquid calories.** Beverages — including lattes, juices, smoothies, and alcohol — are frequently overlooked but can easily add 300–600 kcal to a day.
-- **Recalculate every 5–10 kg.** As your weight changes, your BMR changes too. The [calorie calculator](/calorie) lets you update your inputs at any time.
-- **Combine with body composition tracking.** Knowing your [body fat percentage](/body-fat) helps you distinguish fat loss from muscle loss as the scale moves.
+- **Recalculate every 5–10 kg.** As your weight changes, your BMR changes too. The [calorie calculator](/calorie-calculator) lets you update your inputs at any time.
+- **Combine with body composition tracking.** Knowing your [body fat percentage](/body-fat-calculator) helps you distinguish fat loss from muscle loss as the scale moves.
 
 ## How Your BMI Connects to Calorie Needs
 
-If you've already checked your [BMI](/bmi), you can use that number to contextualize your calorie goal. Someone with a BMI of 28 aiming for a normal BMI of 23 can use the calorie calculator to set a realistic timeline: a 500 kcal/day deficit typically produces ~0.5 kg/week of fat loss. To drop from BMI 28 to 23 at 178 cm height would require losing roughly 16 kg — achievable in 7–8 months at a moderate, sustainable deficit.
+If you've already checked your [BMI](/bmi-calculator), you can use that number to contextualize your calorie goal. Someone with a BMI of 28 aiming for a normal BMI of 23 can use the calorie calculator to set a realistic timeline: a 500 kcal/day deficit typically produces ~0.5 kg/week of fat loss. To drop from BMI 28 to 23 at 178 cm height would require losing roughly 16 kg — achievable in 7–8 months at a moderate, sustainable deficit.
 
 ## Conclusion: Key Takeaways
 
@@ -101,4 +101,4 @@ If you've already checked your [BMI](/bmi), you can use that number to contextua
 - Protein provides 4 kcal/g, carbs 4 kcal/g, fat 9 kcal/g, alcohol 7 kcal/g.
 - Recalculate your TDEE every time your weight changes by 5–10 kg.
 
-[Find your personal daily calorie target now](/calorie) — free, no signup required.
+[Find your personal daily calorie target now](/calorie-calculator) — free, no signup required.

@@ -59,7 +59,7 @@ To get total days, multiply full years by 365, then add leap year days and the r
 - Days from Jan 1, 2026 to April 18, 2026: 108 days
 - **Estimated total: ~13,913 days lived**
 
-For a precise count, the [CalcKit age calculator](/age) handles every leap year automatically.
+For a precise count, the [CalcKit age calculator](/age-calculator) handles every leap year automatically.
 
 ---
 
@@ -84,7 +84,7 @@ Weeks are calculated as years × 52.177 (accounting for the extra fraction of a 
 Once you know your current age, it is easy to find out how many days until your next birthday:
 
 1. Set the target date to your next birthday (same day and month, next year if the birthday has passed this year — or this year if it has not).
-2. Use the date difference formula or the [CalcKit date calculator](/date) to count the days.
+2. Use the date difference formula or the [CalcKit date calculator](/date-calculator) to count the days.
 
 For the example above, the next birthday is March 15, 2027. From April 18, 2026 to March 15, 2027 is **331 days**.
 
@@ -100,9 +100,9 @@ For the example above, the next birthday is March 15, 2027. From April 18, 2026 
 
 ## Try It in Seconds
 
-Doing this calculation by hand is great for understanding the logic, but it takes time and is error-prone. The [CalcKit age calculator](/age) gives you years, months, days, hours, and total days lived instantly — just enter your birthdate.
+Doing this calculation by hand is great for understanding the logic, but it takes time and is error-prone. The [CalcKit age calculator](/age-calculator) gives you years, months, days, hours, and total days lived instantly — just enter your birthdate.
 
-Need to figure out how many days between two events? The [date calculator](/date) handles that too. Or convert your age into weeks and days with the [unit converter](/unit-converter).
+Need to figure out how many days between two events? The [date calculator](/date-calculator) handles that too. Or convert your age into weeks and days with the [unit converter](/unit-converter).
 
 ---
 

@@ -58,7 +58,7 @@ January (31) + February (28) + March (31) + 18 days of April = **108 days**.
 - **Approximate months:** 794 ÷ 30.44 ≈ **26.1 months**
 - **Business days:** Multiply by 5/7. 794 × 0.714 ≈ **567 business days** (assumes no public holidays)
 
-For exact business-day counts, you need to exclude weekends manually and account for local holidays — the [CalcKit date calculator](/date) handles this automatically.
+For exact business-day counts, you need to exclude weekends manually and account for local holidays — the [CalcKit date calculator](/date-calculator) handles this automatically.
 
 ---
 
@@ -98,9 +98,9 @@ The only month that changes between regular and leap years is February.
 
 ## Try It Without the Math
 
-Manual date counting works well for a span of a few weeks. Once you cross year boundaries — especially with leap years involved — it gets tedious and error-prone. The [CalcKit date calculator](/date) accepts any two dates and returns the exact number of days, weeks, and months in one click.
+Manual date counting works well for a span of a few weeks. Once you cross year boundaries — especially with leap years involved — it gets tedious and error-prone. The [CalcKit date calculator](/date-calculator) accepts any two dates and returns the exact number of days, weeks, and months in one click.
 
-Need to see your age in days? Combine this with the [age calculator](/age). Want to convert days into another time unit? The [unit converter](/unit-converter) has you covered.
+Need to see your age in days? Combine this with the [age calculator](/age-calculator). Want to convert days into another time unit? The [unit converter](/unit-converter) has you covered.
 
 ---
 

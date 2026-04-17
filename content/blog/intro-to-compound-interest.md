@@ -32,4 +32,4 @@ The difference between starting at 25 vs. 35 is over $73,000 from the same $10,0
 
 ## Try It Yourself
 
-Use our [Compound Interest Calculator](/compound-interest) to model your own scenario.
+Use our [Compound Interest Calculator](/compound-interest-calculator) to model your own scenario.

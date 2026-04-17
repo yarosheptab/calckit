@@ -10,7 +10,7 @@ A **currency converter** translates one currency into another at a given exchang
 
 The mid-market rate is not what most people actually receive when converting money. Every bank, transfer service, and airport kiosk layers a margin on top, and that margin is where billions in annual revenue are generated at travelers' and senders' expense.
 
-[Convert any currency at the mid-market rate](/currency) to see what your money is actually worth.
+[Convert any currency at the mid-market rate](/currency-converter) to see what your money is actually worth.
 
 ## Fixed vs. Floating Exchange Rates
 
@@ -86,7 +86,7 @@ When traveling internationally, the choices you make about when and how to excha
 - **Avoid airport and hotel exchange desks.** As shown in the table above, these consistently offer the worst rates. If you need local cash immediately on arrival, withdraw from an ATM using your no-fee debit card — even ATM fees plus the interbank rate usually beat airport kiosk rates.
 - **Plan large transfers with a fintech service.** For wire transfers above $500, services like Wise typically save $20–100 per transfer compared to bank wires.
 
-For any travel math involving spending estimates, the [Unit Converter](/unit-converter) can help with distance, temperature, and measurement conversions that often come up alongside currency questions. When splitting travel costs with a group, the [Tip Calculator](/tip) helps divide restaurant bills and service charges fairly.
+For any travel math involving spending estimates, the [Unit Converter](/unit-converter) can help with distance, temperature, and measurement conversions that often come up alongside currency questions. When splitting travel costs with a group, the [Tip Calculator](/tip-calculator) helps divide restaurant bills and service charges fairly.
 
 ## Conclusion: Key Takeaways
 
@@ -97,4 +97,4 @@ For any travel math involving spending estimates, the [Unit Converter](/unit-con
 - The Kuwaiti Dinar (KWD) is the world's highest face-value currency at ~$3.25 per dinar.
 - Always pay in local currency abroad — "dynamic currency conversion" at point of sale is a guaranteed bad rate.
 
-[Convert any currency and see the mid-market rate instantly](/currency).
+[Convert any currency and see the mid-market rate instantly](/currency-converter).

@@ -8,7 +8,7 @@ excerpt: "A savings calculator shows exactly how much to set aside each month to
 
 A savings calculator answers the question most people find surprisingly hard to answer: how much should I save each month to reach my goal on time? The answer isn't a generic percentage — it's a specific number that accounts for your target amount, timeline, and the interest your savings will earn along the way.
 
-Without running the numbers, "save more" stays abstract. With a calculator, it becomes "$394 a month" — concrete, plannable, and trackable. [Use our free Savings Calculator](/savings) to set your own target and timeline.
+Without running the numbers, "save more" stays abstract. With a calculator, it becomes "$394 a month" — concrete, plannable, and trackable. [Use our free Savings Calculator](/savings-calculator) to set your own target and timeline.
 
 ## The 50/30/20 Rule: A Framework for Getting Started
 
@@ -115,7 +115,7 @@ The longer your savings sits, the more dramatically compound interest changes th
 
 At the 10-year mark, your $60,000 in contributions has grown to **$77,641** — an extra $17,641 from interest alone. At 30 years, you contributed $180,000 and ended up with **$416,129**. More than half that final balance is pure interest.
 
-This compounding snowball effect is why starting earlier — even with a smaller amount — almost always beats waiting to save a larger amount later. For a deeper look at the math, see our [Compound Interest Calculator](/compound-interest).
+This compounding snowball effect is why starting earlier — even with a smaller amount — almost always beats waiting to save a larger amount later. For a deeper look at the math, see our [Compound Interest Calculator](/compound-interest-calculator).
 
 ## 401(k) and Employer Match: The Highest-Return "Investment" Available
 
@@ -142,7 +142,7 @@ If you're trying to figure out where to put each dollar, here's a logical order:
 6. **Additional 401(k) contributions** up to IRS limit ($23,500 in 2025)
 7. **Taxable brokerage / additional savings goals**
 
-Working through this stack systematically produces better outcomes than trying to do everything simultaneously. For debt payoff strategy at step 4, our [Loan Calculator](/loan) can help you model which debts to attack first.
+Working through this stack systematically produces better outcomes than trying to do everything simultaneously. For debt payoff strategy at step 4, our [Loan Calculator](/loan-calculator) can help you model which debts to attack first.
 
 ## Conclusion: Key Takeaways
 
@@ -153,4 +153,4 @@ Working through this stack systematically produces better outcomes than trying t
 - **$500/month at 5% for 10 years** grows to $77,641 — $17,641 more than you contributed
 - Always capture the full **401(k) employer match** first — it's a 50–100% instant return
 
-[Set your savings goal and calculate your monthly target →](/savings)
+[Set your savings goal and calculate your monthly target →](/savings-calculator)

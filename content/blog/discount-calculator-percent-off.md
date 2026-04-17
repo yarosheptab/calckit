@@ -28,7 +28,7 @@ Example: Item costs $75 after a 40% discount → $75 / (1 − 0.40) = $75 / 0.60
 
 The third question matters when a tag shows only the sale price and the discount percentage — common in outlet stores and online flash sales.
 
-Use the [discount calculator](/discount) to solve all three in seconds.
+Use the [discount calculator](/discount-calculator) to solve all three in seconds.
 
 ## Mental Math Shortcuts for Quick Estimates
 
@@ -100,7 +100,7 @@ Example: $150 jacket, 20% off, in a state with 8% sales tax:
 
 Total out-of-pocket: $129.60. Not $120 + $12 (tax on original) = $132. You save the tax on the $30 discount too.
 
-For purchases where sales tax significantly affects your budget, the [percentage calculator](/percentage) can help you break down the components. If you're splitting a discounted restaurant bill, the [tip calculator](/tip) handles the combined discount + tip math.
+For purchases where sales tax significantly affects your budget, the [percentage calculator](/percentage-calculator) can help you break down the components. If you're splitting a discounted restaurant bill, the [tip calculator](/tip-calculator) handles the combined discount + tip math.
 
 ## Key Takeaways
 
@@ -111,4 +111,4 @@ For purchases where sales tax significantly affects your budget, the [percentage
 - Sales tax is applied to the discounted price, which saves you tax on the discount amount too
 - Use price history tools to evaluate whether Black Friday and seasonal sale prices are genuine
 
-Do the math on your next purchase with the [discount calculator](/discount).
+Do the math on your next purchase with the [discount calculator](/discount-calculator).

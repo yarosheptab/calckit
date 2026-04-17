@@ -10,7 +10,7 @@ Learning **how to measure body fat percentage** gives you something BMI cannot: 
 
 The US Navy circumference method is the most practical at-home option. It requires nothing but a soft measuring tape and takes about three minutes. Studies place its accuracy within 3–4 percentage points of DEXA scans for most adults — good enough for tracking progress over time.
 
-[Measure your body fat percentage now with the free Body Fat Calculator](/body-fat)
+[Measure your body fat percentage now with the free Body Fat Calculator](/body-fat-calculator)
 
 ---
 
@@ -72,7 +72,7 @@ Use either all centimetres or all inches — do not mix. The formulas below use 
 
 According to the ACE table below, this places a man in the "Acceptable" category.
 
-The [free Body Fat Calculator](/body-fat) runs these logarithms for you — all you need are your tape measurements.
+The [free Body Fat Calculator](/body-fat-calculator) runs these logarithms for you — all you need are your tape measurements.
 
 ---
 
@@ -90,7 +90,7 @@ The American Council on Exercise (ACE) publishes widely used reference ranges. T
 
 Our example result of 24.9% (male) sits at the top of "Acceptable" — one percentage point from "Obese." A realistic near-term goal for this individual would be reducing to 20–22%, achievable with a modest calorie deficit paired with resistance training.
 
-Pair this measurement with your [BMI result](/bmi) and a [daily calorie target](/calorie) to build a complete picture of where you are and where you want to go.
+Pair this measurement with your [BMI result](/bmi-calculator) and a [daily calorie target](/calorie-calculator) to build a complete picture of where you are and where you want to go.
 
 ---
 
@@ -103,4 +103,4 @@ Pair this measurement with your [BMI result](/bmi) and a [daily calorie target](
 - Measure three times and average; always take readings on an empty stomach in the morning
 - The ACE "Fitness" range is 14–17% for men and 21–24% for women
 - A single BMI number misses the lean-mass vs fat-mass distinction that body fat percentage reveals
-- Use the [free Body Fat Calculator](/body-fat) to get your percentage without manual logarithm calculations
+- Use the [free Body Fat Calculator](/body-fat-calculator) to get your percentage without manual logarithm calculations

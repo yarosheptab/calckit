@@ -38,7 +38,7 @@ Plug real numbers into the formula:
 
 Compare that to simple interest: $5,000 × 0.08 × 30 = $12,000 in interest, giving a total of **$17,000**. Compound interest produces **$50,313** — nearly three times more. The extra $33,313 comes entirely from interest earning interest.
 
-Use the [compound interest calculator](/compound-interest) to run your own scenarios in seconds.
+Use the [compound interest calculator](/compound-interest-calculator) to run your own scenarios in seconds.
 
 ## Future Value of $10,000 at Different Rates and Time Horizons
 
@@ -110,4 +110,4 @@ This is why starting early matters more than investing large amounts later.
 - $5/day invested at 7% for 30 years = ~$184,000
 - Starting 10 years earlier can double your retirement balance at the same monthly contribution
 
-Run your own numbers with the [compound interest calculator](/compound-interest). For building a complete savings plan, also explore the [savings calculator](/savings) and [ROI calculator](/roi).
+Run your own numbers with the [compound interest calculator](/compound-interest-calculator). For building a complete savings plan, also explore the [savings calculator](/savings-calculator) and [ROI calculator](/roi-calculator).

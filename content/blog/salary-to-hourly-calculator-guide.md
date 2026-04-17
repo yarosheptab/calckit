@@ -34,7 +34,7 @@ That's the baseline formula. Simple, but it changes depending on actual hours wo
 
 Use these as quick reference benchmarks when reviewing job offers. A role paying $28/hour is roughly equivalent to a $58,000 salary — helpful when comparing a salaried offer to a contract role.
 
-Get your exact number instantly with the [salary to hourly calculator](/salary).
+Get your exact number instantly with the [salary to hourly calculator](/salary-calculator).
 
 ## The Work Year Isn't Always 2,080 Hours
 
@@ -58,7 +58,7 @@ For a $75,000 annual salary (single filer, standard deduction):
 - **State income tax** (varies, estimate 4%): ~$3,000/year (~$1.44/hour)
 - **Net hourly rate (estimated)**: ~**$26–28/hour**
 
-So $36.06 gross becomes roughly $27 net — a 25% reduction. This matters when comparing a salary offer to a contract rate: the contract rate needs to be higher to deliver equivalent take-home pay. Model the breakdown with the [tax calculator](/tax).
+So $36.06 gross becomes roughly $27 net — a 25% reduction. This matters when comparing a salary offer to a contract rate: the contract rate needs to be higher to deliver equivalent take-home pay. Model the breakdown with the [tax calculator](/tax-calculator).
 
 ## Overtime Rules: Who Gets Paid More for Extra Hours
 
@@ -97,7 +97,7 @@ When evaluating job offers, base salary is only part of the **pay period calcula
 
 A $90,000 offer with a 15% bonus, 5% 401k match, and generous benefits may be worth more than a $100,000 offer with no benefits. Always build the full compensation picture before accepting or declining.
 
-Also check the [tip calculator](/tip) if you're evaluating jobs in service industries where gratuity is a significant component of total earnings.
+Also check the [tip calculator](/tip-calculator) if you're evaluating jobs in service industries where gratuity is a significant component of total earnings.
 
 ## Key Takeaways
 
@@ -108,4 +108,4 @@ Also check the [tip calculator](/tip) if you're evaluating jobs in service indus
 - Freelancers need 1.3–1.5× their income target to cover self-employment tax and benefits
 - Always compare total compensation — benefits, bonus, and equity can be worth 20–40% of base salary
 
-Run the numbers for your specific situation with the [salary calculator](/salary).
+Run the numbers for your specific situation with the [salary calculator](/salary-calculator).

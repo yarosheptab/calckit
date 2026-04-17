@@ -8,7 +8,7 @@ excerpt: "Use our age calculator to find exactly how old you are in years, month
 
 An **age calculator** does more than subtract your birth year from the current year. Accurate age calculation works in three steps: count the full years elapsed, then count the remaining full months, then count the remaining days. This cascading approach means a person born on October 15, 1994 who checks their age on April 3, 2026 is exactly 31 years, 5 months, and 19 days old — not just "31."
 
-[Try the free Age Calculator](/age) to see your exact age right now.
+[Try the free Age Calculator](/age-calculator) to see your exact age right now.
 
 The distinction matters in legal, medical, and financial contexts where a difference of days can change outcomes — pension eligibility, insurance brackets, contract terms, and more.
 
@@ -83,13 +83,13 @@ Beyond curiosity, an **age calculator** is a practical tool in several real-worl
 - **Contract and subscription dates:** Many contracts specify terms in years — knowing the precise expiration date requires adding the exact number of days, not just years.
 - **Medical eligibility:** Certain screenings (colonoscopy at 45, mammogram recommendations, vaccine schedules) are triggered by exact age, not just birth year.
 
-You can also use the [Date Calculator](/date) to add or subtract days from any date — useful for calculating contract expiry dates or how many days until a specific deadline.
+You can also use the [Date Calculator](/date-calculator) to add or subtract days from any date — useful for calculating contract expiry dates or how many days until a specific deadline.
 
 For metric and unit conversions that sometimes come up in medical or international contexts, the [Unit Converter](/unit-converter) handles everything from metric to imperial in seconds.
 
 ## How to Use the CalcKit Age Calculator
 
-The [Age Calculator at CalcKit](/age) takes your date of birth and a target date (defaulting to today), then returns:
+The [Age Calculator at CalcKit](/age-calculator) takes your date of birth and a target date (defaulting to today), then returns:
 
 - Your age in years, months, and days
 - Total days alive
@@ -107,4 +107,4 @@ It handles all leap year edge cases automatically, including February 29 birthda
 - Key US legal milestones occur at ages 16, 18, 21, 25, 26, 59½, 65, and 67.
 - Fun personal milestones: 10,000 days (~age 27.4) and 1 billion seconds (~age 31.7) are popular to celebrate.
 
-[Calculate your exact age in days, weeks, and months](/age) — it takes under 5 seconds.
+[Calculate your exact age in days, weeks, and months](/age-calculator) — it takes under 5 seconds.

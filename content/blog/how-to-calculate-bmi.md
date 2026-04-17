@@ -10,7 +10,7 @@ Learning **how to calculate BMI** takes less than two minutes, and the result gi
 
 Two formulas exist depending on which unit system you use. Neither requires anything beyond a scale and a tape measure.
 
-[Calculate your BMI instantly with the free BMI Calculator](/bmi)
+[Calculate your BMI instantly with the free BMI Calculator](/bmi-calculator)
 
 ---
 
@@ -92,11 +92,11 @@ The table below shows healthy and adjacent ranges for common heights:
 BMI is a screening number, not a diagnosis. Here is how to act on it:
 
 - **Normal (18.5–24.9):** Maintain current habits. Focus on exercise, sleep, and nutrient quality.
-- **Overweight (25–29.9):** A modest calorie deficit of 300–500 kcal/day can move you back into the normal range over 3–6 months. Pair this with [understanding your daily calorie needs](/calorie).
+- **Overweight (25–29.9):** A modest calorie deficit of 300–500 kcal/day can move you back into the normal range over 3–6 months. Pair this with [understanding your daily calorie needs](/calorie-calculator).
 - **Underweight (below 18.5):** Speak with a doctor. Increasing calorie-dense, nutritious foods and resistance training is the usual path.
 - **Obese (30+):** BMI alone does not determine health risk — but sustained elevation above 30 is associated with type 2 diabetes, cardiovascular disease, and joint problems. A structured plan with a healthcare provider is advisable.
 
-BMI does not account for muscle mass, bone density, or fat distribution. Athletes often show a BMI above 25 with low body fat. For a more precise measurement, consider checking your [body fat percentage](/body-fat), which distinguishes lean mass from fat mass directly.
+BMI does not account for muscle mass, bone density, or fat distribution. Athletes often show a BMI above 25 with low body fat. For a more precise measurement, consider checking your [body fat percentage](/body-fat-calculator), which distinguishes lean mass from fat mass directly.
 
 ---
 
@@ -108,4 +108,4 @@ BMI does not account for muscle mass, bone density, or fat distribution. Athlete
 - The WHO "Normal" range is 18.5 to 24.9
 - At 175 cm, a healthy weight falls between approximately 57 kg and 76 kg
 - BMI is a useful starting point, but always combine it with other metrics like body fat percentage
-- Use the [free BMI Calculator](/bmi) to get your result instantly without doing the arithmetic yourself
+- Use the [free BMI Calculator](/bmi-calculator) to get your result instantly without doing the arithmetic yourself

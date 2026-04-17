@@ -8,7 +8,7 @@ excerpt: "Our tip calculator does the math on restaurant tips, bill splitting, a
 
 The **tip calculator** question — how much to tip — comes up multiple times a week for most Americans, yet the answer genuinely varies by service type, region, and cultural context. In the United States, tipping is not optional for most service categories: it is the primary income mechanism for millions of workers. Understanding what is standard, what is generous, and what is insulting saves awkwardness and ensures service workers are fairly compensated.
 
-[Use the free Tip Calculator](/tip) to instantly calculate any tip amount and split among any number of people.
+[Use the free Tip Calculator](/tip-calculator) to instantly calculate any tip amount and split among any number of people.
 
 ## US Tipping Norms by Service Type
 
@@ -91,11 +91,11 @@ US tipping norms do not export well. In several countries, tipping can cause con
 - **Switzerland, Austria** — Tips are appreciated but small (rounding up the bill, not a percentage). A full 20% tip reads as extravagant.
 - **Australia, New Zealand** — Tipping is optional and not expected. Leaving nothing is perfectly normal. Workers earn award wages.
 
-If you are converting a bill total in a foreign currency to understand what a tip costs in home-currency terms, the [Currency Converter](/currency) does that calculation instantly.
+If you are converting a bill total in a foreign currency to understand what a tip costs in home-currency terms, the [Currency Converter](/currency-converter) does that calculation instantly.
 
 ## Splitting the Bill Fairly
 
-The [Tip Calculator](/tip) splits the total (bill + tip) evenly across any number of people. For groups with unequal orders, the most practical approach is:
+The [Tip Calculator](/tip-calculator) splits the total (bill + tip) evenly across any number of people. For groups with unequal orders, the most practical approach is:
 
 1. Each person calculates their own subtotal
 2. Everyone adds the same tip percentage to their own portion
@@ -105,7 +105,7 @@ This avoids the awkward math of subtracting individual items from a shared total
 
 For larger groups, restaurants often add an **automatic gratuity of 18–20%** for parties of 6 or more. Always check the bill before adding an additional tip on top of auto-grat — double-tipping is a common mistake when paying with a card that prompts for a tip percentage.
 
-When calculating group costs that involve foreign currencies — common for group travel — the [Discount Calculator](/discount) can help with splitting promotional prices, and the [Currency Converter](/currency) handles the exchange math.
+When calculating group costs that involve foreign currencies — common for group travel — the [Discount Calculator](/discount-calculator) can help with splitting promotional prices, and the [Currency Converter](/currency-converter) handles the exchange math.
 
 ## Conclusion: Key Takeaways
 
@@ -116,4 +116,4 @@ When calculating group costs that involve foreign currencies — common for grou
 - Avoid tipping in Japan and South Korea — it is culturally inappropriate and can cause offense.
 - Auto-gratuity (18–20%) is common for parties of 6+ — check before adding more on the card reader.
 
-[Calculate your tip and split the bill instantly](/tip) — no mental math required.
+[Calculate your tip and split the bill instantly](/tip-calculator) — no mental math required.

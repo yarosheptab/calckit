@@ -48,7 +48,7 @@ $60,000 × (1.035)^15 = $60,000 × 1.6753 = **$100,518**
 
 A $60,000 salary in 2010 has the equivalent purchasing power of approximately **$100,500 in 2025**.
 
-Use the [CalcKit Inflation Calculator](/inflation) to run this calculation for any year range and any dollar amount — no arithmetic required.
+Use the [CalcKit Inflation Calculator](/inflation-calculator) to run this calculation for any year range and any dollar amount — no arithmetic required.
 
 ## Step 4: Interpret Real vs. Nominal Value
 
@@ -113,4 +113,4 @@ If comparable homes sold for $200,000 in 2010, today's price is elevated even af
 
 For a $60,000 salary in 2010 at 3.5% average inflation: **$100,500 equivalent in 2025**. Any 2025 salary below that represents a real income decline.
 
-Run any inflation scenario instantly with the [CalcKit Inflation Calculator](/inflation). To see how your investments are performing in real terms, the [ROI Calculator](/roi) can help you measure actual returns. And if you're setting savings goals while accounting for future purchasing power, the [Savings Calculator](/savings) models contribution needs over time.
+Run any inflation scenario instantly with the [CalcKit Inflation Calculator](/inflation-calculator). To see how your investments are performing in real terms, the [ROI Calculator](/roi-calculator) can help you measure actual returns. And if you're setting savings goals while accounting for future purchasing power, the [Savings Calculator](/savings-calculator) models contribution needs over time.

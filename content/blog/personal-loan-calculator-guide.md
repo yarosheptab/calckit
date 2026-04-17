@@ -8,7 +8,7 @@ excerpt: "Use a personal loan calculator to understand exactly what you'll pay e
 
 A personal loan calculator is one of the most useful tools in personal finance because it reveals the true cost of borrowing — not just the rate a lender advertises, but the actual dollar amount leaving your bank account each month and the total interest you'll pay over the life of the loan.
 
-Whether you're consolidating credit card debt, financing a major purchase, or covering an unexpected expense, running the numbers first puts you in a far stronger position. [Use our free Loan Calculator](/loan) to model any loan scenario in seconds.
+Whether you're consolidating credit card debt, financing a major purchase, or covering an unexpected expense, running the numbers first puts you in a far stronger position. [Use our free Loan Calculator](/loan-calculator) to model any loan scenario in seconds.
 
 ## Types of Consumer Loans and Typical Interest Rates
 
@@ -122,11 +122,11 @@ It may not make sense when:
 - You're close to paying off the balance through normal payments anyway
 - You're financing something depreciating rapidly (consider whether you need it at all)
 
-For debt consolidation scenarios, our [Debt Payoff Calculator](/debt) can model whether consolidation actually saves you money versus aggressive individual paydown.
+For debt consolidation scenarios, our [Debt Payoff Calculator](/debt-payoff-calculator) can model whether consolidation actually saves you money versus aggressive individual paydown.
 
 ## Related Calculators
 
-Planning a larger purchase? If you're comparing a personal loan to a home equity option, run the numbers with our [Mortgage Calculator](/mortgage). If you're borrowing to consolidate credit card debt, check our [Debt Payoff Calculator](/debt) to compare strategies.
+Planning a larger purchase? If you're comparing a personal loan to a home equity option, run the numbers with our [Mortgage Calculator](/mortgage-calculator). If you're borrowing to consolidate credit card debt, check our [Debt Payoff Calculator](/debt-payoff-calculator) to compare strategies.
 
 ## Conclusion: Key Takeaways
 
@@ -137,4 +137,4 @@ Planning a larger purchase? If you're comparing a personal loan to a home equity
 - Paying just **$100/month extra** can save hundreds in interest and shave months off the loan
 - Always compare the total cost of borrowing, not just the monthly payment
 
-[Run your own loan calculation now →](/loan)
+[Run your own loan calculation now →](/loan-calculator)
