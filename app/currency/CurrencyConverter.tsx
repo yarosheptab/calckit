@@ -6,8 +6,8 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { RelatedTools } from '@/components/tool/RelatedTools'
-import { Label } from '@/components/ui/label'
 import { FaqSection } from '@/components/tool/FaqSection'
+import { CurrencySelect } from './CurrencySelect'
 
 const FAQS = [
   {
@@ -30,11 +30,6 @@ const FAQS = [
     q: 'What is the difference between a fixed and floating exchange rate?',
     a: 'A floating exchange rate is determined by market supply and demand (USD, EUR, GBP). A fixed (pegged) rate is set and maintained by a government against another currency — for example, the Hong Kong Dollar is pegged to the USD at roughly 7.8:1. Fixed rates offer stability; floating rates adjust to economic conditions.',
   },
-]
-
-const CURRENCIES = [
-  'USD','EUR','GBP','JPY','CAD','AUD','CHF','CNY','INR','MXN',
-  'BRL','SGD','HKD','KRW','NOK','SEK','DKK','NZD','ZAR','UAH',
 ]
 
 const COMMON_PAIRS = ['GBP', 'JPY', 'CAD']
@@ -105,16 +100,7 @@ export default function CurrencyPage() {
             </div>
           )}
           <FieldInput label="Amount" value={amount} onChange={setAmount} id="amount" type="number" />
-          <div className="flex flex-col gap-1.5">
-            <Label>From</Label>
-            <select
-              value={from}
-              onChange={e => setFrom(e.target.value)}
-              className="h-11 rounded-lg border border-gray-200 bg-white px-3 text-[15px] font-medium text-gray-900 outline-none focus:border-blue-500 focus:ring-3 focus:ring-blue-500/10"
-            >
-              {CURRENCIES.map(c => <option key={c} value={c}>{c}</option>)}
-            </select>
-          </div>
+          <CurrencySelect label="From" value={from} onChange={setFrom} />
           <button
             onClick={swap}
             type="button"
@@ -122,16 +108,7 @@ export default function CurrencyPage() {
           >
             <ArrowLeftRight className="w-4 h-4" /> Swap
           </button>
-          <div className="flex flex-col gap-1.5">
-            <Label>To</Label>
-            <select
-              value={to}
-              onChange={e => setTo(e.target.value)}
-              className="h-11 rounded-lg border border-gray-200 bg-white px-3 text-[15px] font-medium text-gray-900 outline-none focus:border-blue-500 focus:ring-3 focus:ring-blue-500/10"
-            >
-              {CURRENCIES.map(c => <option key={c} value={c}>{c}</option>)}
-            </select>
-          </div>
+          <CurrencySelect label="To" value={to} onChange={setTo} />
         </div>
       </div>
       <RelatedTools tools={RELATED} />
