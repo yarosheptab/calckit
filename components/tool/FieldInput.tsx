@@ -1,6 +1,5 @@
 import { Label } from '@/components/ui/label'
 import { TooltipIcon } from './TooltipIcon'
-import { cn } from '@/lib/utils'
 
 interface FieldInputProps {
   label: string
