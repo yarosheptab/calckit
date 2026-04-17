@@ -2,8 +2,20 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — calckit',
-  description: 'Privacy policy for calckit.yaro-labs.com, operated by Yaro Labs.',
+  title: 'Privacy Policy',
+  description: 'Privacy policy for calckit.yaro-labs.com, operated by Yaro Labs. We use Google Analytics for anonymous usage stats and store no personal data.',
+  openGraph: {
+    title: 'Privacy Policy — calckit',
+    description: 'Privacy policy for calckit.yaro-labs.com, operated by Yaro Labs.',
+    url: 'https://calckit.yaro-labs.com/privacy',
+    siteName: 'calckit',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Privacy Policy — calckit',
+    description: 'Privacy policy for calckit.yaro-labs.com, operated by Yaro Labs.',
+  },
 }
 
 const h2Style = { fontSize: '14px', fontWeight: 600, color: '#111827', marginTop: '28px', marginBottom: '8px' } as const

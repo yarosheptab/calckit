@@ -2,8 +2,20 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Use — calckit',
-  description: 'Terms of use for calckit, a free calculator site operated by Yaro Labs.',
+  title: 'Terms of Use',
+  description: 'Terms of use for calckit, a free calculator site operated by Yaro Labs. All calculator results are for informational purposes only.',
+  openGraph: {
+    title: 'Terms of Use — calckit',
+    description: 'Terms of use for calckit, a free calculator site operated by Yaro Labs.',
+    url: 'https://calckit.yaro-labs.com/terms',
+    siteName: 'calckit',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Terms of Use — calckit',
+    description: 'Terms of use for calckit, a free calculator site operated by Yaro Labs.',
+  },
 }
 
 const h2Style = { fontSize: '14px', fontWeight: 600, color: '#111827', marginTop: '28px', marginBottom: '8px' } as const
