@@ -1,39 +1,51 @@
+import { Label } from '@/components/ui/label'
+import { TooltipIcon } from './TooltipIcon'
+
 interface FieldInputProps {
   label: string
-  id: string
-  type?: string
   value: string
-  onChange: (v: string) => void
+  onChange: (value: string) => void
+  prefix?: string
+  suffix?: string
+  tooltip?: string
   placeholder?: string
+  type?: string
   min?: string
   step?: string
+  id?: string
 }
 
-export default function FieldInput({ label, id, type = 'number', value, onChange, placeholder, min, step }: FieldInputProps) {
+export default function FieldInput({
+  label, value, onChange, prefix, suffix, tooltip, placeholder, type = 'number', min, step, id,
+}: FieldInputProps) {
   return (
-    <div style={{ marginBottom: '12px' }}>
-      <label htmlFor={id} style={{ display: 'block', fontSize: '9px', fontWeight: 500, color: '#6b7280', marginBottom: '4px' }}>
+    <div className="flex flex-col gap-1.5">
+      <Label htmlFor={id} className="flex items-center gap-1.5">
         {label}
-      </label>
-      <input
-        id={id}
-        type={type}
-        value={value}
-        onChange={e => onChange(e.target.value)}
-        placeholder={placeholder}
-        min={min}
-        step={step}
-        style={{
-          width: '100%',
-          border: '1px solid #e5e7eb',
-          borderRadius: '5px',
-          padding: '7px 10px',
-          fontSize: '11px',
-          color: '#111',
-          background: '#fff',
-          transition: 'border-color 120ms ease',
-        }}
-      />
+        {tooltip && <TooltipIcon text={tooltip} />}
+      </Label>
+      <div className="flex items-center h-11 border border-gray-200 rounded-lg bg-white overflow-hidden transition-all focus-within:border-blue-500 focus-within:ring-3 focus-within:ring-blue-500/10">
+        {prefix && (
+          <span className="px-3 text-sm text-gray-400 bg-gray-50 border-r border-gray-100 h-full flex items-center select-none">
+            {prefix}
+          </span>
+        )}
+        <input
+          id={id}
+          type={type}
+          value={value}
+          onChange={e => onChange(e.target.value)}
+          placeholder={placeholder}
+          min={min}
+          step={step}
+          className="flex-1 px-3 h-full text-[15px] font-medium text-gray-900 bg-transparent outline-none"
+        />
+        {suffix && (
+          <span className="px-3 text-sm text-gray-400 bg-gray-50 border-l border-gray-100 h-full flex items-center whitespace-nowrap select-none">
+            {suffix}
+          </span>
+        )}
+      </div>
     </div>
   )
 }

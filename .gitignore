@@ -42,5 +42,9 @@ next-env.d.ts
 
 # git worktrees
 .worktrees/
+
+# superpowers plugin working files
+.superpowers/
+
+# session memory
 .remember
-.superpowers

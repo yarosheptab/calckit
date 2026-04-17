@@ -7,14 +7,16 @@ interface ToolHeaderProps {
 
 export default function ToolHeader({ title, description }: ToolHeaderProps) {
   return (
-    <div style={{ padding: '14px 20px 12px', background: '#fff', borderBottom: '1px solid #f0f0f0' }}>
-      <div style={{ fontSize: '9px', color: '#9ca3af', marginBottom: '4px' }}>
-        <Link href="/" style={{ color: '#9ca3af', textDecoration: 'none' }}>calckit</Link>
+    <div className="max-w-5xl mx-auto px-4 pt-8 pb-2">
+      <div className="text-sm text-gray-400 mb-3">
+        <Link href="/" className="hover:text-gray-600 transition-colors">calckit</Link>
         {' / '}
-        <span style={{ color: '#2563eb' }}>{title}</span>
+        <span>{title}</span>
       </div>
-      <div style={{ fontSize: '16px', fontWeight: 800, color: '#111', letterSpacing: '-0.03em', marginBottom: '2px' }}>{title}</div>
-      <div style={{ fontSize: '10px', color: '#9ca3af' }}>{description}</div>
+      <h1 className="text-[28px] font-extrabold text-gray-900 tracking-tight leading-tight mb-2">
+        {title}
+      </h1>
+      <p className="text-[15px] text-gray-500 leading-relaxed max-w-lg">{description}</p>
     </div>
   )
 }

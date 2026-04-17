@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
 const siteTitle = 'calckit — Free Online Calculators'
 const siteDescription = 'Calculators — Mortgage, Compound Interest, ROI, Currency Converter, Unit Converter, Tip Calculator, Tax Estimator. Free, no account needed.'
@@ -43,10 +44,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body>
         <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGJKRZZF" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGJKRZZF" height="0" width="0" className="hidden invisible" />
         </noscript>
         <script
           type="application/ld+json"

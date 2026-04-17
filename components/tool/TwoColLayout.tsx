@@ -5,13 +5,9 @@ interface TwoColLayoutProps {
 
 export default function TwoColLayout({ left, right }: TwoColLayoutProps) {
   return (
-    <div className="two-col-layout">
-      <div style={{ padding: '20px 20px 28px', background: '#fff', borderRight: '1px solid #f0f0f0' }}>
-        {left}
-      </div>
-      <div style={{ padding: '20px 20px 28px', background: '#f9fafb' }}>
-        {right}
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-[400px_1fr] gap-6 max-w-5xl mx-auto px-4 py-8">
+      <div className="flex flex-col gap-5">{left}</div>
+      <div>{right}</div>
     </div>
   )
 }
