@@ -34,7 +34,7 @@ const FAQS = [
 
 const CURRENCIES = [
   'USD','EUR','GBP','JPY','CAD','AUD','CHF','CNY','INR','MXN',
-  'BRL','SGD','HKD','KRW','NOK','SEK','DKK','NZD','ZAR','RUB',
+  'BRL','SGD','HKD','KRW','NOK','SEK','DKK','NZD','ZAR','UAH',
 ]
 
 const COMMON_PAIRS = ['GBP', 'JPY', 'CAD']
