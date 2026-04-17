@@ -61,9 +61,9 @@ export default function Navbar() {
               w-56 flex flex-col max-h-[80dvh] overflow-y-auto
               md:w-auto md:flex-row md:max-h-none md:overflow-visible md:divide-x md:divide-gray-100">
               {[
+                { label: 'Everyday', tools: EVERYDAY_TOOLS },
                 { label: 'Finance', tools: FINANCE_TOOLS },
                 { label: 'Health', tools: HEALTH_TOOLS },
-                { label: 'Everyday', tools: EVERYDAY_TOOLS },
               ].map(({ label, tools }) => (
                 <div key={label} className="md:w-48 shrink-0">
                   <div className="px-3 pt-3 pb-1">

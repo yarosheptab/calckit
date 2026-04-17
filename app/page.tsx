@@ -49,6 +49,14 @@ export default function HomePage() {
       {/* Tool Grid */}
       <section id="tools" className="max-w-6xl mx-auto px-6 pb-20">
         <div className="flex items-center gap-3 mb-6">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Everyday</span>
+          <div className="flex-1 h-px bg-gray-200" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          {EVERYDAY_TOOLS.map(t => <ToolCard key={t.href} tool={t} />)}
+        </div>
+
+        <div className="flex items-center gap-3 mb-6">
           <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Finance</span>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
@@ -60,16 +68,8 @@ export default function HomePage() {
           <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Health</span>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-          {HEALTH_TOOLS.map(t => <ToolCard key={t.href} tool={t} />)}
-        </div>
-
-        <div className="flex items-center gap-3 mb-6">
-          <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Everyday</span>
-          <div className="flex-1 h-px bg-gray-200" />
-        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {EVERYDAY_TOOLS.map(t => <ToolCard key={t.href} tool={t} />)}
+          {HEALTH_TOOLS.map(t => <ToolCard key={t.href} tool={t} />)}
         </div>
       </section>
     </div>

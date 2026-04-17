@@ -8,6 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 import { FaqSection } from '@/components/tool/FaqSection'
+import { TOOL } from '@/lib/tools'
 
 const FAQS = [
   {
@@ -67,10 +68,7 @@ const units: Record<Category, { label: string; toBase: (v: number) => number; fr
 
 const CATEGORIES: Category[] = ['Length', 'Weight', 'Temperature', 'Data']
 
-const RELATED = [
-  { name: 'Currency Converter', href: '/currency' },
-  { name: 'Tip Calculator', href: '/tip' },
-]
+const RELATED = [TOOL.currency, TOOL.percentage]
 
 export default function UnitConverterPage() {
   const [category, setCategory] = useState<Category>('Length')
