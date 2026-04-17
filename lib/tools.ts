@@ -1,4 +1,4 @@
-import { Home, TrendingUp, BarChart2, Receipt, ArrowLeftRight, Ruler, UtensilsCrossed, Scale, Percent, Flame, CalendarDays } from 'lucide-react'
+import { Home, TrendingUp, BarChart2, Receipt, ArrowLeftRight, Ruler, UtensilsCrossed, Scale, Percent, Flame, CalendarDays, CreditCard, PiggyBank, Briefcase, CalendarRange } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export interface Tool {
@@ -11,6 +11,30 @@ export interface Tool {
 }
 
 export const FINANCE_TOOLS: Tool[] = [
+  {
+    name: 'Loan Calculator',
+    desc: 'Monthly payments & total interest for any loan',
+    href: '/loan',
+    icon: CreditCard,
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-700',
+  },
+  {
+    name: 'Savings Calculator',
+    desc: 'Monthly savings needed or projected balance',
+    href: '/savings',
+    icon: PiggyBank,
+    iconBg: 'bg-green-100',
+    iconColor: 'text-green-700',
+  },
+  {
+    name: 'Salary Calculator',
+    desc: 'Convert salary to hourly, weekly, monthly & more',
+    href: '/salary',
+    icon: Briefcase,
+    iconBg: 'bg-amber-100',
+    iconColor: 'text-amber-700',
+  },
   {
     name: 'Mortgage Calculator',
     desc: 'Monthly payment, total interest & amortization',
@@ -80,6 +104,14 @@ export const EVERYDAY_TOOLS: Tool[] = [
     icon: CalendarDays,
     iconBg: 'bg-violet-100',
     iconColor: 'text-violet-700',
+  },
+  {
+    name: 'Date Calculator',
+    desc: 'Days between dates & add/subtract days',
+    href: '/date',
+    icon: CalendarRange,
+    iconBg: 'bg-cyan-100',
+    iconColor: 'text-cyan-700',
   },
   {
     name: 'Currency Converter',
