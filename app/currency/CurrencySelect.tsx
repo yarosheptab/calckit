@@ -172,6 +172,8 @@ interface CurrencySelectProps {
 export function CurrencySelect({ value, onChange, label }: CurrencySelectProps) {
   const [open, setOpen] = useState(false)
   const [search, setSearch] = useState('')
+  const [dropdownStyle, setDropdownStyle] = useState<React.CSSProperties>({})
+  const triggerRef = useRef<HTMLButtonElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const searchRef = useRef<HTMLInputElement>(null)
 
@@ -184,10 +186,27 @@ export function CurrencySelect({ value, onChange, label }: CurrencySelectProps) 
       )
     : ALL_CURRENCIES
 
+  function openDropdown() {
+    if (!triggerRef.current) return
+    const rect = triggerRef.current.getBoundingClientRect()
+    setDropdownStyle({
+      position: 'fixed',
+      top: rect.bottom + 4,
+      left: rect.left,
+      width: rect.width,
+      zIndex: 9999,
+    })
+    setOpen(true)
+    setSearch('')
+  }
+
   useEffect(() => {
     if (!open) return
     function onClickOutside(e: MouseEvent) {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+      if (
+        containerRef.current && !containerRef.current.contains(e.target as Node) &&
+        !(e.target as Element).closest('[data-currency-dropdown]')
+      ) {
         setOpen(false)
         setSearch('')
       }
@@ -210,10 +229,11 @@ export function CurrencySelect({ value, onChange, label }: CurrencySelectProps) 
   return (
     <div className="flex flex-col gap-1.5" ref={containerRef}>
       <span className="text-sm font-medium text-gray-700">{label}</span>
-      <div className="relative">
+      <div>
         <button
+          ref={triggerRef}
           type="button"
-          onClick={() => { setOpen(o => !o); setSearch('') }}
+          onClick={() => open ? (setOpen(false), setSearch('')) : openDropdown()}
           className="w-full h-11 flex items-center justify-between px-3 rounded-lg border border-gray-200 bg-white text-[15px] font-medium text-gray-900 hover:border-blue-400 focus:outline-none focus:border-blue-500 focus:ring-3 focus:ring-blue-500/10 transition-colors"
         >
           <span>
@@ -224,7 +244,7 @@ export function CurrencySelect({ value, onChange, label }: CurrencySelectProps) 
         </button>
 
         {open && (
-          <div className="absolute z-50 mt-1 w-full bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden">
+          <div data-currency-dropdown style={dropdownStyle} className="bg-white border border-gray-200 rounded-xl shadow-xl overflow-hidden">
             <div className="p-2 border-b border-gray-100">
               <div className="flex items-center gap-2 px-2 h-9 bg-gray-50 rounded-lg border border-gray-200 focus-within:border-blue-400">
                 <Search className="w-3.5 h-3.5 text-gray-400 shrink-0" />
