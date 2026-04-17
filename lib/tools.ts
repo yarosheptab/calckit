@@ -1,4 +1,4 @@
-import { Home, TrendingUp, BarChart2, Receipt, ArrowLeftRight, Ruler, UtensilsCrossed, Scale, Percent, Flame, CalendarDays, CreditCard, PiggyBank, Briefcase, CalendarRange } from 'lucide-react'
+import { Home, TrendingUp, BarChart2, Receipt, ArrowLeftRight, Ruler, UtensilsCrossed, Scale, Percent, Flame, CalendarDays, CreditCard, PiggyBank, Briefcase, CalendarRange, TrendingDown, GraduationCap, DollarSign, Tag, Activity } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export interface Tool {
@@ -67,6 +67,22 @@ export const FINANCE_TOOLS: Tool[] = [
     iconBg: 'bg-amber-100',
     iconColor: 'text-amber-700',
   },
+  {
+    name: 'Debt Payoff Calculator',
+    desc: 'How long to pay off debt & interest cost',
+    href: '/debt',
+    icon: TrendingDown,
+    iconBg: 'bg-red-100',
+    iconColor: 'text-red-700',
+  },
+  {
+    name: 'Inflation Calculator',
+    desc: 'Purchasing power & inflation-adjusted value',
+    href: '/inflation',
+    icon: DollarSign,
+    iconBg: 'bg-yellow-100',
+    iconColor: 'text-yellow-700',
+  },
 ]
 
 export const HEALTH_TOOLS: Tool[] = [
@@ -85,6 +101,14 @@ export const HEALTH_TOOLS: Tool[] = [
     icon: Flame,
     iconBg: 'bg-orange-100',
     iconColor: 'text-orange-700',
+  },
+  {
+    name: 'Body Fat Calculator',
+    desc: 'Body fat % using the US Navy method',
+    href: '/body-fat',
+    icon: Activity,
+    iconBg: 'bg-pink-100',
+    iconColor: 'text-pink-700',
   },
 ]
 
@@ -136,6 +160,22 @@ export const EVERYDAY_TOOLS: Tool[] = [
     icon: UtensilsCrossed,
     iconBg: 'bg-rose-100',
     iconColor: 'text-rose-700',
+  },
+  {
+    name: 'Grade Calculator',
+    desc: 'Final exam grade needed, weighted avg & GPA',
+    href: '/grade',
+    icon: GraduationCap,
+    iconBg: 'bg-indigo-100',
+    iconColor: 'text-indigo-700',
+  },
+  {
+    name: 'Discount Calculator',
+    desc: 'Sale price, % off, and original price',
+    href: '/discount',
+    icon: Tag,
+    iconBg: 'bg-lime-100',
+    iconColor: 'text-lime-700',
   },
 ]
 
