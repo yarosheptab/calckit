@@ -1,5 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
+
+export const metadata: Metadata = {
+  title: 'Blog — calckit',
+  description: 'Articles about personal finance, math, and everyday calculations.',
+}
 
 export default function BlogIndexPage() {
   const posts = getAllPosts()
