@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import type { LucideIcon } from 'lucide-react'
 import { Home, TrendingUp, BarChart2, Receipt, ArrowLeftRight, Ruler, UtensilsCrossed } from 'lucide-react'
 import { HeroWidget } from './_components/HeroWidget'
 
@@ -66,7 +67,7 @@ const EVERYDAY_TOOLS = [
 
 interface Tool {
   name: string; desc: string; href: string
-  icon: React.ComponentType<{ className?: string }>
+  icon: LucideIcon
   iconBg: string; iconColor: string
 }
 

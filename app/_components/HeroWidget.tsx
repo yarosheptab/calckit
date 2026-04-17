@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 
 type Tab = 'Mortgage' | 'Compound' | 'ROI' | 'Tip'
 const TABS: Tab[] = ['Mortgage', 'Compound', 'ROI', 'Tip']
@@ -156,9 +157,9 @@ export function HeroWidget() {
 
       {/* Footer link */}
       <div className="border-t border-gray-100 px-5 py-3">
-        <a href={CALCULATOR_HREFS[tab]} className="text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+        <Link href={CALCULATOR_HREFS[tab]} className="text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
           Open full calculator →
-        </a>
+        </Link>
       </div>
     </div>
   )
