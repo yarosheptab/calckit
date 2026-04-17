@@ -14,7 +14,10 @@ const siteTitle = 'calckit — Free Online Calculators'
 const siteDescription = 'Calculators — Mortgage, Compound Interest, ROI, Currency Converter, Unit Converter, Tip Calculator, Tax Estimator. Free, no account needed.'
 
 export const metadata: Metadata = {
-  title: siteTitle,
+  title: {
+    default: siteTitle,
+    template: '%s — calckit',
+  },
   description: siteDescription,
   keywords: [
     'calculators',
@@ -59,7 +62,6 @@ export const metadata: Metadata = {
     url: 'https://calckit.yaro-labs.com',
     siteName: 'calckit',
     type: 'website',
-    images: [{ url: 'https://calckit.yaro-labs.com/og/home.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -87,11 +89,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   url: 'https://calckit.yaro-labs.com',
                   description: siteDescription,
                   publisher: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
-                  potentialAction: {
-                    '@type': 'SearchAction',
-                    target: { '@type': 'EntryPoint', urlTemplate: 'https://calckit.yaro-labs.com/search?q={search_term_string}' },
-                    'query-input': 'required name=search_term_string',
-                  },
                 },
                 {
                   '@type': 'Organization',
