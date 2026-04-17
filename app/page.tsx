@@ -1,75 +1,6 @@
 import Link from 'next/link'
-import type { LucideIcon } from 'lucide-react'
-import { Home, TrendingUp, BarChart2, Receipt, ArrowLeftRight, Ruler, UtensilsCrossed } from 'lucide-react'
 import { HeroWidget } from './_components/HeroWidget'
-
-const FINANCE_TOOLS = [
-  {
-    name: 'Mortgage Calculator',
-    desc: 'Monthly payment, total interest & amortization',
-    href: '/mortgage',
-    icon: Home,
-    iconBg: 'bg-blue-100',
-    iconColor: 'text-blue-700',
-  },
-  {
-    name: 'Compound Interest',
-    desc: 'Future value with compounding and contributions',
-    href: '/compound-interest',
-    icon: TrendingUp,
-    iconBg: 'bg-green-100',
-    iconColor: 'text-green-700',
-  },
-  {
-    name: 'ROI Calculator',
-    desc: 'Return on investment and annualized return',
-    href: '/roi',
-    icon: BarChart2,
-    iconBg: 'bg-indigo-100',
-    iconColor: 'text-indigo-700',
-  },
-  {
-    name: 'Tax Estimator',
-    desc: 'Federal income tax and take-home pay',
-    href: '/tax',
-    icon: Receipt,
-    iconBg: 'bg-amber-100',
-    iconColor: 'text-amber-700',
-  },
-]
-
-const EVERYDAY_TOOLS = [
-  {
-    name: 'Currency Converter',
-    desc: 'Live exchange rates, 170+ currencies',
-    href: '/currency',
-    icon: ArrowLeftRight,
-    iconBg: 'bg-teal-100',
-    iconColor: 'text-teal-700',
-  },
-  {
-    name: 'Unit Converter',
-    desc: 'Length, weight, temperature, data',
-    href: '/unit-converter',
-    icon: Ruler,
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-700',
-  },
-  {
-    name: 'Tip Calculator',
-    desc: 'Split bills and calculate tip amounts',
-    href: '/tip',
-    icon: UtensilsCrossed,
-    iconBg: 'bg-rose-100',
-    iconColor: 'text-rose-700',
-  },
-]
-
-interface Tool {
-  name: string; desc: string; href: string
-  icon: LucideIcon
-  iconBg: string; iconColor: string
-}
+import { FINANCE_TOOLS, HEALTH_TOOLS, EVERYDAY_TOOLS, type Tool } from '@/lib/tools'
 
 function ToolCard({ tool }: { tool: Tool }) {
   const Icon = tool.icon
@@ -123,6 +54,14 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
           {FINANCE_TOOLS.map(t => <ToolCard key={t.href} tool={t} />)}
+        </div>
+
+        <div className="flex items-center gap-3 mb-6">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Health</span>
+          <div className="flex-1 h-px bg-gray-200" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          {HEALTH_TOOLS.map(t => <ToolCard key={t.href} tool={t} />)}
         </div>
 
         <div className="flex items-center gap-3 mb-6">
