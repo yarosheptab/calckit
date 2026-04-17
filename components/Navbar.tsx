@@ -1,41 +1,39 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils'
+
+const NAV_LINKS = [
+  { href: '/#tools', label: 'Tools' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/about', label: 'About' },
+]
 
 export default function Navbar() {
   const pathname = usePathname()
-  const showCta = pathname === '/'
 
   return (
-    <nav style={{
-      height: '50px',
-      background: '#fff',
-      borderBottom: '1px solid #efefef',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      padding: '0 24px',
-      position: 'sticky',
-      top: 0,
-      zIndex: 50,
-    }}>
-      <Link href="/" style={{ textDecoration: 'none' }}>
-        <span style={{ fontSize: '15px', fontWeight: 800, color: '#111', letterSpacing: '-0.03em' }}>
-          calc<span style={{ color: '#2563eb' }}>kit</span>
+    <nav className="h-[58px] bg-white border-b border-gray-200 flex items-center justify-between px-6 sticky top-0 z-50">
+      <Link href="/" className="no-underline">
+        <span className="text-[17px] font-extrabold tracking-tight text-gray-900">
+          calc<span className="text-blue-600">kit</span>
         </span>
       </Link>
-      <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-        <Link href="/#tools" style={{ fontSize: '11px', color: '#9ca3af', textDecoration: 'none' }}>Tools</Link>
-        <Link href="/blog" style={{ fontSize: '11px', color: '#9ca3af', textDecoration: 'none' }}>Blog</Link>
-        <Link href="/about" style={{ fontSize: '11px', color: '#9ca3af', textDecoration: 'none' }}>About</Link>
-        {showCta && (
-          <Link href="/#tools" style={{
-            background: '#2563eb', color: '#fff',
-            fontSize: '10px', fontWeight: 600,
-            padding: '5px 12px', borderRadius: '5px',
-            textDecoration: 'none',
-          }}>Browse tools</Link>
-        )}
+      <div className="flex items-center gap-1">
+        {NAV_LINKS.map(({ href, label }) => (
+          <Link
+            key={href}
+            href={href}
+            className={cn(
+              'text-sm font-medium px-3 py-1.5 rounded-lg transition-colors',
+              pathname === href || (href === '/blog' && pathname.startsWith('/blog'))
+                ? 'text-gray-900 bg-gray-100'
+                : 'text-gray-500 hover:bg-gray-100 hover:text-gray-700'
+            )}
+          >
+            {label}
+          </Link>
+        ))}
       </div>
     </nav>
   )
