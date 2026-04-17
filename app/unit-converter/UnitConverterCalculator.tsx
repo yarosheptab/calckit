@@ -134,16 +134,19 @@ export default function UnitConverterPage() {
     </>
   )
 
-  const resultPanel = result !== null ? (
-    <ResultPanel
-      label="Converted Value"
-      value={result}
-      subtitle={`${value} ${catUnits[fromIdx].label} = ${result} ${catUnits[toIdx].label}`}
-      rows={[
-        { label: 'Reverse', value: `${parseFloat(parseFloat(catUnits[fromIdx].fromBase(catUnits[toIdx].toBase(parseFloat(result) || 0)).toPrecision(7)).toString())} ${catUnits[fromIdx].label}` },
-      ]}
-    />
-  ) : (
+  const resultPanel = result !== null ? (() => {
+    const reverseVal = catUnits[fromIdx].fromBase(catUnits[toIdx].toBase(parseFloat(result)))
+    return (
+      <ResultPanel
+        label="Converted Value"
+        value={result}
+        subtitle={`${value} ${catUnits[fromIdx].label} = ${result} ${catUnits[toIdx].label}`}
+        rows={[
+          { label: 'Reverse', value: `${parseFloat(reverseVal.toPrecision(7))} ${catUnits[fromIdx].label}` },
+        ]}
+      />
+    )
+  })() : (
     <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-sm text-blue-300 font-medium">
       Enter a value to convert.
     </div>

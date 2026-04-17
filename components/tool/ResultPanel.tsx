@@ -1,7 +1,6 @@
 interface BreakdownRow {
   label: string
   value: string
-  barPct?: number // legacy — ignored in new UI; will be removed in Task 10
 }
 
 interface BarData {
