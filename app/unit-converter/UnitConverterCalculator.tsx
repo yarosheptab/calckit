@@ -7,6 +7,30 @@ import ResultPanel from '@/components/tool/ResultPanel'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
+import { FaqSection } from '@/components/tool/FaqSection'
+
+const FAQS = [
+  {
+    q: 'How do I convert kilometers to miles?',
+    a: 'Multiply kilometers by 0.621371 to get miles. For example, 10 km × 0.621371 = 6.21 miles. Going the other direction, multiply miles by 1.60934 to get kilometers. A quick mental shortcut: 5 miles ≈ 8 km.',
+  },
+  {
+    q: 'How do I convert Celsius to Fahrenheit?',
+    a: 'Use the formula: °F = (°C × 9/5) + 32. So 20°C = (20 × 1.8) + 32 = 68°F. To convert Fahrenheit to Celsius: °C = (°F − 32) × 5/9. A useful benchmark: 0°C = 32°F, 100°C = 212°F, and body temperature is 37°C = 98.6°F.',
+  },
+  {
+    q: 'How many pounds are in a kilogram?',
+    a: 'One kilogram equals approximately 2.20462 pounds. To convert kg to pounds, multiply by 2.205. To convert pounds to kg, divide by 2.205 (or multiply by 0.453592). For example, 70 kg ≈ 154 pounds; 150 pounds ≈ 68 kg.',
+  },
+  {
+    q: 'How many megabytes are in a gigabyte?',
+    a: 'In binary (used by computers): 1 GB = 1,024 MB. In decimal (used by storage manufacturers): 1 GB = 1,000 MB. This is why a 128 GB USB drive shows up as 119 GB on your computer — the OS reports in binary while the manufacturer labels in decimal.',
+  },
+  {
+    q: 'What is the difference between metric and imperial units?',
+    a: 'The metric system (SI) uses units based on powers of 10 — meters, kilograms, liters. It\'s used by most of the world and all of science. The imperial system uses units like inches, feet, pounds, and gallons — still common in the US, UK (partially), and a few other countries. Metric is generally easier to calculate with due to its base-10 structure.',
+  },
+]
 
 type Category = 'Length' | 'Weight' | 'Temperature' | 'Data'
 
@@ -156,6 +180,7 @@ export default function UnitConverterPage() {
     <div className="bg-gray-50 min-h-screen">
       <ToolHeader title="Unit Converter" description="Convert between length, weight, temperature, and data units." />
       <TwoColLayout left={inputPanel} right={resultPanel} />
+      <FaqSection items={FAQS} />
     </div>
   )
 }

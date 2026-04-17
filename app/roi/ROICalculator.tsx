@@ -5,6 +5,30 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { RelatedTools } from '@/components/tool/RelatedTools'
+import { FaqSection } from '@/components/tool/FaqSection'
+
+const FAQS = [
+  {
+    q: 'What is ROI and how is it calculated?',
+    a: 'ROI (Return on Investment) measures profit relative to cost. The formula is: ROI = ((Final Value − Initial Investment) / Initial Investment) × 100. For example, investing $10,000 that grows to $14,500 gives an ROI of 45%.',
+  },
+  {
+    q: 'What is a good ROI?',
+    a: 'It depends on asset class and risk. The S&P 500 has historically returned 7–10% annually (inflation-adjusted). Real estate typically yields 8–12%. A business investment might target 15–30%. Always compare ROI against the risk taken and opportunity cost of alternatives.',
+  },
+  {
+    q: 'What is the difference between ROI and annualized return?',
+    a: 'ROI is the total percentage gain over the entire holding period. Annualized return converts that to a consistent per-year rate using: (1 + ROI/100)^(1/years) − 1. For example, a 50% ROI over 4 years equals an annualized return of about 10.67% per year.',
+  },
+  {
+    q: 'How do I calculate ROI on a rental property?',
+    a: 'For real estate, ROI = (Annual Rental Income − Annual Costs) / Total Investment × 100. Include mortgage payments, taxes, insurance, maintenance, and vacancy in your costs. A common benchmark is 8–12% cash-on-cash return for a good rental investment.',
+  },
+  {
+    q: 'Does ROI account for inflation?',
+    a: 'Standard ROI does not adjust for inflation. To calculate real (inflation-adjusted) ROI: Real ROI = ((1 + Nominal ROI) / (1 + Inflation Rate)) − 1. With a 10% nominal ROI and 3% inflation, your real ROI is approximately 6.8%.',
+  },
+]
 
 function pct(n: number) { return n.toFixed(2) + '%' }
 function fmt(n: number) {
@@ -74,6 +98,7 @@ export default function ROIPage() {
     <div className="bg-gray-50 min-h-screen">
       <ToolHeader title="ROI Calculator" description="Calculate return on investment, annualized return, and net profit." />
       <TwoColLayout left={inputPanel} right={resultPanel} />
+      <FaqSection items={FAQS} />
     </div>
   )
 }

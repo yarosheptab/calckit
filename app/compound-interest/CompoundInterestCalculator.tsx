@@ -7,6 +7,30 @@ import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
+import { FaqSection } from '@/components/tool/FaqSection'
+
+const FAQS = [
+  {
+    q: 'What is compound interest?',
+    a: 'Compound interest is interest earned on both your original principal and the interest already accumulated. Unlike simple interest (earned only on the principal), compound interest grows exponentially — each period\'s interest becomes part of the base for the next period\'s calculation.',
+  },
+  {
+    q: 'What is the compound interest formula?',
+    a: 'FV = P × (1 + r/n)^(n×t), where P is the principal, r is the annual interest rate as a decimal, n is the number of compounding periods per year (12 for monthly, 365 for daily), and t is the time in years. The result is the future value including all compounded interest.',
+  },
+  {
+    q: 'What is the Rule of 72?',
+    a: 'The Rule of 72 is a shortcut: divide 72 by your annual interest rate to estimate how many years it takes to double your money. At 6%, money doubles in roughly 72 ÷ 6 = 12 years. At 9%, it doubles in 8 years. This works because of how compound growth curves behave.',
+  },
+  {
+    q: 'Does compounding frequency matter?',
+    a: 'Yes, but the difference diminishes at higher frequencies. Moving from annual to monthly compounding on $10,000 at 7% over 10 years increases your return by about $300. Moving from monthly to daily adds only ~$10 more. The biggest jump is from simple to any compounding.',
+  },
+  {
+    q: 'How do regular contributions affect compound growth?',
+    a: 'Regular contributions dramatically accelerate growth. Adding $200/month to a $10,000 principal at 7% for 20 years yields ~$208,000 — compared to ~$38,700 with no contributions. This is why consistent investing early, even in small amounts, produces outsized long-term results.',
+  },
+]
 
 type Frequency = 'Daily' | 'Monthly' | 'Annually'
 const freqMap: Record<Frequency, number> = { Daily: 365, Monthly: 12, Annually: 1 }
@@ -104,6 +128,7 @@ export default function CompoundInterestPage() {
     <div className="bg-gray-50 min-h-screen">
       <ToolHeader title="Compound Interest Calculator" description="Calculate future value with compounding interest and optional monthly contributions." />
       <TwoColLayout left={inputPanel} right={resultPanel} />
+      <FaqSection items={FAQS} />
     </div>
   )
 }

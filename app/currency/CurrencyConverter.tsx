@@ -7,6 +7,30 @@ import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Label } from '@/components/ui/label'
+import { FaqSection } from '@/components/tool/FaqSection'
+
+const FAQS = [
+  {
+    q: 'How often are exchange rates updated?',
+    a: 'Our rates are sourced from an open exchange-rate API and updated hourly. For real-time trading rates, use a dedicated forex platform. For everyday conversions — travel, transfers, purchases — hourly rates are more than accurate enough.',
+  },
+  {
+    q: 'What is the mid-market exchange rate?',
+    a: 'The mid-market rate (also called the interbank rate) is the midpoint between the buy and sell prices in the global currency market. It\'s the "true" exchange rate you see on Google or financial data providers. Banks and services typically charge a margin above this rate.',
+  },
+  {
+    q: 'Why do banks give worse rates than this calculator?',
+    a: 'Banks, airport kiosks, and transfer services add a markup (spread) on top of the mid-market rate — often 1–5%. That\'s how they profit on currency exchange. Services like Wise and Revolut are closer to the mid-market rate with a transparent fee, making them cheaper for international transfers.',
+  },
+  {
+    q: 'Which currency is the strongest in the world?',
+    a: 'By nominal exchange rate, the Kuwaiti Dinar (KWD) is the highest-valued currency against the US Dollar (1 KWD ≈ $3.25 USD). However, "strong" doesn\'t mean better for an economy — exchange rates reflect supply, demand, monetary policy, and trade balances, not economic health alone.',
+  },
+  {
+    q: 'What is the difference between a fixed and floating exchange rate?',
+    a: 'A floating exchange rate is determined by market supply and demand (USD, EUR, GBP). A fixed (pegged) rate is set and maintained by a government against another currency — for example, the Hong Kong Dollar is pegged to the USD at roughly 7.8:1. Fixed rates offer stability; floating rates adjust to economic conditions.',
+  },
+]
 
 const CURRENCIES = [
   'USD','EUR','GBP','JPY','CAD','AUD','CHF','CNY','INR','MXN',
@@ -145,6 +169,7 @@ export default function CurrencyPage() {
     <div className="bg-gray-50 min-h-screen">
       <ToolHeader title="Currency Converter" description="Convert between 170+ currencies using live exchange rates." />
       <TwoColLayout left={inputPanel} right={resultPanel} />
+      <FaqSection items={FAQS} />
     </div>
   )
 }

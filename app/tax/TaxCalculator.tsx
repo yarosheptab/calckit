@@ -6,6 +6,30 @@ import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
 import { RelatedTools } from '@/components/tool/RelatedTools'
+import { FaqSection } from '@/components/tool/FaqSection'
+
+const FAQS = [
+  {
+    q: 'What are the 2024 US federal income tax brackets?',
+    a: 'For single filers: 10% up to $11,600; 12% up to $47,150; 22% up to $100,525; 24% up to $191,950; 32% up to $243,725; 35% up to $609,350; 37% above. For married filing jointly, thresholds are roughly double. These are marginal rates — each bracket only applies to the income within that range.',
+  },
+  {
+    q: 'What is the standard deduction for 2024?',
+    a: 'The 2024 standard deduction is $14,600 for single filers and $29,200 for married filing jointly. This amount is subtracted from your gross income before calculating tax. Most taxpayers take the standard deduction rather than itemizing because it\'s simpler and usually larger.',
+  },
+  {
+    q: 'What is the difference between effective and marginal tax rate?',
+    a: 'Your marginal tax rate is the rate applied to your last dollar of income — your top bracket. Your effective tax rate is total tax paid ÷ gross income — always lower because income in lower brackets is taxed at lower rates. On a $75,000 salary (single), the marginal rate is 22% but the effective rate is approximately 13.3%.',
+  },
+  {
+    q: 'Does this calculator include Social Security and Medicare taxes?',
+    a: 'No — this calculator estimates federal income tax only. FICA taxes (Social Security at 6.2% up to $168,600, and Medicare at 1.45% on all wages) are separate and not included here. State income taxes also vary from 0% (Texas, Florida) to over 13% (California). Your total tax burden is higher than the federal estimate shown.',
+  },
+  {
+    q: 'What is the marriage tax penalty?',
+    a: 'A marriage tax penalty occurs when two earners filing jointly pay more total tax than they would as two singles. This typically happens when both partners earn similar incomes and are pushed into higher combined brackets. The opposite — a marriage bonus — happens when one partner earns significantly more, as the lower-income partner\'s earnings are partially sheltered by the other\'s lower bracket space.',
+  },
+]
 
 type FilingStatus = 'single' | 'married'
 
@@ -115,6 +139,7 @@ export default function TaxPage() {
     <div className="bg-gray-50 min-h-screen">
       <ToolHeader title="Tax Estimator" description="Estimate your US federal income tax using 2024 brackets and standard deduction." />
       <TwoColLayout left={inputPanel} right={resultPanel} />
+      <FaqSection items={FAQS} />
     </div>
   )
 }

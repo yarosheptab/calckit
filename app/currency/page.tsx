@@ -41,6 +41,26 @@ const jsonLd = JSON.stringify({
         { '@type': 'ListItem', position: 2, name: 'Currency Converter', item: `${BASE}/currency` },
       ],
     },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How often are exchange rates updated?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Our rates are sourced from an open exchange-rate API and updated hourly. For real-time trading rates, use a dedicated forex platform.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the mid-market exchange rate?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The mid-market rate is the midpoint between buy and sell prices in the global currency market. Banks and services typically charge a markup above this rate.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why do banks give worse exchange rates?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Banks and airport kiosks add a markup (spread) of 1–5% on top of the mid-market rate. Services like Wise and Revolut are closer to the mid-market rate with a transparent fee.' },
+        },
+      ],
+    },
   ],
 })
 

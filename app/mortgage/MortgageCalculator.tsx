@@ -7,6 +7,30 @@ import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
+import { FaqSection } from '@/components/tool/FaqSection'
+
+const FAQS = [
+  {
+    q: 'What is the monthly payment on a $400,000 mortgage?',
+    a: 'At 6.5% interest over 30 years with a 20% down payment ($80,000), your loan is $320,000 and the monthly principal & interest payment is approximately $2,023. Property taxes, insurance, and PMI will increase your total monthly cost.',
+  },
+  {
+    q: 'How is a mortgage payment calculated?',
+    a: 'The formula is M = P × [r(1+r)^n] / [(1+r)^n − 1], where P is the loan amount, r is the monthly interest rate (annual rate ÷ 12), and n is the total number of payments (years × 12). This gives the fixed monthly principal + interest payment.',
+  },
+  {
+    q: 'How much house can I afford?',
+    a: 'A common guideline is the 28/36 rule: your monthly mortgage payment should not exceed 28% of gross monthly income, and total debt payments should not exceed 36%. For a $100,000 annual salary, that means a mortgage payment under ~$2,333/month.',
+  },
+  {
+    q: 'What is the difference between interest rate and APR?',
+    a: 'The interest rate is the base cost of borrowing the principal. APR (Annual Percentage Rate) includes the interest rate plus lender fees, points, and mortgage insurance — making it a more complete measure of the loan\'s true annual cost. APR is always equal to or higher than the interest rate.',
+  },
+  {
+    q: 'How much of my mortgage payment goes to interest vs principal?',
+    a: 'In the early years, most of your payment goes to interest. On a 30-year $300,000 loan at 6.5%, your first payment splits roughly $1,625 to interest and $271 to principal. Over time this flips: by year 25, most of each payment is principal. The amortization schedule shows this breakdown month by month.',
+  },
+]
 
 function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
@@ -151,6 +175,7 @@ export default function MortgagePage() {
     <div className="bg-gray-50 min-h-screen">
       <ToolHeader title="Mortgage Calculator" description="Estimate your monthly payment, total interest, and true cost of your loan." />
       <TwoColLayout left={inputPanel} right={resultPanel} />
+      <FaqSection items={FAQS} />
     </div>
   )
 }
