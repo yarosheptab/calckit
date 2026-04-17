@@ -6,6 +6,7 @@ import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
+import { calcROI } from '@/lib/calculators/roi'
 
 const FAQS = [
   {
@@ -51,13 +52,9 @@ export default function ROIPage() {
   useEffect(() => {
     if (timerRef.current) clearTimeout(timerRef.current)
     timerRef.current = setTimeout(() => {
-      const I = parseFloat(initial) || 0
-      const F = parseFloat(finalVal) || 0
-      const t = parseFloat(years) || 0
-      if (!I || !F) return
-      const roi = ((F - I) / I) * 100
-      const annualized = t > 0 ? (Math.pow(F / I, 1 / t) - 1) * 100 : roi
-      setResult({ roi, annualized, netProfit: F - I })
+      const result = calcROI(parseFloat(initial) || 0, parseFloat(finalVal) || 0, parseFloat(years) || 0)
+      if (!result) return
+      setResult(result)
     }, 150)
     return () => { if (timerRef.current) clearTimeout(timerRef.current) }
   }, [initial, finalVal, years])

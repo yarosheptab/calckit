@@ -8,6 +8,7 @@ import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
 import { FaqSection } from '@/components/tool/FaqSection'
+import { calcMortgage, calcMortgageExtras } from '@/lib/calculators/mortgage'
 
 const FAQS = [
   {
@@ -69,22 +70,17 @@ export default function MortgagePage() {
       const dp = downMode === '%'
         ? price * (parseFloat(downPayment) || 0) / 100
         : parseFloat(downPayment) || 0
-      const P = price - dp
-      const annualRate = (parseFloat(rate) || 0) / 100
-      const r = annualRate / 12
       const termMonths = termMode === 'yr'
         ? (parseFloat(term) || 0) * 12
         : parseFloat(term) || 0
-      if (P <= 0 || r <= 0 || termMonths <= 0) return
-      const monthly = (P * r * Math.pow(1 + r, termMonths)) / (Math.pow(1 + r, termMonths) - 1)
-      const totalCost = monthly * termMonths
-      const totalInterest = totalCost - P
-      const monthlyExtras =
-        (price * (parseFloat(propTax) || 0)) / 100 / 12 +
-        (parseFloat(hoa) || 0) +
-        (parseFloat(insurance) || 0) / 12 +
-        (P * (parseFloat(pmi) || 0)) / 100 / 12
-      setResult({ monthly, principal: P, totalInterest, totalCost, withExtras: monthly + monthlyExtras })
+      const core = calcMortgage({ homePrice: price, downPayment: dp, annualRate: parseFloat(rate) || 0, termMonths })
+      if (!core) return
+      const monthlyExtras = calcMortgageExtras(
+        price, core.principal,
+        parseFloat(propTax) || 0, parseFloat(hoa) || 0,
+        parseFloat(insurance) || 0, parseFloat(pmi) || 0,
+      )
+      setResult({ ...core, withExtras: core.monthly + monthlyExtras })
     }, 150)
     return () => { if (timerRef.current) clearTimeout(timerRef.current) }
   }, [homePrice, downPayment, downMode, rate, term, termMode, propTax, hoa, insurance, pmi])

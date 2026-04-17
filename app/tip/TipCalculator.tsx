@@ -7,6 +7,7 @@ import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
+import { calcTip } from '@/lib/calculators/tip'
 
 const FAQS = [
   {
@@ -55,13 +56,9 @@ export default function TipPage() {
   useEffect(() => {
     if (timerRef.current) clearTimeout(timerRef.current)
     timerRef.current = setTimeout(() => {
-      const b = parseFloat(bill) || 0
-      const t = (parseFloat(activeTipPct) || 0) / 100
-      const p = parseInt(people) || 1
-      if (!b || t < 0) return
-      const tipAmount = b * t
-      const total = b + tipAmount
-      setResult({ tipAmount, total, perPerson: total / p })
+      const result = calcTip(parseFloat(bill) || 0, parseFloat(activeTipPct) || 0, parseInt(people) || 1)
+      if (!result) return
+      setResult(result)
     }, 150)
     return () => { if (timerRef.current) clearTimeout(timerRef.current) }
   }, [bill, activeTipPct, people])

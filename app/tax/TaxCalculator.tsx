@@ -7,6 +7,7 @@ import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
+import { calcTax, type FilingStatus as TaxFilingStatus } from '@/lib/calculators/tax'
 
 const FAQS = [
   {
@@ -31,33 +32,7 @@ const FAQS = [
   },
 ]
 
-type FilingStatus = 'single' | 'married'
-
-const STANDARD_DEDUCTION: Record<FilingStatus, number> = { single: 14600, married: 29200 }
-
-const BRACKETS: Record<FilingStatus, [number, number][]> = {
-  single: [
-    [0.10, 11600], [0.12, 47150], [0.22, 100525],
-    [0.24, 191950], [0.32, 243725], [0.35, 609350], [0.37, Infinity],
-  ],
-  married: [
-    [0.10, 23200], [0.12, 94300], [0.22, 201050],
-    [0.24, 383900], [0.32, 487450], [0.35, 731200], [0.37, Infinity],
-  ],
-}
-
-function calcFederalTax(taxable: number, status: FilingStatus): number {
-  let tax = 0
-  let prev = 0
-  for (const [rate, upTo] of BRACKETS[status]) {
-    if (taxable <= prev) break
-    const chunk = Math.min(taxable, upTo) - prev
-    tax += chunk * rate
-    prev = upTo
-    if (upTo === Infinity) break
-  }
-  return Math.max(0, tax)
-}
+type FilingStatus = TaxFilingStatus
 
 function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
@@ -81,14 +56,9 @@ export default function TaxPage() {
   useEffect(() => {
     if (timerRef.current) clearTimeout(timerRef.current)
     timerRef.current = setTimeout(() => {
-      const gross = parseFloat(salary) || 0
-      if (!gross) return
-      const deduction = STANDARD_DEDUCTION[status]
-      const taxable = Math.max(0, gross - deduction)
-      const federalTax = calcFederalTax(taxable, status)
-      const effectiveRate = (federalTax / gross) * 100
-      const takeHomeAnnual = gross - federalTax
-      setResult({ federalTax, effectiveRate, takeHomeAnnual, takeHomeMonthly: takeHomeAnnual / 12 })
+      const result = calcTax(parseFloat(salary) || 0, status)
+      if (!result) return
+      setResult(result)
     }, 150)
     return () => { if (timerRef.current) clearTimeout(timerRef.current) }
   }, [salary, status])

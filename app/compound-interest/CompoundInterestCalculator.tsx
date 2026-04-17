@@ -8,6 +8,7 @@ import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
 import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
 import { FaqSection } from '@/components/tool/FaqSection'
+import { calcCompound, type CompoundFrequency } from '@/lib/calculators/compound'
 
 const FAQS = [
   {
@@ -32,8 +33,7 @@ const FAQS = [
   },
 ]
 
-type Frequency = 'Daily' | 'Monthly' | 'Annually'
-const freqMap: Record<Frequency, number> = { Daily: 365, Monthly: 12, Annually: 1 }
+type Frequency = CompoundFrequency
 
 function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
@@ -57,19 +57,15 @@ export default function CompoundInterestPage() {
   useEffect(() => {
     if (timerRef.current) clearTimeout(timerRef.current)
     timerRef.current = setTimeout(() => {
-      const P = parseFloat(principal) || 0
-      const r = (parseFloat(rate) || 0) / 100
-      const t = parseFloat(years) || 0
-      const n = freqMap[freq]
-      const pmt = parseFloat(contribution) || 0
-      if (!P || !r || !t) return
-      const fvPrincipal = P * Math.pow(1 + r / n, n * t)
-      const fvContrib = pmt > 0
-        ? pmt * ((Math.pow(1 + r / n, n * t) - 1) / (r / n))
-        : 0
-      const futureValue = fvPrincipal + fvContrib
-      const totalContributions = pmt * 12 * t
-      setResult({ futureValue, totalInterest: futureValue - P - totalContributions, totalContributions })
+      const result = calcCompound({
+        principal: parseFloat(principal) || 0,
+        annualRate: parseFloat(rate) || 0,
+        years: parseFloat(years) || 0,
+        freq,
+        monthlyContribution: parseFloat(contribution) || 0,
+      })
+      if (!result) return
+      setResult(result)
     }, 150)
     return () => { if (timerRef.current) clearTimeout(timerRef.current) }
   }, [principal, rate, years, freq, contribution])
