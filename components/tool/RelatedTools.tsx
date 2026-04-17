@@ -16,7 +16,7 @@ export function RelatedTools({ tools }: { tools: RelatedTool[] }) {
           <Link
             key={t.href}
             href={t.href}
-            className="text-sm font-medium text-gray-600 px-3.5 py-1.5 bg-white border border-gray-200 rounded-lg hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+            className="text-sm font-medium text-gray-600 px-3.5 py-1.5 bg-white border border-gray-200 rounded-lg hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-colors cursor-pointer"
           >
             {t.name}
           </Link>

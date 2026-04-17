@@ -104,7 +104,7 @@ export default function CurrencyPage() {
           <button
             onClick={swap}
             type="button"
-            className="self-start flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-blue-600 transition-colors"
+            className="self-start flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
           >
             <ArrowLeftRight className="w-4 h-4" /> Swap
           </button>

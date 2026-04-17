@@ -1,0 +1,114 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "calckit" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e4]: calckit
+    - generic [ref=e5]:
+      - link "Tools" [ref=e6] [cursor=pointer]:
+        - /url: /#tools
+      - link "Blog" [ref=e7] [cursor=pointer]:
+        - /url: /blog
+      - link "About" [ref=e8] [cursor=pointer]:
+        - /url: /about
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - link "calckit" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - text: / Mortgage Calculator
+        - heading "Mortgage Calculator" [level=1] [ref=e14]
+        - paragraph [ref=e15]: Estimate your monthly payment, total interest, and true cost of your loan.
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Your details
+            - generic [ref=e20]:
+              - generic [ref=e21]:
+                - generic [ref=e22]: Home Price
+                - generic [ref=e23]:
+                  - generic [ref=e24]: $
+                  - spinbutton "Home Price" [ref=e25]: "400000"
+              - generic [ref=e26]:
+                - generic [ref=e27]:
+                  - generic [ref=e28]: Down Payment
+                  - generic [ref=e29]:
+                    - button "%" [ref=e30]
+                    - button "$" [ref=e31]
+                - generic [ref=e33]:
+                  - spinbutton [ref=e34]: "20"
+                  - generic [ref=e35]: "%"
+              - generic [ref=e36]:
+                - generic [ref=e37]:
+                  - text: Interest Rate
+                  - generic [ref=e38]: "?"
+                - generic [ref=e39]:
+                  - spinbutton "Interest Rate ?" [ref=e40]: "6.5"
+                  - generic [ref=e41]: "%"
+              - generic [ref=e42]:
+                - generic [ref=e43]:
+                  - generic [ref=e44]: Loan Term
+                  - generic [ref=e45]:
+                    - button "yr" [ref=e46]
+                    - button "mo" [ref=e47]
+                - generic [ref=e49]:
+                  - spinbutton [ref=e50]: "30"
+                  - generic [ref=e51]: yr
+            - heading "Add taxes, insurance & PMI" [level=3] [ref=e54]:
+              - button "Add taxes, insurance & PMI" [ref=e55]:
+                - text: Add taxes, insurance & PMI
+                - img [ref=e56]
+          - generic [ref=e58]:
+            - text: Related tools
+            - generic [ref=e59]:
+              - link "Compound Interest" [ref=e60] [cursor=pointer]:
+                - /url: /compound-interest
+              - link "ROI Calculator" [ref=e61] [cursor=pointer]:
+                - /url: /roi
+              - link "Tax Estimator" [ref=e62] [cursor=pointer]:
+                - /url: /tax
+        - generic [ref=e64]: Enter your details to see the result.
+      - generic [ref=e65]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e66]
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - heading "What is the monthly payment on a $400,000 mortgage?" [level=3] [ref=e69]
+            - paragraph [ref=e70]: At 6.5% interest over 30 years with a 20% down payment ($80,000), your loan is $320,000 and the monthly principal & interest payment is approximately $2,023. Property taxes, insurance, and PMI will increase your total monthly cost.
+          - generic [ref=e71]:
+            - heading "How is a mortgage payment calculated?" [level=3] [ref=e72]
+            - paragraph [ref=e73]: The formula is M = P × [r(1+r)^n] / [(1+r)^n − 1], where P is the loan amount, r is the monthly interest rate (annual rate ÷ 12), and n is the total number of payments (years × 12). This gives the fixed monthly principal + interest payment.
+          - generic [ref=e74]:
+            - heading "How much house can I afford?" [level=3] [ref=e75]
+            - paragraph [ref=e76]: "A common guideline is the 28/36 rule: your monthly mortgage payment should not exceed 28% of gross monthly income, and total debt payments should not exceed 36%. For a $100,000 annual salary, that means a mortgage payment under ~$2,333/month."
+          - generic [ref=e77]:
+            - heading "What is the difference between interest rate and APR?" [level=3] [ref=e78]
+            - paragraph [ref=e79]: The interest rate is the base cost of borrowing the principal. APR (Annual Percentage Rate) includes the interest rate plus lender fees, points, and mortgage insurance — making it a more complete measure of the loan's true annual cost. APR is always equal to or higher than the interest rate.
+          - generic [ref=e80]:
+            - heading "How much of my mortgage payment goes to interest vs principal?" [level=3] [ref=e81]
+            - paragraph [ref=e82]: "In the early years, most of your payment goes to interest. On a 30-year $300,000 loan at 6.5%, your first payment splits roughly $1,625 to interest and $271 to principal. Over time this flips: by year 25, most of each payment is principal. The amortization schedule shows this breakdown month by month."
+  - contentinfo [ref=e83]:
+    - link "© 2026 Yaro Labs" [ref=e84] [cursor=pointer]:
+      - /url: https://yaro-labs.com
+    - generic [ref=e85]:
+      - link "Privacy" [ref=e86] [cursor=pointer]:
+        - /url: /privacy
+      - link "Terms" [ref=e87] [cursor=pointer]:
+        - /url: /terms
+      - link "Cookies" [ref=e88] [cursor=pointer]:
+        - /url: /cookies
+      - link "About" [ref=e89] [cursor=pointer]:
+        - /url: /about
+      - link "Blog" [ref=e90] [cursor=pointer]:
+        - /url: /blog
+  - button "Open Next.js Dev Tools" [ref=e96] [cursor=pointer]:
+    - img [ref=e97]
+  - alert [ref=e102]
+  - generic [ref=e104]:
+    - paragraph [ref=e105]:
+      - text: We use cookies to improve your experience.
+      - link "Cookie Policy" [ref=e106] [cursor=pointer]:
+        - /url: /cookies
+      - text: .
+    - generic [ref=e107]:
+      - button "Decline" [ref=e108] [cursor=pointer]
+      - button "Accept" [ref=e109] [cursor=pointer]

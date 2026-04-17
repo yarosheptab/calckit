@@ -234,7 +234,7 @@ export function CurrencySelect({ value, onChange, label }: CurrencySelectProps) 
           ref={triggerRef}
           type="button"
           onClick={() => open ? (setOpen(false), setSearch('')) : openDropdown()}
-          className="w-full h-11 flex items-center justify-between px-3 rounded-lg border border-gray-200 bg-white text-[15px] font-medium text-gray-900 hover:border-blue-400 focus:outline-none focus:border-blue-500 focus:ring-3 focus:ring-blue-500/10 transition-colors"
+          className="w-full h-11 flex items-center justify-between px-3 rounded-lg border border-gray-200 bg-white text-[15px] font-medium text-gray-900 hover:border-blue-400 focus:outline-none focus:border-blue-500 focus:ring-3 focus:ring-blue-500/10 transition-colors cursor-pointer"
         >
           <span>
             <span className="font-semibold">{value}</span>
@@ -267,7 +267,7 @@ export function CurrencySelect({ value, onChange, label }: CurrencySelectProps) 
                   key={c.code}
                   type="button"
                   onClick={() => { onChange(c.code); setOpen(false); setSearch('') }}
-                  className={`w-full flex items-center justify-between px-4 py-2.5 text-left hover:bg-blue-50 transition-colors ${c.code === value ? 'bg-blue-50' : ''}`}
+                  className={`w-full flex items-center justify-between px-4 py-2.5 text-left hover:bg-blue-50 transition-colors cursor-pointer ${c.code === value ? 'bg-blue-50' : ''}`}
                 >
                   <span className="flex items-center gap-3">
                     <span className="text-sm font-semibold text-gray-900 w-10 shrink-0">{c.code}</span>

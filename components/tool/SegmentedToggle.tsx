@@ -15,7 +15,7 @@ export function SegmentedToggle({ options, value, onChange }: SegmentedTogglePro
           type="button"
           onClick={() => onChange(opt)}
           className={cn(
-            'px-3 py-1.5 text-xs font-semibold rounded-md transition-all',
+            'px-3 py-1.5 text-xs font-semibold rounded-md transition-all cursor-pointer',
             value === opt
               ? 'bg-white text-gray-900 shadow-sm'
               : 'text-gray-400 hover:text-gray-600'

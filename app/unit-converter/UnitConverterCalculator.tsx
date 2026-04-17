@@ -118,7 +118,7 @@ export default function UnitConverterPage() {
                   type="button"
                   onClick={() => handleCategoryChange(cat)}
                   className={cn(
-                    'px-3.5 py-1.5 text-sm font-medium rounded-lg border transition-colors',
+                    'px-3.5 py-1.5 text-sm font-medium rounded-lg border transition-colors cursor-pointer',
                     category === cat
                       ? 'bg-blue-600 text-white border-blue-600'
                       : 'bg-white text-gray-600 border-gray-200 hover:border-blue-400 hover:text-blue-600'
