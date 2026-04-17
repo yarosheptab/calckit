@@ -8,7 +8,7 @@ export function ogImageMarkup(title: string, subtitle: string) {
         display: 'flex',
         flexDirection: 'column',
         padding: '72px 80px',
-        fontFamily: 'system-ui, sans-serif',
+        fontFamily: 'sans-serif',
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: 'auto' }}>
