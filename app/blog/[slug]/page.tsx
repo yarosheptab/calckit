@@ -95,22 +95,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
             {/* Prose content — HTML from static markdown files in /content/blog */}
             <div className="px-8 py-10">
-              <div
-                className="prose prose-gray prose-sm sm:prose-base max-w-none
-                  prose-headings:font-bold prose-headings:tracking-tight
-                  prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4
-                  prose-h3:text-base prose-h3:mt-6 prose-h3:mb-3
-                  prose-p:text-gray-700 prose-p:leading-relaxed
-                  prose-a:text-blue-600 prose-a:font-medium prose-a:no-underline hover:prose-a:underline
-                  prose-strong:text-gray-900
-                  prose-table:text-sm
-                  prose-th:font-semibold prose-th:text-gray-700
-                  prose-td:text-gray-600
-                  prose-blockquote:border-blue-400 prose-blockquote:not-italic
-                  prose-code:bg-gray-100 prose-code:text-gray-800 prose-code:rounded prose-code:px-1 prose-code:text-[13px] prose-code:before:content-none prose-code:after:content-none
-                  prose-li:text-gray-700"
-                dangerouslySetInnerHTML={{ __html: postHtml }}
-              />
+              <div className="blog-prose" dangerouslySetInnerHTML={{ __html: postHtml }} />
             </div>
 
             {/* CTA */}

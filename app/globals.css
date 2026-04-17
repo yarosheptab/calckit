@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@plugin "@tailwindcss/typography";
 
 @theme {
   --font-sans: var(--font-inter), 'Inter', sans-serif;
@@ -16,6 +15,142 @@ body {
 }
 
 input, select, button { font-family: inherit; }
+
+/* Blog article prose */
+.blog-prose {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #374151;
+}
+.blog-prose h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.blog-prose h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.blog-prose h4 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+.blog-prose p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+.blog-prose a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+.blog-prose a:hover {
+  text-decoration: underline;
+}
+.blog-prose strong {
+  font-weight: 700;
+  color: #111827;
+}
+.blog-prose em {
+  font-style: italic;
+}
+.blog-prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.blog-prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.blog-prose li {
+  margin-bottom: 0.35rem;
+}
+.blog-prose li > ul,
+.blog-prose li > ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+.blog-prose blockquote {
+  border-left: 3px solid #3b82f6;
+  background: #eff6ff;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #1e40af;
+  font-style: normal;
+}
+.blog-prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+.blog-prose code {
+  background: #f3f4f6;
+  color: #1f2937;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8125rem;
+  padding: 0.15em 0.4em;
+  border-radius: 0.25rem;
+}
+.blog-prose pre {
+  background: #1f2937;
+  color: #f9fafb;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.blog-prose pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+}
+.blog-prose hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
+.blog-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 1.5rem 0;
+}
+.blog-prose thead {
+  background: #f9fafb;
+}
+.blog-prose th {
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  padding: 0.625rem 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+.blog-prose td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  color: #4b5563;
+}
+.blog-prose tr:last-child td {
+  border-bottom: none;
+}
+.blog-prose img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
 
 @keyframes accordion-down {
   from { height: 0; overflow: hidden; }
