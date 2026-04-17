@@ -11,12 +11,13 @@ interface FieldInputProps {
   placeholder?: string
   type?: string
   min?: string
+  max?: string
   step?: string
   id?: string
 }
 
 export default function FieldInput({
-  label, value, onChange, prefix, suffix, tooltip, placeholder, type = 'number', min, step, id,
+  label, value, onChange, prefix, suffix, tooltip, placeholder, type = 'number', min, max, step, id,
 }: FieldInputProps) {
   return (
     <div className="flex flex-col gap-1.5">
@@ -37,6 +38,7 @@ export default function FieldInput({
           onChange={e => onChange(e.target.value)}
           placeholder={placeholder}
           min={min}
+          max={max}
           step={step}
           className="flex-1 px-3 h-full text-[15px] font-medium text-gray-900 bg-transparent outline-none"
         />
