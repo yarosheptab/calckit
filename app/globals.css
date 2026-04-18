@@ -122,14 +122,19 @@ input, select, button { font-family: inherit; }
   border-top: 1px solid #e5e7eb;
   margin: 2rem 0;
 }
-.blog-prose table {
-  display: block;
+.blog-prose .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+.blog-prose table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.875rem;
-  margin: 1.5rem 0;
+  margin: 0;
+  border: none;
 }
 .blog-prose thead {
   background: #f9fafb;

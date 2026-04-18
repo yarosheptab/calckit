@@ -57,7 +57,9 @@ export function getPostBySlug(slug: string): Post | null {
   if (!fs.existsSync(filePath)) return null
   const raw = fs.readFileSync(filePath, 'utf8')
   const { data, content } = matter(raw)
-  const html = marked.parse(content) as string
+  const html = (marked.parse(content) as string)
+    .replace(/<table>/g, '<div class="table-scroll"><table>')
+    .replace(/<\/table>/g, '</table></div>')
   return {
     slug,
     title: data.title ?? '',
