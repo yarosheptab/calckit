@@ -98,6 +98,12 @@ export default function HomePage() {
           <a href="https://fazier.com/launches/calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
             <Image src="https://fazier.com/api/v1/public/badges/launch_badges.svg?badge_type=launched&theme=light" alt="Launched on Fazier" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
           </a>
+          <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://twelve.tools/badge0-light.svg" alt="Featured on Twelve Tools" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
+          <a href="https://findly.tools" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on Findly Tools" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
         </div>
       </section>
     </div>
