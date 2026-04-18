@@ -1,18 +1,20 @@
+import { EVERYDAY_TOOLS, FINANCE_TOOLS, HEALTH_TOOLS, type Tool } from '@/lib/tools'
 import Link from 'next/link'
 import { HeroWidget } from './_components/HeroWidget'
-import { FINANCE_TOOLS, HEALTH_TOOLS, EVERYDAY_TOOLS, type Tool } from '@/lib/tools'
 
 function ToolCard({ tool }: { tool: Tool }) {
   const Icon = tool.icon
   return (
     <Link href={tool.href} className="no-underline group">
-      <div className="bg-white border border-gray-200 rounded-xl p-5 transition-colors hover:border-blue-300 hover:shadow-sm">
+      <div className="flex flex-col bg-white border h-full border-gray-200 rounded-xl p-5 transition-colors hover:border-blue-300 hover:shadow-sm">
         <div className={`inline-flex items-center justify-center w-8 h-8 rounded-lg ${tool.iconBg} mb-3`}>
           <Icon className={`w-4 h-4 ${tool.iconColor}`} />
         </div>
         <div className="text-[15px] font-bold text-gray-900 mb-1">{tool.name}</div>
         <div className="text-[13px] text-gray-400 leading-relaxed mb-3">{tool.desc}</div>
-        <span className="text-xs font-semibold text-blue-600">Open →</span>
+        <div className="flex-1 flex items-end">
+          <span className="text-xs font-semibold text-blue-600">Open →</span>
+        </div>
       </div>
     </Link>
   )
