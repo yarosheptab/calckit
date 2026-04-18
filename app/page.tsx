@@ -89,6 +89,9 @@ export default function HomePage() {
           <a href="https://toolfio.com" target="_blank" rel="dofollow noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
             <Image src="https://toolfio.com/toolfio-light-badge.png" alt="Featured on Toolfio" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
           </a>
+          <a href="https://launchigniter.com/product/calckit?ref=badge-calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://launchigniter.com/api/badge/calckit?theme=light" alt="Featured on LaunchIgniter" width={212} height={55} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
         </div>
       </section>
     </div>
