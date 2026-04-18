@@ -1,8 +1,8 @@
+import { findToolForPost, getAllPosts, getPostBySlug, getRelatedPosts } from '@/lib/blog'
+import { ArrowRight, CalendarDays, ChevronRight } from 'lucide-react'
 import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { ChevronRight, ArrowRight, CalendarDays } from 'lucide-react'
-import { getAllPosts, getPostBySlug, findToolForPost, getRelatedPosts } from '@/lib/blog'
+import { notFound } from 'next/navigation'
 
 const BASE = 'https://calckit.yaro-labs.com'
 
@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </div>
 
             {/* Prose content — HTML from static markdown files in /content/blog */}
-            <div className="px-8 py-10">
+            <div className="px-8 pb-10 pt-0">
               <div className="blog-prose" dangerouslySetInnerHTML={{ __html: postHtml }} />
             </div>
 

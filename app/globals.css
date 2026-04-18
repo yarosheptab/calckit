@@ -123,6 +123,9 @@ input, select, button { font-family: inherit; }
   margin: 2rem 0;
 }
 .blog-prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
   border-collapse: collapse;
   font-size: 0.875rem;
