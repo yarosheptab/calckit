@@ -86,6 +86,9 @@ export default function HomePage() {
           <a href="https://open-launch.com/projects/calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
             <Image src="https://open-launch.com/api/badge/4a847206-9c28-45b0-a30f-f23329190ed1/featured-light.svg" alt="Featured on Open-Launch" width={200} height={50} unoptimized style={{ height: 40, width: 'auto' }} />
           </a>
+          <a href="https://toolfio.com" target="_blank" rel="dofollow noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://toolfio.com/toolfio-light-badge.png" alt="Featured on Toolfio" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
         </div>
       </section>
     </div>
