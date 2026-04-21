@@ -113,6 +113,18 @@ export default function HomePage() {
           <a href="https://dang.ai" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
             <Image src="https://dang.ai/badge.png" alt="Featured on Dang.ai" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
           </a>
+          <a href="https://toolfame.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://toolfame.com/badge-light.svg" alt="Featured on ToolFame" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
+          <a href="https://saasfame.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://saasfame.com/badge-light.svg" alt="Featured on SaaSFame" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
+          <a href="https://productfame.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://productfame.com/badges/featured-light.svg" alt="Featured on ProductFame" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
+          <a href="https://dofollow.tools" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
         </div>
       </section>
     </div>
