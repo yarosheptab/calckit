@@ -104,6 +104,9 @@ export default function HomePage() {
           <a href="https://findly.tools/calckit?utm_source=calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
             <Image src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on Findly Tools" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
           </a>
+          <a href="https://acidtools.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <Image src="https://acidtools.com/assets/images/badge.png" alt="Acid Tools" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+          </a>
         </div>
       </section>
     </div>
