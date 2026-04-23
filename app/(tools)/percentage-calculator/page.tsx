@@ -4,6 +4,7 @@ import PercentageCalculator from './PercentageCalculator'
 export const metadata: Metadata = {
   title: 'Percentage Calculator — % Of, What %, & % Change',
   description: 'Calculate percentages instantly: find X% of a number, what percentage one number is of another, or the percentage change between two values.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/percentage-calculator' },
   keywords: ['percentage calculator', 'percent calculator', 'percent change calculator', 'percentage increase calculator', 'what percent of calculator'],
   openGraph: {
     title: 'Percentage Calculator — % Of, What %, & % Change',

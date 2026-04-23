@@ -4,6 +4,7 @@ import BodyFatCalculator from './BodyFatCalculator'
 export const metadata: Metadata = {
   title: 'Body Fat Calculator — US Navy Method',
   description: 'Calculate your body fat percentage using the US Navy method. Enter height, waist, and neck measurements for an accurate body fat estimate without equipment.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/body-fat-calculator' },
   keywords: ['body fat calculator', 'body fat percentage calculator', 'navy body fat calculator', 'how to calculate body fat', 'body fat percentage chart'],
   openGraph: {
     title: 'Body Fat Calculator — US Navy Method',

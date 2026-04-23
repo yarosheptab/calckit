@@ -4,6 +4,7 @@ import TipCalculator from './TipCalculator'
 export const metadata: Metadata = {
   title: 'Tip Calculator — Split Bill & Calculate Gratuity',
   description: 'Calculate tip amounts and split the bill between multiple people. Enter your total, tip %, and number of people.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/tip-calculator' },
   keywords: ['tip calculator', 'bill splitter', 'split bill calculator', 'restaurant tip calculator', 'gratuity calculator'],
   openGraph: {
     title: 'Tip Calculator — Split Bill & Calculate Gratuity',

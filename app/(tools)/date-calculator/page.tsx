@@ -4,6 +4,7 @@ import DateCalculator from './DateCalculator'
 export const metadata: Metadata = {
   title: 'Date Calculator — Days Between Dates & Date Math',
   description: 'Calculate the number of days between two dates, or add and subtract days from a date. Includes weeks, months, and workday estimates.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/date-calculator' },
   keywords: ['date calculator', 'days between dates', 'days until calculator', 'date difference calculator', 'add days to date calculator'],
   openGraph: {
     title: 'Date Calculator — Days Between Dates & Date Math',

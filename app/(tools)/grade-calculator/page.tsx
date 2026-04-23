@@ -4,6 +4,7 @@ import GradeCalculator from './GradeCalculator'
 export const metadata: Metadata = {
   title: 'Grade Calculator — Final Exam, Weighted Average & GPA',
   description: 'Calculate what grade you need on your final exam, your weighted course average, or your GPA. Free grade and GPA calculator for students.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/grade-calculator' },
   keywords: ['grade calculator', 'final grade calculator', 'what grade do i need', 'gpa calculator', 'weighted grade calculator'],
   openGraph: {
     title: 'Grade Calculator — Final Exam, Weighted Average & GPA',

@@ -4,6 +4,7 @@ import MortgageCalculator from './MortgageCalculator'
 export const metadata: Metadata = {
   title: 'Mortgage Calculator — Monthly Payment & Amortization',
   description: 'Calculate monthly mortgage payments, total interest, and amortization. Enter loan amount, rate, and term — get instant results.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/mortgage-calculator' },
   keywords: ['mortgage calculator', 'monthly payment calculator', 'home loan calculator', 'mortgage payment', 'amortization calculator'],
   openGraph: {
     title: 'Mortgage Calculator — Monthly Payment & Amortization',

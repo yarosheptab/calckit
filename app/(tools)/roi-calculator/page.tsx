@@ -4,6 +4,7 @@ import ROICalculator from './ROICalculator'
 export const metadata: Metadata = {
   title: 'ROI Calculator — Return on Investment & Annualized Return',
   description: 'Calculate return on investment (ROI %) and annualized return for any investment. Enter initial value, final value, and time period.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/roi-calculator' },
   keywords: ['ROI calculator', 'return on investment', 'investment ROI', 'annualized return', 'profit calculator'],
   openGraph: {
     title: 'ROI Calculator — Return on Investment & Annualized Return',

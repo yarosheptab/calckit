@@ -4,6 +4,7 @@ import UnitConverterCalculator from './UnitConverterCalculator'
 export const metadata: Metadata = {
   title: 'Unit Converter — Length, Weight, Temperature, Data',
   description: 'Convert between units of length, weight, temperature, and data storage. Instant conversions, no signup.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/unit-converter' },
   keywords: ['unit converter', 'length converter', 'weight converter', 'temperature converter', 'data storage converter', 'metric imperial converter'],
   openGraph: {
     title: 'Unit Converter — Length, Weight, Temperature, Data',

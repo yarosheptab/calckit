@@ -4,6 +4,7 @@ import InflationCalculator from './InflationCalculator'
 export const metadata: Metadata = {
   title: 'Inflation Calculator — Adjust for Inflation & Purchasing Power',
   description: 'Calculate the inflation-adjusted value of money over time. See what $1,000 from any past year is worth today, or find the implied inflation rate.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/inflation-calculator' },
   keywords: ['inflation calculator', 'purchasing power calculator', 'cpi calculator', 'dollar value over time', 'inflation adjusted calculator'],
   openGraph: {
     title: 'Inflation Calculator — Adjust for Inflation & Purchasing Power',

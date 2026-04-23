@@ -4,6 +4,7 @@ import CalorieCalculator from './CalorieCalculator'
 export const metadata: Metadata = {
   title: 'Calorie Calculator — Daily Calories & TDEE',
   description: 'Calculate your daily calorie needs (TDEE) based on age, weight, height, and activity level. Find your maintenance, weight loss, and weight gain calorie targets.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/calorie-calculator' },
   keywords: ['calorie calculator', 'tdee calculator', 'daily calorie calculator', 'calories to lose weight', 'bmr calculator'],
   openGraph: {
     title: 'Calorie Calculator — Daily Calories & TDEE',

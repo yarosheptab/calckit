@@ -4,6 +4,7 @@ import CurrencyConverter from './CurrencyConverter'
 export const metadata: Metadata = {
   title: 'Currency Converter — Live Exchange Rates, 170+ Currencies',
   description: 'Convert between 170+ currencies with live exchange rates. Updated hourly. No account needed.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/currency-converter' },
   keywords: ['currency converter', 'exchange rate', 'live currency rates', 'forex converter', 'money converter online'],
   openGraph: {
     title: 'Currency Converter — Live Exchange Rates, 170+ Currencies',

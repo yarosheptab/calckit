@@ -4,6 +4,7 @@ import TaxCalculator from './TaxCalculator'
 export const metadata: Metadata = {
   title: 'Income Tax Calculator 2025 — US Federal Brackets',
   description: 'Estimate your 2025 US federal income tax based on gross salary and filing status. Uses current tax brackets.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/tax-calculator' },
   keywords: ['tax calculator', 'income tax calculator', '2025 tax brackets', 'US federal tax', 'take-home pay calculator'],
   openGraph: {
     title: 'Income Tax Calculator 2025 — US Federal Brackets',

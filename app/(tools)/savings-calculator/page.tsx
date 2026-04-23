@@ -4,6 +4,7 @@ import SavingsCalculator from './SavingsCalculator'
 export const metadata: Metadata = {
   title: 'Savings Calculator — Monthly Savings & Goal Planner',
   description: 'Calculate how much to save each month to reach your goal, or project your final savings balance. Includes compound interest and current savings.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/savings-calculator' },
   keywords: ['savings calculator', 'savings goal calculator', 'how much to save calculator', 'monthly savings calculator', 'compound savings calculator'],
   openGraph: {
     title: 'Savings Calculator — Monthly Savings & Goal Planner',

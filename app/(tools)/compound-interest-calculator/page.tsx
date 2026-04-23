@@ -4,6 +4,7 @@ import CompoundInterestCalculator from './CompoundInterestCalculator'
 export const metadata: Metadata = {
   title: 'Compound Interest Calculator — Future Value & Growth',
   description: 'Calculate how investments grow with compound interest. Choose annual, monthly, or daily compounding — see future value and interest earned.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/compound-interest-calculator' },
   keywords: ['compound interest calculator', 'investment calculator', 'interest calculator', 'future value calculator', 'compounding frequency'],
   openGraph: {
     title: 'Compound Interest Calculator — Future Value & Growth',

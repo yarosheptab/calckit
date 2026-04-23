@@ -4,6 +4,7 @@ import BmiCalculator from './BmiCalculator'
 export const metadata: Metadata = {
   title: 'BMI Calculator — Body Mass Index for Adults',
   description: 'Calculate your BMI (Body Mass Index) instantly. Supports metric and imperial units. See your BMI category, healthy weight range, and what your score means.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/bmi-calculator' },
   keywords: ['bmi calculator', 'body mass index calculator', 'bmi calculator metric', 'bmi calculator imperial', 'healthy bmi range'],
   openGraph: {
     title: 'BMI Calculator — Body Mass Index for Adults',

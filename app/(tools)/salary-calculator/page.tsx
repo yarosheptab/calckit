@@ -4,6 +4,7 @@ import SalaryCalculator from './SalaryCalculator'
 export const metadata: Metadata = {
   title: 'Salary to Hourly Calculator — Convert Any Pay Period',
   description: 'Convert salary to hourly rate or any pay period instantly. Enter annual, monthly, weekly, or hourly pay to see all equivalent rates.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/salary-calculator' },
   keywords: ['salary to hourly calculator', 'hourly to salary calculator', 'salary calculator', 'pay period converter', 'annual salary calculator'],
   openGraph: {
     title: 'Salary to Hourly Calculator — Convert Any Pay Period',

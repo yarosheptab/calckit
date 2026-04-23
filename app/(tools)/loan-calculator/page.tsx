@@ -4,6 +4,7 @@ import LoanCalculator from './LoanCalculator'
 export const metadata: Metadata = {
   title: 'Loan Calculator — Monthly Payment & Total Interest',
   description: 'Calculate monthly loan payments and total interest for any personal, auto, or student loan. Enter loan amount, interest rate, and term for instant results.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/loan-calculator' },
   keywords: ['loan calculator', 'personal loan calculator', 'loan payment calculator', 'monthly payment calculator', 'auto loan calculator'],
   openGraph: {
     title: 'Loan Calculator — Monthly Payment & Total Interest',

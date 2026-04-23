@@ -4,6 +4,7 @@ import DebtCalculator from './DebtCalculator'
 export const metadata: Metadata = {
   title: 'Debt Payoff Calculator — Credit Card & Loan Payoff',
   description: 'Calculate how long to pay off any debt and total interest paid. Find the monthly payment needed to become debt-free by a target date.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/debt-payoff-calculator' },
   keywords: ['debt payoff calculator', 'credit card payoff calculator', 'debt snowball calculator', 'debt avalanche calculator', 'how long to pay off debt'],
   openGraph: {
     title: 'Debt Payoff Calculator — Credit Card & Loan Payoff',

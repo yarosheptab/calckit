@@ -4,6 +4,7 @@ import AgeCalculator from './AgeCalculator'
 export const metadata: Metadata = {
   title: 'Age Calculator — How Old Am I in Years, Months & Days',
   description: "Calculate your exact age in years, months, and days. Find out how many days and weeks you've been alive, and when your next birthday is.",
+  alternates: { canonical: 'https://calckit.yaro-labs.com/age-calculator' },
   keywords: ['age calculator', 'how old am i', 'age in days calculator', 'days old calculator', 'birthday calculator'],
   openGraph: {
     title: 'Age Calculator — How Old Am I in Years, Months & Days',

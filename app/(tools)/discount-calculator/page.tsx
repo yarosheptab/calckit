@@ -4,6 +4,7 @@ import DiscountCalculator from './DiscountCalculator'
 export const metadata: Metadata = {
   title: 'Discount Calculator — Percent Off & Sale Price',
   description: 'Calculate sale price after a discount, find what percentage off an item is, or work out the original price. Free online discount calculator.',
+  alternates: { canonical: 'https://calckit.yaro-labs.com/discount-calculator' },
   keywords: ['discount calculator', 'percent off calculator', 'sale price calculator', 'percentage discount calculator', 'how much is X percent off'],
   openGraph: {
     title: 'Discount Calculator — Percent Off & Sale Price',
