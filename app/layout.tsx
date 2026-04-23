@@ -14,6 +14,7 @@ const siteTitle = 'calckit — Free Online Calculators'
 const siteDescription = 'Calculators — Mortgage, Compound Interest, ROI, Currency Converter, Unit Converter, Tip Calculator, Tax Estimator. Free, no account needed.'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://calckit.yaro-labs.com'),
   title: {
     default: siteTitle,
     template: '%s — calckit',
