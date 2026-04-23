@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcLoan, LoanResult } from '@/lib/calculators/loan'
 import { TOOL } from '@/lib/tools'
@@ -37,7 +36,6 @@ function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 })
 }
 
-const RELATED = [TOOL.mortgage, TOOL.debt, TOOL.savings, TOOL.percentage]
 
 export default function LoanCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [loanAmount, setLoanAmount] = useState('10000')
@@ -80,7 +78,6 @@ export default function LoanCalculator({ pageTitle }: { pageTitle?: string } = {
           </div>
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

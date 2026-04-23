@@ -4,7 +4,6 @@ import ToolHeader from '@/components/tool/ToolHeader'
 import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 import { FaqSection } from '@/components/tool/FaqSection'
@@ -68,7 +67,6 @@ const units: Record<Category, { label: string; toBase: (v: number) => number; fr
 
 const CATEGORIES: Category[] = ['Length', 'Weight', 'Temperature', 'Data']
 
-const RELATED = [TOOL.currency, TOOL.percentage]
 
 export default function UnitConverterPage() {
   const [category, setCategory] = useState<Category>('Length')
@@ -152,7 +150,6 @@ export default function UnitConverterPage() {
           </div>
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

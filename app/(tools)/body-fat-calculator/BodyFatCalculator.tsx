@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcBodyFatMetric, calcBodyFatImperial, BodyFatResult } from '@/lib/calculators/bodyfat'
 import { TOOL } from '@/lib/tools'
@@ -33,7 +32,6 @@ const FAQS = [
   },
 ]
 
-const RELATED = [TOOL.bmi, TOOL.calorie, TOOL.unitConverter]
 
 const UNITS = ['Metric', 'Imperial']
 const SEXES = ['Male', 'Female']
@@ -136,7 +134,6 @@ export default function BodyFatCalculator({ pageTitle }: { pageTitle?: string } 
           )}
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

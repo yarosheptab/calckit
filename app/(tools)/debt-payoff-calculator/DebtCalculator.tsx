@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcDebtPayoff, calcRequiredPayment } from '@/lib/calculators/debt'
 import { TOOL } from '@/lib/tools'
@@ -53,7 +52,6 @@ function addMonths(date: Date, months: number): string {
 }
 
 const MODES = ['Payoff Timeline', 'Required Payment']
-const RELATED = [TOOL.loan, TOOL.savings, TOOL.mortgage, TOOL.salary]
 
 export default function DebtCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState('Payoff Timeline')
@@ -134,7 +132,6 @@ export default function DebtCalculator({ pageTitle }: { pageTitle?: string } = {
           )}
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

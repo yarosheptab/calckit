@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcMortgage, calcMortgageExtras } from '@/lib/calculators/mortgage'
@@ -38,7 +37,6 @@ function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 }
 
-const RELATED = [TOOL.loan, TOOL.compoundInterest, TOOL.tax, TOOL.debt, TOOL.salary]
 
 export default function MortgagePage({ pageTitle }: { pageTitle?: string } = {}) {
   const [homePrice, setHomePrice] = useState('400000')
@@ -138,7 +136,6 @@ export default function MortgagePage({ pageTitle }: { pageTitle?: string } = {})
           </AccordionItem>
         </Accordion>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

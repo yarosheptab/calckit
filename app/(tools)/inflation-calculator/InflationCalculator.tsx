@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcInflation, calcImpliedInflation } from '@/lib/calculators/inflation'
 import { TOOL } from '@/lib/tools'
@@ -34,7 +33,6 @@ const FAQS = [
 ]
 
 const MODES = ['Adjust for Inflation', 'Find Rate']
-const RELATED = [TOOL.compoundInterest, TOOL.roi, TOOL.savings, TOOL.currency]
 
 function fmtUSD(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
@@ -131,7 +129,6 @@ export default function InflationCalculator({ pageTitle }: { pageTitle?: string 
             <FieldInput label="Annual Inflation Rate" suffix="%" value={rate} onChange={setRate} id="rate" />
           </div>
         </div>
-        <RelatedTools tools={RELATED} />
       </>
     )
 
@@ -173,7 +170,6 @@ export default function InflationCalculator({ pageTitle }: { pageTitle?: string 
             <FieldInput label="Number of Years" suffix="years" value={years} onChange={setYears} id="years" />
           </div>
         </div>
-        <RelatedTools tools={RELATED} />
       </>
     )
 

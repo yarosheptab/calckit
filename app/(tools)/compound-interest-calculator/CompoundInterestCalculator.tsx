@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcCompound, type CompoundFrequency } from '@/lib/calculators/compound'
@@ -40,7 +39,6 @@ function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 }
 
-const RELATED = [TOOL.savings, TOOL.roi, TOOL.inflation]
 
 export default function CompoundInterestPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [principal, setPrincipal] = useState('10000')
@@ -92,7 +90,6 @@ export default function CompoundInterestPage({ pageTitle }: { pageTitle?: string
           </AccordionItem>
         </Accordion>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

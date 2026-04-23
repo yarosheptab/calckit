@@ -5,7 +5,6 @@ import ToolHeader from '@/components/tool/ToolHeader'
 import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { CurrencySelect } from './CurrencySelect'
 import { TOOL } from '@/lib/tools'
@@ -35,7 +34,6 @@ const FAQS = [
 
 const COMMON_PAIRS = ['GBP', 'JPY', 'CAD']
 
-const RELATED = [TOOL.unitConverter, TOOL.percentage, TOOL.tip, TOOL.discount]
 
 export default function CurrencyPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [rates, setRates] = useState<Record<string, number> | null>(null)
@@ -109,7 +107,6 @@ export default function CurrencyPage({ pageTitle }: { pageTitle?: string } = {})
           <CurrencySelect label="To" value={to} onChange={setTo} />
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcTip } from '@/lib/calculators/tip'
 import { TOOL } from '@/lib/tools'
@@ -38,7 +37,6 @@ function fmt(n: number) {
 }
 
 const TIP_PRESETS = ['10', '15', '18', '20', 'Custom']
-const RELATED = [TOOL.percentage, TOOL.discount, TOOL.currency]
 
 export default function TipPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [bill, setBill] = useState('50')
@@ -79,7 +77,6 @@ export default function TipPage({ pageTitle }: { pageTitle?: string } = {}) {
           <FieldInput label="Number of People" value={people} onChange={setPeople} id="people" />
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcPercentOf, calcWhatPercent, calcPercentChange } from '@/lib/calculators/percentage'
 import { TOOL } from '@/lib/tools'
@@ -36,7 +35,6 @@ const FAQS = [
 const MODES = ['% of', 'What %', '% change'] as const
 type Mode = typeof MODES[number]
 
-const RELATED = [TOOL.discount, TOOL.tip, TOOL.tax]
 
 export default function PercentageCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState<Mode>('% of')
@@ -125,7 +123,6 @@ export default function PercentageCalculator({ pageTitle }: { pageTitle?: string
           )}
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

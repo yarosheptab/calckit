@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcMonthlySavings, calcSavingsProjection } from '@/lib/calculators/savings'
 import { TOOL } from '@/lib/tools'
@@ -39,7 +38,6 @@ function fmt(n: number) {
 
 const MODES = ['Reach a Goal', 'Project Savings']
 
-const RELATED = [TOOL.compoundInterest, TOOL.inflation, TOOL.loan, TOOL.percentage]
 
 export default function SavingsCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState('Reach a Goal')
@@ -160,7 +158,6 @@ export default function SavingsCalculator({ pageTitle }: { pageTitle?: string } 
         <SegmentedToggle options={MODES} value={mode} onChange={setMode} />
       </div>
       {mode === 'Reach a Goal' ? inputPanelA : inputPanelB}
-      <RelatedTools tools={RELATED} />
     </>
   )
 

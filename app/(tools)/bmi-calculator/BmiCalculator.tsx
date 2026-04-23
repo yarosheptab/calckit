@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcBmiMetric, calcBmiImperial, BmiResult } from '@/lib/calculators/bmi'
 import { TOOL } from '@/lib/tools'
@@ -33,7 +32,6 @@ const FAQS = [
   },
 ]
 
-const RELATED = [TOOL.calorie, TOOL.bodyFat, TOOL.unitConverter]
 
 const UNITS = ['Metric', 'Imperial']
 
@@ -95,7 +93,6 @@ export default function BmiCalculator({ pageTitle }: { pageTitle?: string } = {}
           )}
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

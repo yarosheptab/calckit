@@ -52,3 +52,9 @@ export const ALL_TOOLS: Tool[] = [...EVERYDAY_TOOLS, ...FINANCE_TOOLS, ...HEALTH
   _seen.add(t.href)
   return true
 })
+
+export function getRelatedTools(href: string, count = 3): Tool[] {
+  const groups = [FINANCE_TOOLS, HEALTH_TOOLS, EVERYDAY_TOOLS]
+  const group = groups.find(g => g.some(t => t.href === href)) ?? ALL_TOOLS
+  return group.filter(t => t.href !== href).slice(0, count)
+}

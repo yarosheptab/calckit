@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcRequiredGrade, calcWeightedGrade, calcGPA } from '@/lib/calculators/grade'
 import { TOOL } from '@/lib/tools'
@@ -36,7 +35,6 @@ const FAQS = [
   },
 ]
 
-const RELATED = [TOOL.percentage, TOOL.savings]
 
 function letterGrade(score: number): string {
   if (score >= 93) return 'A'
@@ -240,7 +238,6 @@ export default function GradeCalculator({ pageTitle }: { pageTitle?: string } = 
         {mode === 'Weighted Avg' && weightedAvgPanel}
         {mode === 'GPA' && gpaPanel}
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

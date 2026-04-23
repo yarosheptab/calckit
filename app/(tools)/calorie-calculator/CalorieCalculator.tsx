@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcCalories, calcCaloriesImperial, CalorieResult, ActivityLevel } from '@/lib/calculators/calorie'
 import { TOOL } from '@/lib/tools'
@@ -33,7 +32,6 @@ const FAQS = [
   },
 ]
 
-const RELATED = [TOOL.bmi, TOOL.bodyFat, TOOL.unitConverter]
 
 const UNITS = ['Metric', 'Imperial']
 const SEXES = ['Male', 'Female']
@@ -130,7 +128,6 @@ export default function CalorieCalculator({ pageTitle }: { pageTitle?: string } 
           </div>
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

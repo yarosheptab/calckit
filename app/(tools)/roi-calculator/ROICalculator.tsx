@@ -4,7 +4,6 @@ import ToolHeader from '@/components/tool/ToolHeader'
 import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcROI } from '@/lib/calculators/roi'
 import { TOOL } from '@/lib/tools'
@@ -37,7 +36,6 @@ function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 }
 
-const RELATED = [TOOL.compoundInterest, TOOL.inflation, TOOL.savings, TOOL.currency]
 
 export default function ROIPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [initial, setInitial] = useState('10000')
@@ -69,7 +67,6 @@ export default function ROIPage({ pageTitle }: { pageTitle?: string } = {}) {
           <FieldInput label="Time Period" suffix="years" value={years} onChange={setYears} id="years" />
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react'
 import ToolHeader from '@/components/tool/ToolHeader'
 import TwoColLayout from '@/components/tool/TwoColLayout'
 import ResultPanel from '@/components/tool/ResultPanel'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcAge, type AgeResult } from '@/lib/calculators/age'
 import { TOOL } from '@/lib/tools'
@@ -31,7 +30,6 @@ const FAQS = [
   },
 ]
 
-const RELATED = [TOOL.date, TOOL.percentage, TOOL.grade]
 
 function parseDate(str: string): Date {
   const [y, m, d] = str.split('-').map(Number)
@@ -92,7 +90,6 @@ export default function AgeCalculator({ pageTitle }: { pageTitle?: string } = {}
           </div>
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

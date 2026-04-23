@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcDiscount, calcDiscountPercent, calcOriginalPrice } from '@/lib/calculators/discount'
 import { TOOL } from '@/lib/tools'
@@ -38,7 +37,6 @@ function fmt(n: number) {
 }
 
 const MODES = ['% Off', 'Find %', 'Find Original']
-const RELATED = [TOOL.percentage, TOOL.tip, TOOL.tax]
 
 export default function DiscountCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState('% Off')
@@ -187,7 +185,6 @@ export default function DiscountCalculator({ pageTitle }: { pageTitle?: string }
           {inputFields}
         </div>
       </div>
-      <RelatedTools tools={RELATED} />
     </>
   )
 

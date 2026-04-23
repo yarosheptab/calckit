@@ -5,7 +5,6 @@ import TwoColLayout from '@/components/tool/TwoColLayout'
 import FieldInput from '@/components/tool/FieldInput'
 import ResultPanel from '@/components/tool/ResultPanel'
 import { SegmentedToggle } from '@/components/tool/SegmentedToggle'
-import { RelatedTools } from '@/components/tool/RelatedTools'
 import { FaqSection } from '@/components/tool/FaqSection'
 import { calcTax, type FilingStatus as TaxFilingStatus } from '@/lib/calculators/tax'
 import { TOOL } from '@/lib/tools'
@@ -39,7 +38,6 @@ function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 }
 
-const RELATED = [TOOL.salary, TOOL.savings, TOOL.inflation]
 
 export default function TaxPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [salary, setSalary] = useState('75000')
@@ -81,7 +79,6 @@ export default function TaxPage({ pageTitle }: { pageTitle?: string } = {}) {
       <p className="text-xs text-gray-400 leading-relaxed px-1">
         Estimate only — uses 2025 federal standard deduction and brackets. Does not include state tax, FICA, or credits.
       </p>
-      <RelatedTools tools={RELATED} />
     </>
   )
 
