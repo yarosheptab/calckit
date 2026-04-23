@@ -52,7 +52,7 @@ export default function HomePage() {
       {/* Tool Grid */}
       <section id="tools" className="max-w-6xl mx-auto px-6 pb-20">
         <div className="flex items-center gap-3 mb-6">
-          <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Everyday</span>
+          <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Everyday</h2>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
@@ -60,7 +60,7 @@ export default function HomePage() {
         </div>
 
         <div className="flex items-center gap-3 mb-6">
-          <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Finance</span>
+          <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Finance</h2>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
@@ -68,7 +68,7 @@ export default function HomePage() {
         </div>
 
         <div className="flex items-center gap-3 mb-6">
-          <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Health</span>
+          <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Health</h2>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -79,7 +79,7 @@ export default function HomePage() {
       {/* Featured On */}
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="flex items-center gap-3 mb-6">
-          <span className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Featured On</span>
+          <h2 className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Featured On</h2>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
         <div className="flex flex-wrap items-center gap-6">
