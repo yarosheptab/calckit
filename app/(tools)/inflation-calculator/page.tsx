@@ -3,11 +3,11 @@ import InflationCalculator from './InflationCalculator'
 
 export const metadata: Metadata = {
   title: 'Inflation Calculator — Adjust for Inflation & Purchasing Power',
-  description: 'Calculate the inflation-adjusted value of money over time. See what $1,000 in any past year is worth today, or find the implied inflation rate between two prices.',
+  description: 'Calculate the inflation-adjusted value of money over time. See what $1,000 from any past year is worth today, or find the implied inflation rate.',
   keywords: ['inflation calculator', 'purchasing power calculator', 'cpi calculator', 'dollar value over time', 'inflation adjusted calculator'],
   openGraph: {
     title: 'Inflation Calculator — Adjust for Inflation & Purchasing Power',
-    description: 'Calculate the inflation-adjusted value of money over time. See what $1,000 in any past year is worth today, or find the implied inflation rate between two prices.',
+    description: 'Calculate the inflation-adjusted value of money over time. See what $1,000 from any past year is worth today, or find the implied inflation rate.',
     url: 'https://calckit.yaro-labs.com/inflation-calculator',
     siteName: 'calckit',
     type: 'website',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Inflation Calculator — Adjust for Inflation & Purchasing Power',
-    description: 'Calculate the inflation-adjusted value of money over time. See what $1,000 in any past year is worth today, or find the implied inflation rate between two prices.',
+    description: 'Calculate the inflation-adjusted value of money over time. See what $1,000 from any past year is worth today, or find the implied inflation rate.',
   },
 }
 

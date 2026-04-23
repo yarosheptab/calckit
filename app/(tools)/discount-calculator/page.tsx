@@ -3,11 +3,11 @@ import DiscountCalculator from './DiscountCalculator'
 
 export const metadata: Metadata = {
   title: 'Discount Calculator — Percent Off & Sale Price',
-  description: 'Calculate the sale price after a percentage discount, find what percentage off an item is, or work backwards from a sale price to find the original. Free discount calculator.',
+  description: 'Calculate sale price after a discount, find what percentage off an item is, or work out the original price. Free online discount calculator.',
   keywords: ['discount calculator', 'percent off calculator', 'sale price calculator', 'percentage discount calculator', 'how much is X percent off'],
   openGraph: {
     title: 'Discount Calculator — Percent Off & Sale Price',
-    description: 'Calculate the sale price after a percentage discount, find what percentage off an item is, or work backwards from a sale price to find the original. Free discount calculator.',
+    description: 'Calculate sale price after a discount, find what percentage off an item is, or work out the original price. Free online discount calculator.',
     url: 'https://calckit.yaro-labs.com/discount-calculator',
     siteName: 'calckit',
     type: 'website',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Discount Calculator — Percent Off & Sale Price',
-    description: 'Calculate the sale price after a percentage discount, find what percentage off an item is, or work backwards from a sale price to find the original. Free discount calculator.',
+    description: 'Calculate sale price after a discount, find what percentage off an item is, or work out the original price. Free online discount calculator.',
   },
 }
 
