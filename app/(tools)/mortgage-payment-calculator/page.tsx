@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function MortgagePaymentCalculatorPage() {
-  return <MortgageCalculator />
+  return <MortgageCalculator pageTitle="Mortgage Payment Calculator" />
 }

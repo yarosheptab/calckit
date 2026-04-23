@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function PersonalLoanCalculatorPage() {
-  return <LoanCalculator />
+  return <LoanCalculator pageTitle="Personal Loan Calculator" />
 }

@@ -52,7 +52,7 @@ function fmt(n: number) {
   return n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 }
 
-export default function SalaryCalculator() {
+export default function SalaryCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [amount, setAmount] = useState('75000')
   const [period, setPeriod] = useState('Annual')
   const [hoursPerDay, setHoursPerDay] = useState('8')
@@ -140,6 +140,7 @@ export default function SalaryCalculator() {
       <ToolHeader
         title="Salary to Hourly Calculator"
         description="Convert salary to hourly rate or any pay period instantly."
+        pageTitle={pageTitle}
       />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />

@@ -39,7 +39,7 @@ function fmt(n: number) {
 
 const RELATED = [TOOL.compoundInterest, TOOL.inflation, TOOL.savings, TOOL.currency]
 
-export default function ROIPage() {
+export default function ROIPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [initial, setInitial] = useState('10000')
   const [finalVal, setFinalVal] = useState('15000')
   const [years, setYears] = useState('3')
@@ -91,7 +91,7 @@ export default function ROIPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="ROI Calculator" description="Calculate return on investment, annualized return, and net profit." />
+      <ToolHeader title="ROI Calculator" description="Calculate return on investment, annualized return, and net profit." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

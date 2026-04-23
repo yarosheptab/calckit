@@ -37,7 +37,7 @@ const COMMON_PAIRS = ['GBP', 'JPY', 'CAD']
 
 const RELATED = [TOOL.unitConverter, TOOL.percentage, TOOL.tip, TOOL.discount]
 
-export default function CurrencyPage() {
+export default function CurrencyPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [rates, setRates] = useState<Record<string, number> | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -142,7 +142,7 @@ export default function CurrencyPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Currency Converter" description="Convert between 170+ currencies using live exchange rates." />
+      <ToolHeader title="Currency Converter" description="Convert between 170+ currencies using live exchange rates." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

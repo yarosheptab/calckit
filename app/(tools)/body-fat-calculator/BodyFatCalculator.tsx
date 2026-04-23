@@ -38,7 +38,7 @@ const RELATED = [TOOL.bmi, TOOL.calorie, TOOL.unitConverter]
 const UNITS = ['Metric', 'Imperial']
 const SEXES = ['Male', 'Female']
 
-export default function BodyFatCalculator() {
+export default function BodyFatCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [unit, setUnit] = useState('Metric')
   const [sex, setSex] = useState('Male')
 
@@ -177,6 +177,7 @@ export default function BodyFatCalculator() {
       <ToolHeader
         title="Body Fat Calculator"
         description="Calculate your body fat percentage using the US Navy method. Supports metric and imperial units."
+        pageTitle={pageTitle}
       />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />

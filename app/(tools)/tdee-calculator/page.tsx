@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function TdeeCalculatorPage() {
-  return <CalorieCalculator />
+  return <CalorieCalculator pageTitle="TDEE Calculator" />
 }

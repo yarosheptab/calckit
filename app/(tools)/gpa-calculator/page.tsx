@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function GpaCalculatorPage() {
-  return <GradeCalculator />
+  return <GradeCalculator pageTitle="GPA Calculator" />
 }

@@ -41,7 +41,7 @@ function fmt(n: number) {
 
 const RELATED = [TOOL.salary, TOOL.savings, TOOL.inflation]
 
-export default function TaxPage() {
+export default function TaxPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [salary, setSalary] = useState('75000')
   const [status, setStatus] = useState<FilingStatus>('single')
 
@@ -104,7 +104,7 @@ export default function TaxPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Tax Estimator" description="Estimate your US federal income tax using 2025 brackets and standard deduction." />
+      <ToolHeader title="Tax Estimator" description="Estimate your US federal income tax using 2025 brackets and standard deduction." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

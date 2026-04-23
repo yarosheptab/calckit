@@ -65,7 +65,7 @@ function fmtDateRange(start: string, end: string): string {
 const dateInputClass =
   'h-11 rounded-lg border border-gray-200 bg-white px-3 text-[15px] font-medium text-gray-900 outline-none focus:border-blue-500 focus:ring-3 focus:ring-blue-500/10 cursor-pointer w-full'
 
-export default function DateCalculator() {
+export default function DateCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState(MODES[0])
 
   // Mode A state
@@ -218,6 +218,7 @@ export default function DateCalculator() {
       <ToolHeader
         title="Date Calculator"
         description="Calculate the number of days between two dates, or add and subtract days from a date."
+        pageTitle={pageTitle}
       />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />

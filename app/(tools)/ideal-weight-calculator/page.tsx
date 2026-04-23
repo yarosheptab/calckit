@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function IdealWeightCalculatorPage() {
-  return <BmiCalculator />
+  return <BmiCalculator pageTitle="Ideal Weight Calculator" />
 }

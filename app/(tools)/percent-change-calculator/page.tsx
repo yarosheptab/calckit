@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function PercentChangeCalculatorPage() {
-  return <PercentageCalculator />
+  return <PercentageCalculator pageTitle="Percent Change Calculator" />
 }

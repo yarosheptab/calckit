@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function DaysBetweenDatesPage() {
-  return <DateCalculator />
+  return <DateCalculator pageTitle="Days Between Dates" />
 }

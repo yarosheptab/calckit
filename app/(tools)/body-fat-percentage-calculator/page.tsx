@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function BodyFatPercentageCalculatorPage() {
-  return <BodyFatCalculator />
+  return <BodyFatCalculator pageTitle="Body Fat Percentage Calculator" />
 }

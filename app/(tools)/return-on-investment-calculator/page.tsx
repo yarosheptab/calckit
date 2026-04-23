@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function ReturnOnInvestmentCalculatorPage() {
-  return <ROICalculator />
+  return <ROICalculator pageTitle="Return on Investment Calculator" />
 }

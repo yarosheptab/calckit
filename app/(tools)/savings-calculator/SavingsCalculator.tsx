@@ -41,7 +41,7 @@ const MODES = ['Reach a Goal', 'Project Savings']
 
 const RELATED = [TOOL.compoundInterest, TOOL.inflation, TOOL.loan, TOOL.percentage]
 
-export default function SavingsCalculator() {
+export default function SavingsCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState('Reach a Goal')
 
   // Mode A — Reach a Goal
@@ -168,7 +168,7 @@ export default function SavingsCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Savings Calculator" description="Calculate how much to save each month to reach your goal, or project your final savings balance." />
+      <ToolHeader title="Savings Calculator" description="Calculate how much to save each month to reach your goal, or project your final savings balance." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

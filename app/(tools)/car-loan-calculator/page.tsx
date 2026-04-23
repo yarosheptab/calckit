@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function CarLoanCalculatorPage() {
-  return <LoanCalculator />
+  return <LoanCalculator pageTitle="Car Loan Calculator" />
 }

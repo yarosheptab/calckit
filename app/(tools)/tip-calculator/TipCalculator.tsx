@@ -40,7 +40,7 @@ function fmt(n: number) {
 const TIP_PRESETS = ['10', '15', '18', '20', 'Custom']
 const RELATED = [TOOL.percentage, TOOL.discount, TOOL.currency]
 
-export default function TipPage() {
+export default function TipPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [bill, setBill] = useState('50')
   const [tipPreset, setTipPreset] = useState('18')
   const [customTip, setCustomTip] = useState('18')
@@ -101,7 +101,7 @@ export default function TipPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Tip Calculator" description="Calculate tip amount and split the bill by number of people." />
+      <ToolHeader title="Tip Calculator" description="Calculate tip amount and split the bill by number of people." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

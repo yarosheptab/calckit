@@ -60,7 +60,7 @@ function gpaLabel(gpa: number): string {
   return ''
 }
 
-export default function GradeCalculator() {
+export default function GradeCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState<Mode>('Final Grade')
 
   // Mode A: Final Grade
@@ -314,7 +314,7 @@ export default function GradeCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Grade & GPA Calculator" description="Calculate what grade you need on your final, your weighted average, or your GPA." />
+      <ToolHeader title="Grade & GPA Calculator" description="Calculate what grade you need on your final, your weighted average, or your GPA." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

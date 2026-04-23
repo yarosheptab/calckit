@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function InvestmentCalculatorPage() {
-  return <CompoundInterestCalculator />
+  return <CompoundInterestCalculator pageTitle="Investment Calculator" />
 }

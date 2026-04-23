@@ -38,7 +38,7 @@ type Mode = typeof MODES[number]
 
 const RELATED = [TOOL.discount, TOOL.tip, TOOL.tax]
 
-export default function PercentageCalculator() {
+export default function PercentageCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState<Mode>('% of')
 
   // Mode 1: % of
@@ -180,7 +180,7 @@ export default function PercentageCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Percentage Calculator" description="Calculate percentages: find X% of a number, what percent one value is of another, or the percentage change between two values." />
+      <ToolHeader title="Percentage Calculator" description="Calculate percentages: find X% of a number, what percent one value is of another, or the percentage change between two values." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

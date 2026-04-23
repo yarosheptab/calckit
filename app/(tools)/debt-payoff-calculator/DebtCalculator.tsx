@@ -55,7 +55,7 @@ function addMonths(date: Date, months: number): string {
 const MODES = ['Payoff Timeline', 'Required Payment']
 const RELATED = [TOOL.loan, TOOL.savings, TOOL.mortgage, TOOL.salary]
 
-export default function DebtCalculator() {
+export default function DebtCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState('Payoff Timeline')
 
   // Mode A fields
@@ -193,7 +193,7 @@ export default function DebtCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Debt Payoff Calculator" description="Calculate how long to pay off any debt and total interest paid." />
+      <ToolHeader title="Debt Payoff Calculator" description="Calculate how long to pay off any debt and total interest paid." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

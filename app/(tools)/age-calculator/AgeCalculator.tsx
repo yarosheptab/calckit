@@ -38,7 +38,7 @@ function parseDate(str: string): Date {
   return new Date(Date.UTC(y, m - 1, d))
 }
 
-export default function AgeCalculator() {
+export default function AgeCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const todayStr = new Date().toISOString().slice(0, 10)
   const [birthdate, setBirthdate] = useState('1990-01-01')
   const [asOf, setAsOf] = useState(todayStr)
@@ -119,7 +119,7 @@ export default function AgeCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Age Calculator" description="Calculate your exact age in years, months, and days. Find out how many days and weeks you've been alive." />
+      <ToolHeader title="Age Calculator" description="Calculate your exact age in years, months, and days. Find out how many days and weeks you've been alive." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

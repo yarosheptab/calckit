@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function DateDifferenceCalculatorPage() {
-  return <DateCalculator />
+  return <DateCalculator pageTitle="Date Difference Calculator" />
 }

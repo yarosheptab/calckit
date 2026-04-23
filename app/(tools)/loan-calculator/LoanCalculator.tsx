@@ -39,7 +39,7 @@ function fmt(n: number) {
 
 const RELATED = [TOOL.mortgage, TOOL.debt, TOOL.savings, TOOL.percentage]
 
-export default function LoanCalculator() {
+export default function LoanCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [loanAmount, setLoanAmount] = useState('10000')
   const [annualRate, setAnnualRate] = useState('7.5')
   const [termUnit, setTermUnit] = useState('Years')
@@ -104,7 +104,7 @@ export default function LoanCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Loan Calculator" description="Calculate monthly loan payments and total interest for any personal, auto, or student loan." />
+      <ToolHeader title="Loan Calculator" description="Calculate monthly loan payments and total interest for any personal, auto, or student loan." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function AgeDifferenceCalculatorPage() {
-  return <AgeCalculator />
+  return <AgeCalculator pageTitle="Age Difference Calculator" />
 }

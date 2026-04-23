@@ -37,7 +37,7 @@ const RELATED = [TOOL.calorie, TOOL.bodyFat, TOOL.unitConverter]
 
 const UNITS = ['Metric', 'Imperial']
 
-export default function BmiCalculator() {
+export default function BmiCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [unit, setUnit] = useState('Metric')
   const [weightKg, setWeightKg] = useState('70')
   const [heightCm, setHeightCm] = useState('175')
@@ -123,7 +123,7 @@ export default function BmiCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="BMI Calculator" description="Calculate your Body Mass Index. Supports metric and imperial units." />
+      <ToolHeader title="BMI Calculator" description="Calculate your Body Mass Index. Supports metric and imperial units." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

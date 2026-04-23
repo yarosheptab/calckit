@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function TakeHomePayCalculatorPage() {
-  return <SalaryCalculator />
+  return <SalaryCalculator pageTitle="Take-Home Pay Calculator" />
 }

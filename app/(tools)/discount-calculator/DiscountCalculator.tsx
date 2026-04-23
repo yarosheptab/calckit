@@ -40,7 +40,7 @@ function fmt(n: number) {
 const MODES = ['% Off', 'Find %', 'Find Original']
 const RELATED = [TOOL.percentage, TOOL.tip, TOOL.tax]
 
-export default function DiscountCalculator() {
+export default function DiscountCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState('% Off')
 
   // Mode A
@@ -193,7 +193,7 @@ export default function DiscountCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Discount Calculator" description="Calculate the sale price after a percentage discount, find what percentage off an item is, or work backwards from a sale price." />
+      <ToolHeader title="Discount Calculator" description="Calculate the sale price after a percentage discount, find what percentage off an item is, or work backwards from a sale price." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

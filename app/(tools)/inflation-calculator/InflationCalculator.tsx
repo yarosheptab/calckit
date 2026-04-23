@@ -42,7 +42,7 @@ function fmtUSD(n: number) {
 
 const CURRENT_YEAR = new Date().getFullYear().toString()
 
-export default function InflationCalculator() {
+export default function InflationCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [mode, setMode] = useState(MODES[0])
 
   // Mode A state
@@ -195,6 +195,7 @@ export default function InflationCalculator() {
       <ToolHeader
         title="Inflation Calculator"
         description="Calculate the inflation-adjusted value of money over time, or find the implied inflation rate between two prices."
+        pageTitle={pageTitle}
       />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />

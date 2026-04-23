@@ -46,7 +46,7 @@ const ACTIVITY_OPTIONS: { label: string; value: ActivityLevel }[] = [
   { label: 'Very Active (physical job)', value: 'very_active' },
 ]
 
-export default function CalorieCalculator() {
+export default function CalorieCalculator({ pageTitle }: { pageTitle?: string } = {}) {
   const [unit, setUnit] = useState('Metric')
   const [sex, setSex] = useState('Male')
   const [age, setAge] = useState('25')
@@ -154,7 +154,7 @@ export default function CalorieCalculator() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Calorie Calculator" description="Calculate your daily calorie needs based on age, sex, weight, height, and activity level." />
+      <ToolHeader title="Calorie Calculator" description="Calculate your daily calorie needs based on age, sex, weight, height, and activity level." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

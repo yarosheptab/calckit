@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function BillSplitterPage() {
-  return <TipCalculator />
+  return <TipCalculator pageTitle="Bill Splitter" />
 }

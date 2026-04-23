@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function SalePriceCalculatorPage() {
-  return <DiscountCalculator />
+  return <DiscountCalculator pageTitle="Sale Price Calculator" />
 }

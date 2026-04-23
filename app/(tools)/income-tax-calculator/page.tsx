@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function IncomeTaxCalculatorPage() {
-  return <TaxCalculator />
+  return <TaxCalculator pageTitle="Income Tax Calculator" />
 }

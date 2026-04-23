@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function DebtConsolidationCalculatorPage() {
-  return <DebtCalculator />
+  return <DebtCalculator pageTitle="Debt Consolidation Calculator" />
 }

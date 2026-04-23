@@ -42,7 +42,7 @@ function fmt(n: number) {
 
 const RELATED = [TOOL.savings, TOOL.roi, TOOL.inflation]
 
-export default function CompoundInterestPage() {
+export default function CompoundInterestPage({ pageTitle }: { pageTitle?: string } = {}) {
   const [principal, setPrincipal] = useState('10000')
   const [rate, setRate] = useState('7')
   const [years, setYears] = useState('10')
@@ -120,7 +120,7 @@ export default function CompoundInterestPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Compound Interest Calculator" description="Calculate future value with compounding interest and optional monthly contributions." />
+      <ToolHeader title="Compound Interest Calculator" description="Calculate future value with compounding interest and optional monthly contributions." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

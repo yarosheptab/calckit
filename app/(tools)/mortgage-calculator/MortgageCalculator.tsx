@@ -40,7 +40,7 @@ function fmt(n: number) {
 
 const RELATED = [TOOL.loan, TOOL.compoundInterest, TOOL.tax, TOOL.debt, TOOL.salary]
 
-export default function MortgagePage() {
+export default function MortgagePage({ pageTitle }: { pageTitle?: string } = {}) {
   const [homePrice, setHomePrice] = useState('400000')
   const [downPayment, setDownPayment] = useState('20')
   const [downMode, setDownMode] = useState('%')
@@ -166,7 +166,7 @@ export default function MortgagePage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Mortgage Calculator" description="Estimate your monthly payment, total interest, and true cost of your loan." />
+      <ToolHeader title="Mortgage Calculator" description="Estimate your monthly payment, total interest, and true cost of your loan." pageTitle={pageTitle} />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>

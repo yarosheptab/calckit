@@ -21,5 +21,5 @@ export const metadata: Metadata = {
 }
 
 export default function PurchasingPowerCalculatorPage() {
-  return <InflationCalculator />
+  return <InflationCalculator pageTitle="Purchasing Power Calculator" />
 }
