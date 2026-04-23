@@ -1,7 +1,24 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  images: { unoptimized: true },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'open-launch.com' },
+      { protocol: 'https', hostname: 'toolfio.com' },
+      { protocol: 'https', hostname: 'launchigniter.com' },
+      { protocol: 'https', hostname: 'www.startupfa.st' },
+      { protocol: 'https', hostname: 'fazier.com' },
+      { protocol: 'https', hostname: 'twelve.tools' },
+      { protocol: 'https', hostname: 'findly.tools' },
+      { protocol: 'https', hostname: 'acidtools.com' },
+      { protocol: 'https', hostname: 'neeed.directory' },
+      { protocol: 'https', hostname: 'dang.ai' },
+      { protocol: 'https', hostname: 'toolfame.com' },
+      { protocol: 'https', hostname: 'saasfame.com' },
+      { protocol: 'https', hostname: 'productfame.com' },
+      { protocol: 'https', hostname: 'dofollow.tools' },
+    ],
+  },
   async redirects() {
     return [
       { source: '/bmi', destination: '/bmi-calculator', permanent: true },

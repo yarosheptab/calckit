@@ -84,46 +84,46 @@ export default function HomePage() {
         </div>
         <div className="flex flex-wrap items-center gap-6">
           <a href="https://open-launch.com/projects/calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://open-launch.com/api/badge/4a847206-9c28-45b0-a30f-f23329190ed1/featured-light.svg" alt="Featured on Open-Launch" width={200} height={50} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://open-launch.com/api/badge/4a847206-9c28-45b0-a30f-f23329190ed1/featured-light.svg" alt="Featured on Open-Launch" width={200} height={50} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://toolfio.com" target="_blank" rel="dofollow noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://toolfio.com/toolfio-light-badge.png" alt="Featured on Toolfio" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://toolfio.com/toolfio-light-badge.png" alt="Featured on Toolfio" width={200} height={54} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://launchigniter.com/product/calckit?ref=badge-calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://launchigniter.com/api/badge/calckit?theme=light" alt="Featured on LaunchIgniter" width={212} height={55} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://launchigniter.com/api/badge/calckit?theme=light" alt="Featured on LaunchIgniter" width={212} height={55} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://www.startupfa.st/projects/calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://www.startupfa.st/badge-light.png" alt="Featured on Startup Fast" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://www.startupfa.st/badge-light.png" alt="Featured on Startup Fast" width={200} height={54} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://fazier.com/launches/calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://fazier.com/api/v1/public/badges/launch_badges.svg?badge_type=launched&theme=light" alt="Launched on Fazier" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://fazier.com/api/v1/public/badges/launch_badges.svg?badge_type=launched&theme=light" alt="Launched on Fazier" width={200} height={54} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://twelve.tools/badge0-light.svg" alt="Featured on Twelve Tools" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://twelve.tools/badge0-light.svg" alt="Featured on Twelve Tools" width={200} height={54} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://findly.tools/calckit?utm_source=calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on Findly Tools" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on Findly Tools" width={200} height={54} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://acidtools.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://acidtools.com/assets/images/badge.png" alt="Acid Tools" width={200} height={54} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://acidtools.com/assets/images/badge.png" alt="Acid Tools" width={200} height={54} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://neeed.directory/products/calckit?utm_source=calckit" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://neeed.directory/badges/neeed-badge-light.svg" alt="Featured on neeed.directory" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://neeed.directory/badges/neeed-badge-light.svg" alt="Featured on neeed.directory" width={139} height={40} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://dang.ai" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://dang.ai/badge.png" alt="Featured on Dang.ai" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://dang.ai/badge.png" alt="Featured on Dang.ai" width={139} height={40} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://toolfame.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://toolfame.com/badge-light.svg" alt="Featured on ToolFame" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://toolfame.com/badge-light.svg" alt="Featured on ToolFame" width={139} height={40} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://saasfame.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://saasfame.com/badge-light.svg" alt="Featured on SaaSFame" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://saasfame.com/badge-light.svg" alt="Featured on SaaSFame" width={139} height={40} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://productfame.com" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://productfame.com/badges/featured-light.svg" alt="Featured on ProductFame" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://productfame.com/badges/featured-light.svg" alt="Featured on ProductFame" width={139} height={40} style={{ height: 40, width: 'auto' }} />
           </a>
           <a href="https://dofollow.tools" target="_blank" rel="noopener noreferrer" className="flex h-[40px] items-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0">
-            <Image src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" width={139} height={40} unoptimized style={{ height: 40, width: 'auto' }} />
+            <Image src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" width={139} height={40} style={{ height: 40, width: 'auto' }} />
           </a>
         </div>
       </section>
