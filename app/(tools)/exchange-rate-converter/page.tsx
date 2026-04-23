@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Exchange Rate Converter',
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/exchange-rate-converter`,
+      description: 'Convert currencies using live exchange rates.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Exchange Rate Converter', item: `${BASE}/exchange-rate-converter` },
+      ],
+    },
+  ],
+})
+
 export default function ExchangeRateConverterPage() {
-  return <CurrencyConverter pageTitle="Exchange Rate Converter" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <CurrencyConverter pageTitle="Exchange Rate Converter" />
+    </>
+  )
 }
+

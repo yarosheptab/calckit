@@ -20,6 +20,35 @@ export const metadata: Metadata = {
   },
 }
 
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Age Difference Calculator',
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/age-difference-calculator`,
+      description: 'Calculate the age difference between two people using their birthdays.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Age Difference Calculator', item: `${BASE}/age-difference-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function AgeDifferenceCalculatorPage() {
-  return <AgeCalculator pageTitle="Age Difference Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <AgeCalculator pageTitle="Age Difference Calculator" />
+    </>
+  )
 }

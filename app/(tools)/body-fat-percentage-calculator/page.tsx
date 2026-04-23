@@ -20,6 +20,35 @@ export const metadata: Metadata = {
   },
 }
 
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Body Fat Percentage Calculator',
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/body-fat-percentage-calculator`,
+      description: 'Estimate your body fat percentage using the US Navy or BMI method.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Body Fat Percentage Calculator', item: `${BASE}/body-fat-percentage-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function BodyFatPercentageCalculatorPage() {
-  return <BodyFatCalculator pageTitle="Body Fat Percentage Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <BodyFatCalculator pageTitle="Body Fat Percentage Calculator" />
+    </>
+  )
 }

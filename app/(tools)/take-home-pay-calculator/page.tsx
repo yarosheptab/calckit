@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Take-Home Pay Calculator',
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/take-home-pay-calculator`,
+      description: 'Find out exactly how much of your salary you actually take home.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Take-Home Pay Calculator', item: `${BASE}/take-home-pay-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function TakeHomePayCalculatorPage() {
-  return <SalaryCalculator pageTitle="Take-Home Pay Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <SalaryCalculator pageTitle="Take-Home Pay Calculator" />
+    </>
+  )
 }
+

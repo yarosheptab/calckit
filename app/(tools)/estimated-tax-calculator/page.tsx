@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Estimated Tax Calculator',
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/estimated-tax-calculator`,
+      description: 'Calculate your estimated quarterly tax payments for self-employment, freelance, or investment income.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Estimated Tax Calculator', item: `${BASE}/estimated-tax-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function EstimatedTaxCalculatorPage() {
-  return <TaxCalculator pageTitle="Estimated Tax Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <TaxCalculator pageTitle="Estimated Tax Calculator" />
+    </>
+  )
 }
+

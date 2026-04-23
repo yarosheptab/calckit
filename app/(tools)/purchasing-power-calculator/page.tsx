@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Purchasing Power Calculator',
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/purchasing-power-calculator`,
+      description: 'See how inflation has eroded the purchasing power of money over time.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Purchasing Power Calculator', item: `${BASE}/purchasing-power-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function PurchasingPowerCalculatorPage() {
-  return <InflationCalculator pageTitle="Purchasing Power Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <InflationCalculator pageTitle="Purchasing Power Calculator" />
+    </>
+  )
 }
+

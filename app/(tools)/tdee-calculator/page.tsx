@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'TDEE Calculator',
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/tdee-calculator`,
+      description: 'Calculate your Total Daily Energy Expenditure (TDEE) based on age, weight, height, and activity level.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'TDEE Calculator', item: `${BASE}/tdee-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function TdeeCalculatorPage() {
-  return <CalorieCalculator pageTitle="TDEE Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <CalorieCalculator pageTitle="TDEE Calculator" />
+    </>
+  )
 }
+

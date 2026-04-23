@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Personal Loan Calculator',
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/personal-loan-calculator`,
+      description: 'Estimate your personal loan monthly payment and total interest cost.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Personal Loan Calculator', item: `${BASE}/personal-loan-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function PersonalLoanCalculatorPage() {
-  return <LoanCalculator pageTitle="Personal Loan Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <LoanCalculator pageTitle="Personal Loan Calculator" />
+    </>
+  )
 }
+

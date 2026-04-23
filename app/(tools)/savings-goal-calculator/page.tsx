@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Savings Goal Calculator',
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/savings-goal-calculator`,
+      description: 'Find out how long it takes to reach a savings goal with regular contributions.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Savings Goal Calculator', item: `${BASE}/savings-goal-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function SavingsGoalCalculatorPage() {
-  return <SavingsCalculator pageTitle="Savings Goal Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <SavingsCalculator pageTitle="Savings Goal Calculator" />
+    </>
+  )
 }
+

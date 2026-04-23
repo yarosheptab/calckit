@@ -20,6 +20,37 @@ export const metadata: Metadata = {
   },
 }
 
+
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Ideal Weight Calculator',
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/ideal-weight-calculator`,
+      description: 'Find the ideal weight range for your height and body frame.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Ideal Weight Calculator', item: `${BASE}/ideal-weight-calculator` },
+      ],
+    },
+  ],
+})
+
 export default function IdealWeightCalculatorPage() {
-  return <BmiCalculator pageTitle="Ideal Weight Calculator" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <BmiCalculator pageTitle="Ideal Weight Calculator" />
+    </>
+  )
 }
+

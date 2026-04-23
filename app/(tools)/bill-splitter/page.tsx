@@ -20,6 +20,35 @@ export const metadata: Metadata = {
   },
 }
 
+const BASE = 'https://calckit.yaro-labs.com'
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'SoftwareApplication',
+      name: 'Bill Splitter',
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Web',
+      url: `${BASE}/bill-splitter`,
+      description: 'Split any restaurant bill evenly among friends and calculate the tip per person.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+        { '@type': 'ListItem', position: 2, name: 'Bill Splitter', item: `${BASE}/bill-splitter` },
+      ],
+    },
+  ],
+})
+
 export default function BillSplitterPage() {
-  return <TipCalculator pageTitle="Bill Splitter" />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
+      <TipCalculator pageTitle="Bill Splitter" />
+    </>
+  )
 }
