@@ -1,0 +1,52 @@
+# calckit
+
+> calckit is a free online calculator suite — no account required, no ads.
+> It covers everyday math, personal finance, and health calculations.
+
+## What calckit does
+
+- Mortgage, loan, and compound interest calculators
+- Tax, salary, ROI, inflation, and savings calculators
+- BMI, body fat, calorie, and TDEE calculators
+- Tip, percentage, date, age, grade, and unit converters
+- Currency exchange (live rates)
+- All tools work instantly in the browser — no sign-up, no paywalls
+
+## Who it's for
+
+Anyone who needs a fast, accurate calculation without installing an app or
+creating an account. Works on mobile and desktop.
+
+## Website
+
+https://calckit.yaro-labs.com
+
+## Blog
+
+https://calckit.yaro-labs.com/blog
+
+Covers personal finance (mortgages, taxes, debt payoff, ROI), health (calories,
+BMI, body fat), and everyday math (compound interest, unit conversion, tipping).
+
+## Tool list
+
+- /mortgage-calculator — Monthly mortgage payment & amortization
+- /compound-interest-calculator — Investment growth over time
+- /tax-calculator — 2025 US federal income tax estimate
+- /salary-calculator — Annual salary to hourly, monthly, weekly
+- /loan-calculator — Monthly payment on any loan
+- /bmi-calculator — Body Mass Index & healthy weight range
+- /calorie-calculator — Daily calorie needs by activity level
+- /body-fat-calculator — Body fat % via US Navy formula
+- /roi-calculator — Return on investment
+- /savings-calculator — Savings goal timeline
+- /debt-payoff-calculator — Debt avalanche & snowball payoff
+- /inflation-calculator — Purchasing power over time
+- /tip-calculator — Tip & bill-splitting
+- /percentage-calculator — Percentage change, of, off
+- /currency-converter — Live exchange rates
+- /unit-converter — Length, weight, temperature, volume
+- /discount-calculator — Sale price & savings
+- /grade-calculator — GPA and weighted grades
+- /age-calculator — Exact age & days until birthday
+- /date-calculator — Days between dates
