@@ -30,7 +30,10 @@ export default function RelatedTools() {
                 background: '#fff',
                 transition: 'border-color 0.15s',
               }}>
-                <div style={{ fontSize: '13px', fontWeight: 700, color: '#111', marginBottom: '3px' }}>{tool.name}</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
+                  <Icon style={{ width: 14, height: 14 }} className={tool.iconColor} />
+                  <div style={{ fontSize: '13px', fontWeight: 700, color: '#111' }}>{tool.name}</div>
+                </div>
                 <div style={{ fontSize: '11px', color: '#9ca3af', lineHeight: 1.4 }}>{tool.desc}</div>
               </div>
             </Link>
