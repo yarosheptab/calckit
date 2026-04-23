@@ -1,15 +1,15 @@
 export type FilingStatus = 'single' | 'married'
 
-export const STANDARD_DEDUCTION: Record<FilingStatus, number> = { single: 14600, married: 29200 }
+export const STANDARD_DEDUCTION: Record<FilingStatus, number> = { single: 15000, married: 30000 }
 
 export const BRACKETS: Record<FilingStatus, [number, number][]> = {
   single: [
-    [0.10, 11600], [0.12, 47150], [0.22, 100525],
-    [0.24, 191950], [0.32, 243725], [0.35, 609350], [0.37, Infinity],
+    [0.10, 11925], [0.12, 48475], [0.22, 103350],
+    [0.24, 197300], [0.32, 250525], [0.35, 626350], [0.37, Infinity],
   ],
   married: [
-    [0.10, 23200], [0.12, 94300], [0.22, 201050],
-    [0.24, 383900], [0.32, 487450], [0.35, 731200], [0.37, Infinity],
+    [0.10, 23850], [0.12, 96950], [0.22, 206700],
+    [0.24, 394600], [0.32, 501050], [0.35, 751600], [0.37, Infinity],
   ],
 }
 

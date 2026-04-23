@@ -12,12 +12,12 @@ import { TOOL } from '@/lib/tools'
 
 const FAQS = [
   {
-    q: 'What are the 2024 US federal income tax brackets?',
-    a: 'For single filers: 10% up to $11,600; 12% up to $47,150; 22% up to $100,525; 24% up to $191,950; 32% up to $243,725; 35% up to $609,350; 37% above. For married filing jointly, thresholds are roughly double. These are marginal rates — each bracket only applies to the income within that range.',
+    q: 'What are the 2025 US federal income tax brackets?',
+    a: 'For single filers: 10% up to $11,925; 12% up to $48,475; 22% up to $103,350; 24% up to $197,300; 32% up to $250,525; 35% up to $626,350; 37% above. For married filing jointly, thresholds are roughly double. These are marginal rates — each bracket only applies to the income within that range.',
   },
   {
-    q: 'What is the standard deduction for 2024?',
-    a: 'The 2024 standard deduction is $14,600 for single filers and $29,200 for married filing jointly. This amount is subtracted from your gross income before calculating tax. Most taxpayers take the standard deduction rather than itemizing because it\'s simpler and usually larger.',
+    q: 'What is the standard deduction for 2025?',
+    a: 'The 2025 standard deduction is $15,000 for single filers and $30,000 for married filing jointly. This amount is subtracted from your gross income before calculating tax. Most taxpayers take the standard deduction rather than itemizing because it\'s simpler and usually larger.',
   },
   {
     q: 'What is the difference between effective and marginal tax rate?',
@@ -79,7 +79,7 @@ export default function TaxPage() {
         </div>
       </div>
       <p className="text-xs text-gray-400 leading-relaxed px-1">
-        Estimate only — uses 2024 federal standard deduction and brackets. Does not include state tax, FICA, or credits.
+        Estimate only — uses 2025 federal standard deduction and brackets. Does not include state tax, FICA, or credits.
       </p>
       <RelatedTools tools={RELATED} />
     </>
@@ -104,7 +104,7 @@ export default function TaxPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <ToolHeader title="Tax Estimator" description="Estimate your US federal income tax using 2024 brackets and standard deduction." />
+      <ToolHeader title="Tax Estimator" description="Estimate your US federal income tax using 2025 brackets and standard deduction." />
       <TwoColLayout left={inputPanel} right={resultPanel} />
       <FaqSection items={FAQS} />
     </div>
