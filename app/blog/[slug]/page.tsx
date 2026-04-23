@@ -48,14 +48,26 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const postHtml = post.html
   const ldJson = JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.excerpt,
-    datePublished: post.date,
-    url: `${BASE}/blog/${slug}`,
-    mainEntityOfPage: `${BASE}/blog/${slug}`,
-    author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
-    publisher: { '@type': 'Organization', name: 'calckit', url: BASE },
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        url: `${BASE}/blog/${slug}`,
+        mainEntityOfPage: `${BASE}/blog/${slug}`,
+        author: { '@type': 'Organization', name: 'Yaro Labs', url: 'https://yaro-labs.com' },
+        publisher: { '@type': 'Organization', name: 'calckit', url: BASE },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'calckit', item: BASE },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE}/blog` },
+          { '@type': 'ListItem', position: 3, name: post.title, item: `${BASE}/blog/${slug}` },
+        ],
+      },
+    ],
   })
 
   const dateFormatted = new Date(post.date).toLocaleDateString('en-US', {
