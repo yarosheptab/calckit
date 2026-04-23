@@ -14,6 +14,11 @@ function getCategory(slug: string): 'Finance' | 'Health' | 'Everyday' {
 export const metadata: Metadata = {
   title: 'Blog — Personal Finance & Math Articles',
   description: 'Articles, guides, and explainers about personal finance, everyday math, mortgage calculations, investment growth, tax planning, and more — from the calckit team.',
+  alternates: {
+    types: {
+      'application/rss+xml': 'https://calckit.yaro-labs.com/blog/feed.xml',
+    },
+  },
   openGraph: {
     title: 'Blog — Personal Finance & Math Articles',
     description: 'Articles, guides, and explainers about personal finance, everyday math, mortgage calculations, investment growth, tax planning, and more — from the calckit team.',

@@ -20,6 +20,11 @@ export const metadata: Metadata = {
     template: '%s — calckit',
   },
   description: siteDescription,
+  alternates: {
+    types: {
+      'application/rss+xml': 'https://calckit.yaro-labs.com/blog/feed.xml',
+    },
+  },
   keywords: [
     'calculators',
     'mortgage calculator',
